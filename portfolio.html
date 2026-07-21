@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STACKLY - Portfolio</title>
+  <meta name="description" content="Explore Stackly corporate case studies - enterprise deployments, brand launches, and technological breakthroughs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.webp" alt="STACKLY Logo" class="logo-img">
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="portfolio.html" class="nav-link active">Portfolio</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="team.html" class="nav-link">Team</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+
+        <a href="contact.html" class="btn btn-primary">Start a Project</a>
+        <a href="login.html" class="btn btn-login"><i class="ri-login-box-line"></i> Login</a>
+        <button class="mobile-menu-toggle" aria-label="Open Menu">
+          <i class="ri-menu-3-line"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav-overlay">
+    <button class="mobile-nav-close" aria-label="Close Menu">
+      <i class="ri-close-line"></i>
+    </button>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="portfolio.html" class="mobile-nav-link">Portfolio</a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+      <a href="team.html" class="mobile-nav-link">Leadership</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+      <div class="mobile-nav-divider"></div>
+      <a href="login.html" class="mobile-nav-link mobile-nav-login"><i class="ri-login-box-line"></i> Login</a>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <div class="badge badge-orange">
+          <i class="ri-briefcase-4-fill"></i> Our Work
+        </div>
+        <h1 class="page-hero-title">Projects That <span class="gradient-orange">Redefine Industries</span></h1>
+        <p class="page-hero-subtitle">Explore case studies showcasing enterprise deployments, brand transformations, and technological breakthroughs that deliver measurable impact.</p>
+        <div class="page-hero-cta">
+          <a href="contact.html" class="btn btn-primary">Start a Project <i class="ri-arrow-right-line"></i></a>
+          <a href="services.html" class="btn btn-outline">Our Services <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-orange">
+          <i class="ri-briefcase-4-fill"></i> Selected Case Studies
+        </div>
+        <h2 class="section-title">Transformative Projects Delivered With Impact</h2>
+        <p class="section-subtitle">Examine our latest enterprise deployments, brand launches, and technological breakthroughs.</p>
+      </div>
+
+      <div class="portfolio-filter">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+        <button class="filter-btn" data-filter="enterprise">Enterprise SaaS</button>
+        <button class="filter-btn" data-filter="ai">AI Solutions</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card" data-category="enterprise">
+          <div class="portfolio-img-box">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Fintech Data Analytics Platform">
+          </div>
+          <div class="portfolio-overlay-info">
+            <span class="portfolio-tag">Enterprise SaaS</span>
+            <h3 class="portfolio-title">Aethel Capital Analytics Platform</h3>
+            <p class="portfolio-desc">High-frequency real-time financial reporting platform processing $50B+ in annual transaction volume.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="branding">
+          <div class="portfolio-img-box">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Luxury Architectural Brand System">
+          </div>
+          <div class="portfolio-overlay-info">
+            <span class="portfolio-tag">Branding</span>
+            <h3 class="portfolio-title">Vanguard Architecture Brand Overhaul</h3>
+            <p class="portfolio-desc">Complete visual identity system, 3D interactive brochure, and digital showroom for ultra-luxury developments.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="ai">
+          <div class="portfolio-img-box">
+            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Enterprise AI Automated Workspace">
+          </div>
+          <div class="portfolio-overlay-info">
+            <span class="portfolio-tag">AI Solutions</span>
+            <h3 class="portfolio-title">Cognitive AI Enterprise Assistant</h3>
+            <p class="portfolio-desc">Custom LLM workflow automation suite saving 14,000+ operational hours monthly across 12 countries.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="branding">
+          <div class="portfolio-img-box">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Global Growth & Campaign Platform">
+          </div>
+          <div class="portfolio-overlay-info">
+            <span class="portfolio-tag">Branding</span>
+            <h3 class="portfolio-title">Apex Global Strategic Positioning</h3>
+            <p class="portfolio-desc">Multinational rebrand and digital launch campaign generating 420% increase in tier-1 inbound leads.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="enterprise">
+          <div class="portfolio-img-box">
+            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80" alt="Corporate Cloud Transformation">
+          </div>
+          <div class="portfolio-overlay-info">
+            <span class="portfolio-tag">Enterprise SaaS</span>
+            <h3 class="portfolio-title">Cloud Infrastructure Migration</h3>
+            <p class="portfolio-desc">Zero-downtime multi-cloud deployment for a Fortune 500 logistics conglomerate.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="ai">
+          <div class="portfolio-img-box">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Predictive Analytics Suite">
+          </div>
+          <div class="portfolio-overlay-info">
+            <span class="portfolio-tag">AI Solutions</span>
+            <h3 class="portfolio-title">OmniPredict Supply Chain AI</h3>
+            <p class="portfolio-desc">Predictive inventory model decreasing stockout events by 38% for global retail enterprise.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Stats -->
+  <section class="section" style="background: var(--bg-darker);">
+    <div class="container">
+      <div class="portfolio-stats-grid">
+        <div class="portfolio-stat-card">
+          <div class="portfolio-stat-num">500+</div>
+          <div class="portfolio-stat-label">Projects Delivered</div>
+          <div class="portfolio-stat-desc">Across 12+ industries worldwide</div>
+        </div>
+
+        <div class="portfolio-stat-card">
+          <div class="portfolio-stat-num">$2.8B+</div>
+          <div class="portfolio-stat-label">Revenue Generated</div>
+          <div class="portfolio-stat-desc">Measurable client outcomes</div>
+        </div>
+
+        <div class="portfolio-stat-card">
+          <div class="portfolio-stat-num">30+</div>
+          <div class="portfolio-stat-label">Countries Served</div>
+          <div class="portfolio-stat-desc">Global enterprise deployments</div>
+        </div>
+
+        <div class="portfolio-stat-card">
+          <div class="portfolio-stat-num">99.4%</div>
+          <div class="portfolio-stat-label">Client Retention</div>
+          <div class="portfolio-stat-desc">Long-term partnerships</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Case Studies -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-orange">
+          <i class="ri-file-text-fill"></i> Deep Dive
+        </div>
+        <h2 class="section-title">Featured Case Studies</h2>
+        <p class="section-subtitle">In-depth look at our most impactful enterprise deployments and measurable outcomes.</p>
+      </div>
+
+      <div class="case-studies-grid">
+        <div class="case-study-card">
+          <div class="case-study-img">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Aethel Capital Analytics">
+          </div>
+          <div class="case-study-content">
+            <div class="case-study-meta">
+              <span class="case-study-tag">Enterprise SaaS</span>
+              <span class="case-study-date">2024</span>
+            </div>
+            <h3 class="case-study-title">Aethel Capital Analytics Platform</h3>
+            <p class="case-study-desc">Built a real-time financial reporting platform processing $50B+ in annual transaction volume with sub-second latency and 99.99% uptime.</p>
+            <div class="case-study-results">
+              <div class="case-study-result">
+                <div class="case-study-result-num">$50B+</div>
+                <div class="case-study-result-label">Transaction Volume</div>
+              </div>
+              <div class="case-study-result">
+                <div class="case-study-result-num">99.99%</div>
+                <div class="case-study-result-label">Uptime</div>
+              </div>
+              <div class="case-study-result">
+                <div class="case-study-result-num">&lt;1s</div>
+                <div class="case-study-result-label">Latency</div>
+              </div>
+            </div>
+            <a href="contact.html" class="btn btn-primary">View Full Case Study <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+        <div class="case-study-card">
+          <div class="case-study-img">
+            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Cognitive AI Enterprise">
+          </div>
+          <div class="case-study-content">
+            <div class="case-study-meta">
+              <span class="case-study-tag">AI Solutions</span>
+              <span class="case-study-date">2025</span>
+            </div>
+            <h3 class="case-study-title">Cognitive AI Enterprise Assistant</h3>
+            <p class="case-study-desc">Deployed a custom LLM automation suite that saved 14,000+ operational hours monthly across 12 countries for a Fortune 500 enterprise.</p>
+            <div class="case-study-results">
+              <div class="case-study-result">
+                <div class="case-study-result-num">14K+</div>
+                <div class="case-study-result-label">Hours Saved/Month</div>
+              </div>
+              <div class="case-study-result">
+                <div class="case-study-result-num">12</div>
+                <div class="case-study-result-label">Countries</div>
+              </div>
+              <div class="case-study-result">
+                <div class="case-study-result-num">340%</div>
+                <div class="case-study-result-label">ROI Increase</div>
+              </div>
+            </div>
+            <a href="contact.html" class="btn btn-primary">View Full Case Study <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+        <div class="case-study-card">
+          <div class="case-study-img">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Vanguard Architecture Rebrand">
+          </div>
+          <div class="case-study-content">
+            <div class="case-study-meta">
+              <span class="case-study-tag">Branding</span>
+              <span class="case-study-date">2024</span>
+            </div>
+            <h3 class="case-study-title">Vanguard Architecture Rebrand</h3>
+            <p class="case-study-desc">Complete visual identity system and digital showroom for ultra-luxury developments, increasing brand recognition by 340% in target markets.</p>
+            <div class="case-study-results">
+              <div class="case-study-result">
+                <div class="case-study-result-num">340%</div>
+                <div class="case-study-result-label">Brand Recognition</div>
+              </div>
+              <div class="case-study-result">
+                <div class="case-study-result-num">2.8M</div>
+                <div class="case-study-result-label">Digital Impressions</div>
+              </div>
+              <div class="case-study-result">
+                <div class="case-study-result-num">45%</div>
+                <div class="case-study-result-label">Lead Increase</div>
+              </div>
+            </div>
+            <a href="contact.html" class="btn btn-primary">View Full Case Study <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+        <div class="case-study-card">
+          <div class="case-study-img">
+            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80" alt="Cloud Infrastructure Migration">
+          </div>
+          <div class="case-study-content">
+            <div class="case-study-meta">
+              <span class="case-study-tag">Cloud Solutions</span>
+              <span class="case-study-date">2025</span>
+            </div>
+            <h3 class="case-study-title">Cloud Infrastructure Migration</h3>
+            <p class="case-study-desc">Zero-downtime multi-cloud deployment for a Fortune 500 logistics conglomerate, reducing infrastructure costs by 42%.</p>
+            <div class="case-study-results">
+              <div class="case-study-result">
+                <div class="case-study-result-num">42%</div>
+                <div class="case-study-result-label">Cost Reduction</div>
+              </div>
+              <div class="case-study-result">
+                <div class="case-study-result-num">0</div>
+                <div class="case-study-result-label">Downtime Hours</div>
+              </div>
+              <div class="case-study-result">
+                <div class="case-study-result-num">3x</div>
+                <div class="case-study-result-label">Deploy Speed</div>
+              </div>
+            </div>
+            <a href="contact.html" class="btn btn-primary">View Full Case Study <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology Stack -->
+  <section class="section" style="background: var(--bg-darker);">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">
+          <i class="ri-code-box-fill"></i> Tech Stack
+        </div>
+        <h2 class="section-title">Technologies We Work With</h2>
+        <p class="section-subtitle">Modern enterprise stacks powering our client solutions across web, mobile, cloud, and AI.</p>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-card">
+          <div class="tech-icon"><i class="ri-reactjs-line"></i></div>
+          <div class="tech-name">React</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="ri-nodejs-line"></i></div>
+          <div class="tech-name">Node.js</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="ri-python-line"></i></div>
+          <div class="tech-name">Python</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="ri-cloud-line"></i></div>
+          <div class="tech-name">AWS</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="ri-microsoft-line"></i></div>
+          <div class="tech-name">Azure</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="ri-google-line"></i></div>
+          <div class="tech-name">GCP</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="ri-smartphone-line"></i></div>
+          <div class="tech-name">React Native</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="ri-flutter-line"></i></div>
+          <div class="tech-name">Flutter</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="ri-database-2-line"></i></div>
+          <div class="tech-name">PostgreSQL</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="ri-server-line"></i></div>
+          <div class="tech-name">Kubernetes</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="ri-brain-line"></i></div>
+          <div class="tech-name">TensorFlow</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="ri-shield-check-line"></i></div>
+          <div class="tech-name">Docker</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Logos Marquee -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-orange">
+          <i class="ri-building-2-fill"></i> Trusted By
+        </div>
+        <h2 class="section-title">Clients Who Trust Stackly</h2>
+        <p class="section-subtitle">Leading enterprises across industries choose Stackly as their digital transformation partner.</p>
+      </div>
+
+      <div style="overflow: hidden; margin-top: 2rem;">
+        <div class="client-logos-track">
+          <div class="client-logo-item"><h3 style="color: var(--text-dim); font-size: 1.5rem; white-space: nowrap;">Meridian Financial</h3></div>
+          <div class="client-logo-item"><h3 style="color: var(--text-dim); font-size: 1.5rem; white-space: nowrap;">Quantum Dynamics</h3></div>
+          <div class="client-logo-item"><h3 style="color: var(--text-dim); font-size: 1.5rem; white-space: nowrap;">Aethel Capital</h3></div>
+          <div class="client-logo-item"><h3 style="color: var(--text-dim); font-size: 1.5rem; white-space: nowrap;">Vanguard Architecture</h3></div>
+          <div class="client-logo-item"><h3 style="color: var(--text-dim); font-size: 1.5rem; white-space: nowrap;">Stackly Industries</h3></div>
+          <div class="client-logo-item"><h3 style="color: var(--text-dim); font-size: 1.5rem; white-space: nowrap;">Pinnacle Group</h3></div>
+          <div class="client-logo-item"><h3 style="color: var(--text-dim); font-size: 1.5rem; white-space: nowrap;">Apex Global</h3></div>
+          <div class="client-logo-item"><h3 style="color: var(--text-dim); font-size: 1.5rem; white-space: nowrap;">Vertex Solutions</h3></div>
+          <!-- Duplicate for seamless loop -->
+          <div class="client-logo-item"><h3 style="color: var(--text-dim); font-size: 1.5rem; white-space: nowrap;">Meridian Financial</h3></div>
+          <div class="client-logo-item"><h3 style="color: var(--text-dim); font-size: 1.5rem; white-space: nowrap;">Quantum Dynamics</h3></div>
+          <div class="client-logo-item"><h3 style="color: var(--text-dim); font-size: 1.5rem; white-space: nowrap;">Aethel Capital</h3></div>
+          <div class="client-logo-item"><h3 style="color: var(--text-dim); font-size: 1.5rem; white-space: nowrap;">Vanguard Architecture</h3></div>
+          <div class="client-logo-item"><h3 style="color: var(--text-dim); font-size: 1.5rem; white-space: nowrap;">Stackly Industries</h3></div>
+          <div class="client-logo-item"><h3 style="color: var(--text-dim); font-size: 1.5rem; white-space: nowrap;">Pinnacle Group</h3></div>
+          <div class="client-logo-item"><h3 style="color: var(--text-dim); font-size: 1.5rem; white-space: nowrap;">Apex Global</h3></div>
+          <div class="client-logo-item"><h3 style="color: var(--text-dim); font-size: 1.5rem; white-space: nowrap;">Vertex Solutions</h3></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Testimonials -->
+  <section class="section" style="background: var(--bg-darker);">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">
+          <i class="ri-double-quotes-l"></i> Client Voices
+        </div>
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p class="section-subtitle">Real feedback from enterprise leaders who've partnered with Stackly.</p>
+      </div>
+
+      <div class="about-testimonials-grid">
+        <div class="about-testimonial-card">
+          <p class="about-testimonial-text">"Stackly delivered a fintech platform that processes $50B+ annually with 99.99% uptime. Their technical expertise and strategic vision are unmatched in the industry."</p>
+          <div class="about-testimonial-author">
+            <img class="about-testimonial-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="James Whitfield">
+            <div>
+              <div class="about-testimonial-name">James Whitfield</div>
+              <div class="about-testimonial-role">CTO, Meridian Financial Group</div>
+              <div class="about-testimonial-rating"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-testimonial-card">
+          <p class="about-testimonial-text">"The AI automation suite Stackly built saves us 14,000+ hours monthly. It's transformed how our entire organization operates across 12 countries."</p>
+          <div class="about-testimonial-author">
+            <img class="about-testimonial-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Sarah Chen">
+            <div>
+              <div class="about-testimonial-name">Sarah Chen</div>
+              <div class="about-testimonial-role">VP Digital, Quantum Dynamics</div>
+              <div class="about-testimonial-rating"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-testimonial-card">
+          <p class="about-testimonial-text">"Our rebrand by Stackly increased brand recognition by 340% in target markets. They didn't just redesign our visual identity — they transformed our market position."</p>
+          <div class="about-testimonial-author">
+            <img class="about-testimonial-avatar" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=120&q=80" alt="Michael Torres">
+            <div>
+              <div class="about-testimonial-name">Michael Torres</div>
+              <div class="about-testimonial-role">CEO, Vanguard Architecture</div>
+              <div class="about-testimonial-rating"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-testimonial-card">
+          <p class="about-testimonial-text">"Stackly's cloud migration saved us $2.4M annually while improving deployment speed by 3x. Zero downtime during the entire transition. Exceptional delivery."</p>
+          <div class="about-testimonial-author">
+            <img class="about-testimonial-avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=120&q=80" alt="Priya Sharma">
+            <div>
+              <div class="about-testimonial-name">Priya Sharma</div>
+              <div class="about-testimonial-role">Director of Engineering, Aethel Capital</div>
+              <div class="about-testimonial-rating"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="portfolio-cta">
+    <div class="container">
+      <div class="portfolio-cta-content">
+        <h2 class="portfolio-cta-title">Ready to Build Your Next Success Story?</h2>
+        <p class="portfolio-cta-desc">Partner with Stackly to architect scalable software, elevate your brand, and accelerate growth. Let's create something extraordinary together.</p>
+        <div class="portfolio-cta-btns">
+          <a href="contact.html" class="btn btn-primary">Start a Project <i class="ri-arrow-right-line"></i></a>
+          <a href="services.html" class="btn btn-outline">View Services <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Subscription -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-container">
+        <div class="newsletter-content">
+          <div class="newsletter-badge">
+            <i class="ri-mail-add-fill"></i> Stay Updated
+          </div>
+          <h2 class="newsletter-title">Get Strategic Insights Delivered to Your Inbox</h2>
+          <p class="newsletter-description">
+            Join 15,000+ executives and decision-makers who receive weekly briefs on enterprise technology, digital transformation, and market strategy.
+          </p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <input type="email" class="form-control" placeholder="Enter your corporate email" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <div class="newsletter-features">
+            <div class="newsletter-feature">
+              <i class="ri-check-line"></i>
+              <span>No spam, ever</span>
+            </div>
+            <div class="newsletter-feature">
+              <i class="ri-check-line"></i>
+              <span>Unsubscribe anytime</span>
+            </div>
+          </div>
+        </div>
+        <div class="newsletter-visual">
+          <div class="newsletter-graphic">
+            <div class="newsletter-icon-grid">
+              <div class="newsletter-icon-card">
+                <i class="ri-lightbulb-flash-line"></i>
+                <span>Innovation</span>
+              </div>
+              <div class="newsletter-icon-card">
+                <i class="ri-bar-chart-grouped-line"></i>
+                <span>Analytics</span>
+              </div>
+              <div class="newsletter-icon-card">
+                <i class="ri-shield-check-line"></i>
+                <span>Security</span>
+              </div>
+              <div class="newsletter-icon-card">
+                <i class="ri-cloud-line"></i>
+                <span>Cloud</span>
+              </div>
+              <div class="newsletter-icon-card">
+                <i class="ri-robot-2-line"></i>
+                <span>AI & ML</span>
+              </div>
+              <div class="newsletter-icon-card">
+                <i class="ri-code-s-slash-line"></i>
+                <span>DevOps</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <!-- Company Information -->
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="images/logo.webp" alt="STACKLY Logo" class="logo-img">
+          </a>
+          <p>
+            Stackly is a premier global corporate agency delivering strategic advisory, enterprise technology, and brand elevation to Fortune 500 companies worldwide.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="#" aria-label="Twitter"><i class="ri-twitter-x-fill"></i></a>
+            <a href="#" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html"><i class="ri-arrow-right-s-line"></i> About Us</a></li>
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Services</a></li>
+            <li><a href="portfolio.html"><i class="ri-arrow-right-s-line"></i> Portfolio</a></li>
+            <li><a href="pricing.html"><i class="ri-arrow-right-s-line"></i> Pricing</a></li>
+            <li><a href="team.html"><i class="ri-arrow-right-s-line"></i> Our Team</a></li>
+            <li><a href="contact.html"><i class="ri-arrow-right-s-line"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Industries We Serve -->
+        <div class="footer-col">
+          <h4 class="footer-title">Industries We Serve</h4>
+          <ul class="footer-links">
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Healthcare</a></li>
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Finance & Banking</a></li>
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Retail & E-commerce</a></li>
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Manufacturing</a></li>
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Education</a></li>
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Real Estate</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-col">
+          <h4 class="footer-title">Contact Information</h4>
+          <div class="footer-contact-item">
+            <i class="ri-map-pin-2-fill"></i>
+            <span>450 Lexington Ave, Suite 3200<br>New York, NY 10017</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="ri-phone-fill"></i>
+            <a href="tel:+12125551234">+1 (212) 555-1234</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="ri-mail-fill"></i>
+            <a href="mailto:info@stacklyagency.com">info@stacklyagency.com</a>
+          </div>
+        </div>
+
+        <!-- Business Hours -->
+        <div class="footer-col">
+          <h4 class="footer-title">Business Hours</h4>
+          <div class="footer-hours">
+            <div class="footer-hours-item">
+              <span class="footer-hours-day">Monday - Friday</span>
+              <span class="footer-hours-time">9:00 AM - 6:00 PM</span>
+            </div>
+            <div class="footer-hours-item">
+              <span class="footer-hours-day">Saturday</span>
+              <span class="footer-hours-time">10:00 AM - 4:00 PM</span>
+            </div>
+            <div class="footer-hours-item">
+              <span class="footer-hours-day">Sunday</span>
+              <span class="footer-hours-time">Closed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 STACKLY Corporate Agency Inc. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">SOC2 Compliance</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/shared.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>

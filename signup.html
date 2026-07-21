@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - STACKLY</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+  <a href="index.html" class="auth-back"><i class="ri-arrow-left-line"></i> Back to Home</a>
+
+  <div class="auth-page">
+    <!-- Left Panel -->
+    <div class="auth-left">
+      <div class="auth-brand">
+        <a href="index.html" class="auth-brand-logo">
+          <img src="images/logo.webp" alt="STACKLY">
+        </a>
+        <h1>Start Your <span>Journey</span></h1>
+        <p>Create your account and unlock access to powerful tools for managing projects, teams, and clients.</p>
+        <div class="auth-features">
+          <div class="auth-feature">
+            <div class="auth-feature-icon"><i class="ri-rocket-2-line"></i></div>
+            <div class="auth-feature-text">
+              <strong>Launch Fast</strong>
+              Get started in minutes with guided onboarding
+            </div>
+          </div>
+          <div class="auth-feature">
+            <div class="auth-feature-icon"><i class="ri-bar-chart-grouped-line"></i></div>
+            <div class="auth-feature-text">
+              <strong>Track Progress</strong>
+              Real-time analytics and performance insights
+            </div>
+          </div>
+          <div class="auth-feature">
+            <div class="auth-feature-icon"><i class="ri-global-line"></i></div>
+            <div class="auth-feature-text">
+              <strong>Scale Globally</strong>
+              Enterprise-ready infrastructure for any team size
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Panel - Form -->
+    <div class="auth-right">
+      <div class="auth-form-container">
+        <div class="auth-form-header">
+          <h2>Create Account</h2>
+        </div>
+
+        <!-- Signup Form -->
+        <form id="auth-signup-form" novalidate>
+          <!-- Role Selector -->
+          <div class="auth-role-selector">
+            <div class="auth-role-option">
+              <input type="radio" name="role" id="role-user" value="user" checked>
+              <label for="role-user"><i class="ri-user-line"></i> User</label>
+            </div>
+            <div class="auth-role-option">
+              <input type="radio" name="role" id="role-admin" value="admin">
+              <label for="role-admin"><i class="ri-admin-line"></i> Admin</label>
+            </div>
+          </div>
+
+          <div class="auth-form-group">
+            <label for="auth-name">Full Name <span class="required">*</span></label>
+            <div class="auth-input-wrapper">
+              <input type="text" class="form-control" id="auth-name" placeholder="Enter your full name" autocomplete="name">
+              <span class="auth-input-icon"><i class="ri-user-3-line"></i></span>
+            </div>
+            <div class="auth-error"></div>
+          </div>
+
+          <div class="auth-form-group">
+            <label for="auth-email">Email Address <span class="required">*</span></label>
+            <div class="auth-input-wrapper">
+              <input type="email" class="form-control" id="auth-email" placeholder="Enter your email" autocomplete="email">
+              <span class="auth-input-icon"><i class="ri-mail-line"></i></span>
+            </div>
+            <div class="auth-error"></div>
+          </div>
+
+          <div class="auth-form-group">
+            <label for="auth-phone">Phone Number</label>
+            <div class="auth-input-wrapper">
+              <input type="tel" class="form-control" id="auth-phone" placeholder="+1 (555) 000-0000" autocomplete="tel">
+              <span class="auth-input-icon"><i class="ri-phone-line"></i></span>
+            </div>
+            <div class="auth-error"></div>
+          </div>
+
+          <div class="auth-form-group">
+            <label for="auth-password">Password <span class="required">*</span></label>
+            <div class="auth-input-wrapper">
+              <input type="password" class="form-control" id="auth-password" placeholder="Create a strong password" autocomplete="new-password">
+              <span class="auth-input-icon"><i class="ri-lock-2-line"></i></span>
+              <button type="button" class="auth-toggle-password" aria-label="Toggle password visibility">
+                <i class="ri-eye-line"></i>
+              </button>
+            </div>
+            <div class="auth-password-strength">
+              <div class="auth-strength-bar"></div>
+              <div class="auth-strength-bar"></div>
+              <div class="auth-strength-bar"></div>
+              <div class="auth-strength-bar"></div>
+              <div class="auth-strength-bar"></div>
+            </div>
+            <div class="auth-strength-text"></div>
+            <div class="auth-error"></div>
+          </div>
+
+          <div class="auth-form-group">
+            <label for="auth-confirm-password">Confirm Password <span class="required">*</span></label>
+            <div class="auth-input-wrapper">
+              <input type="password" class="form-control" id="auth-confirm-password" placeholder="Re-enter your password" autocomplete="new-password">
+              <span class="auth-input-icon"><i class="ri-lock-line"></i></span>
+              <button type="button" class="auth-toggle-password" aria-label="Toggle password visibility">
+                <i class="ri-eye-line"></i>
+              </button>
+            </div>
+            <div class="auth-error"></div>
+          </div>
+
+          <div class="auth-form-row" style="margin-top:1rem;">
+            <label class="auth-checkbox">
+              <input type="checkbox" id="terms-checkbox">
+              <span>I agree to the <a href="#" style="color:var(--primary-orange);text-decoration:none;font-weight:600;">Terms &amp; Conditions</a></span>
+            </label>
+          </div>
+
+          <button type="submit" class="auth-submit" style="margin-top:0.5rem;">
+            <span class="btn-text">Create Account</span>
+            <span class="spinner"></span>
+          </button>
+        </form>
+
+        <div class="auth-switch">
+          <p>Already have an account? <a href="login.html">Sign in here <i class="ri-arrow-right-line"></i></a></p>
+        </div>
+
+        <div class="auth-divider"><span>or sign up with</span></div>
+
+        <div class="auth-social">
+          <a href="#" class="auth-social-btn google"><i class="ri-google-fill"></i> Google</a>
+          <a href="#" class="auth-social-btn github"><i class="ri-github-fill"></i> GitHub</a>
+          <a href="#" class="auth-social-btn linkedin"><i class="ri-linkedin-fill"></i> LinkedIn</a>
+        </div>
+
+        <div class="auth-form-footer">
+          <p>&copy; 2026 STACKLY Corporate Agency Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

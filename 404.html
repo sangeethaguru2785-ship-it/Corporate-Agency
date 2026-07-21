@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | STACKLY</title>
+  <meta name="description" content="The page you are looking for does not exist or has been moved.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.webp" alt="STACKLY Logo" class="logo-img">
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="team.html" class="nav-link">Team</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+
+        <a href="contact.html" class="btn btn-primary">Start a Project</a>
+        <a href="login.html" class="btn btn-login"><i class="ri-login-box-line"></i> Login</a>
+        <button class="mobile-menu-toggle" aria-label="Open Menu">
+          <i class="ri-menu-3-line"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Offcanvas Menu -->
+  <div class="mobile-nav-overlay">
+    <button class="mobile-nav-close" aria-label="Close Menu">
+      <i class="ri-close-line"></i>
+    </button>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="portfolio.html" class="mobile-nav-link">Portfolio</a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+      <a href="team.html" class="mobile-nav-link">Leadership</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+      <div class="mobile-nav-divider"></div>
+      <a href="login.html" class="mobile-nav-link mobile-nav-login"><i class="ri-login-box-line"></i> Login</a>
+    </div>
+  </div>
+
+  <!-- 404 Error Section -->
+  <section class="error-section">
+    <div class="container">
+      <div class="error-content">
+        <div class="error-badge">
+          <i class="ri-error-warning-fill"></i> Error
+        </div>
+        <h1 class="error-code">404</h1>
+        <h2 class="error-title">Page Not Found</h2>
+        <p class="error-description">
+          The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+        </p>
+        <div class="error-actions">
+          <a href="index.html" class="btn btn-primary btn-lg">
+            <i class="ri-home-4-line"></i> Back to Home
+          </a>
+          <a href="javascript:history.back()" class="btn btn-outline btn-lg">
+            <i class="ri-arrow-go-back-line"></i> Go Back
+          </a>
+        </div>
+        <div class="error-links">
+          <p>Or try one of these pages:</p>
+          <div class="error-links-grid">
+            <a href="services.html" class="error-link-card">
+              <i class="ri-service-line"></i>
+              <span>Services</span>
+            </a>
+            <a href="portfolio.html" class="error-link-card">
+              <i class="ri-briefcase-4-line"></i>
+              <span>Portfolio</span>
+            </a>
+            <a href="pricing.html" class="error-link-card">
+              <i class="ri-money-dollar-circle-line"></i>
+              <span>Pricing</span>
+            </a>
+            <a href="contact.html" class="error-link-card">
+              <i class="ri-mail-send-line"></i>
+              <span>Contact</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Subscription -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-container">
+        <div class="newsletter-content">
+          <div class="newsletter-badge">
+            <i class="ri-mail-add-fill"></i> Stay Updated
+          </div>
+          <h2 class="newsletter-title">Get Strategic Insights Delivered to Your Inbox</h2>
+          <p class="newsletter-description">
+            Join 15,000+ executives and decision-makers who receive weekly briefs on enterprise technology, digital transformation, and market strategy.
+          </p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <input type="email" class="form-control" placeholder="Enter your corporate email" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <div class="newsletter-features">
+            <div class="newsletter-feature">
+              <i class="ri-check-line"></i>
+              <span>No spam, ever</span>
+            </div>
+            <div class="newsletter-feature">
+              <i class="ri-check-line"></i>
+              <span>Unsubscribe anytime</span>
+            </div>
+          </div>
+        </div>
+        <div class="newsletter-visual">
+          <div class="newsletter-graphic">
+            <div class="newsletter-icon-grid">
+              <div class="newsletter-icon-card">
+                <i class="ri-lightbulb-flash-line"></i>
+                <span>Innovation</span>
+              </div>
+              <div class="newsletter-icon-card">
+                <i class="ri-bar-chart-grouped-line"></i>
+                <span>Analytics</span>
+              </div>
+              <div class="newsletter-icon-card">
+                <i class="ri-shield-check-line"></i>
+                <span>Security</span>
+              </div>
+              <div class="newsletter-icon-card">
+                <i class="ri-cloud-line"></i>
+                <span>Cloud</span>
+              </div>
+              <div class="newsletter-icon-card">
+                <i class="ri-robot-2-line"></i>
+                <span>AI & ML</span>
+              </div>
+              <div class="newsletter-icon-card">
+                <i class="ri-code-s-slash-line"></i>
+                <span>DevOps</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <!-- Company Information -->
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="images/logo.webp" alt="STACKLY Logo" class="logo-img">
+          </a>
+          <p>
+            Stackly is a premier global corporate agency delivering strategic advisory, enterprise technology, and brand elevation to Fortune 500 companies worldwide.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="#" aria-label="Twitter"><i class="ri-twitter-x-fill"></i></a>
+            <a href="#" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html"><i class="ri-arrow-right-s-line"></i> About Us</a></li>
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Services</a></li>
+            <li><a href="portfolio.html"><i class="ri-arrow-right-s-line"></i> Portfolio</a></li>
+            <li><a href="pricing.html"><i class="ri-arrow-right-s-line"></i> Pricing</a></li>
+            <li><a href="team.html"><i class="ri-arrow-right-s-line"></i> Our Team</a></li>
+            <li><a href="contact.html"><i class="ri-arrow-right-s-line"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Industries We Serve -->
+        <div class="footer-col">
+          <h4 class="footer-title">Industries We Serve</h4>
+          <ul class="footer-links">
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Healthcare</a></li>
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Finance & Banking</a></li>
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Retail & E-commerce</a></li>
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Manufacturing</a></li>
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Education</a></li>
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Real Estate</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-col">
+          <h4 class="footer-title">Contact Information</h4>
+          <div class="footer-contact-item">
+            <i class="ri-map-pin-2-fill"></i>
+            <span>450 Lexington Ave, Suite 3200<br>New York, NY 10017</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="ri-phone-fill"></i>
+            <a href="tel:+12125551234">+1 (212) 555-1234</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="ri-mail-fill"></i>
+            <a href="mailto:info@stacklyagency.com">info@stacklyagency.com</a>
+          </div>
+        </div>
+
+        <!-- Business Hours -->
+        <div class="footer-col">
+          <h4 class="footer-title">Business Hours</h4>
+          <div class="footer-hours">
+            <div class="footer-hours-item">
+              <span class="footer-hours-day">Monday - Friday</span>
+              <span class="footer-hours-time">9:00 AM - 6:00 PM</span>
+            </div>
+            <div class="footer-hours-item">
+              <span class="footer-hours-day">Saturday</span>
+              <span class="footer-hours-time">10:00 AM - 4:00 PM</span>
+            </div>
+            <div class="footer-hours-item">
+              <span class="footer-hours-day">Sunday</span>
+              <span class="footer-hours-time">Closed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 STACKLY Corporate Agency Inc. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">SOC2 Compliance</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/shared.js"></script>
+</body>
+</html>

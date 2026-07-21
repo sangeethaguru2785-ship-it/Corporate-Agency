@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STACKLY - Creative Multipurpose Corporate Agency</title>
+  <meta name="description" content="Stackly is a premier global corporate agency delivering digital transformation, enterprise software, brand elevation, and strategic growth.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.webp" alt="STACKLY Logo" class="logo-img">
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="team.html" class="nav-link">Team</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+
+        <a href="contact.html" class="btn btn-primary">Start a Project</a>
+        <a href="login.html" class="btn btn-login"><i class="ri-login-box-line"></i> Login</a>
+        <button class="mobile-menu-toggle" aria-label="Open Menu">
+          <i class="ri-menu-3-line"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Offcanvas Menu -->
+  <div class="mobile-nav-overlay">
+    <button class="mobile-nav-close" aria-label="Close Menu">
+      <i class="ri-close-line"></i>
+    </button>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="portfolio.html" class="mobile-nav-link">Portfolio</a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+      <a href="team.html" class="mobile-nav-link">Leadership</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+      <div class="mobile-nav-divider"></div>
+      <a href="login.html" class="mobile-nav-link mobile-nav-login"><i class="ri-login-box-line"></i> Login</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <video class="hero-video-bg" autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80">
+      <source src="https://assets.mixkit.co/videos/preview/mixkit-corporate-team-working-together-in-office-43527-large.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <div class="hero-text-box">
+        <div class="badge">
+          <i class="ri-sparkling-fill"></i> Premier Multipurpose Corporate Agency
+        </div>
+        <h1 class="hero-title">
+          We Build Strategic <span class="gradient-text">Digital Excellence</span> For Global Enterprises
+        </h1>
+        <p class="hero-desc">
+          Stackly empowers ambitious corporations, venture-backed startups, and visionary brands through bespoke digital transformation, high-impact branding, and enterprise engineering.
+        </p>
+
+        <div class="hero-cta">
+          <a href="portfolio.html" class="btn btn-primary">
+            Explore Work <i class="ri-arrow-right-line"></i>
+          </a>
+          <button class="video-modal-trigger">
+            <span class="play-pulse"><i class="ri-play-fill"></i></span>
+            <span>Watch Agency Showreel</span>
+          </button>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <div class="metric-num">$2.5B+</div>
+            <div class="metric-label">Client Revenue Scaled</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-num">500+</div>
+            <div class="metric-label">Enterprise Solutions Delivered</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-num">99.4%</div>
+            <div class="metric-label">Client Retention Rate</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="glass-card-hero">
+          <div class="hero-img-box">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80" alt="Stackly Corporate Office Strategy">
+          </div>
+          <div class="floating-badge-hero">
+            <div class="badge-icon">
+              <i class="ri-award-fill"></i>
+            </div>
+            <div>
+              <div style="font-weight: 700; font-size: 0.95rem;">Top Global Agency 2026</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted)">Recognized by TechCorp & Forbes</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Logos Marquee -->
+  <section class="marquee-section">
+    <div class="container">
+      <div style="text-align: center; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-dim); margin-bottom: 1.5rem;">
+        TRUSTED BY INDUSTRY LEADERS WORLDWIDE
+      </div>
+      <div class="marquee-container">
+        <div class="marquee-track">
+          <div class="brand-item"><i class="ri-bubble-chart-fill" style="color: var(--primary-orange)"></i> SYNERGY GLOBAL</div>
+          <div class="brand-item"><i class="ri-quadrant-line" style="color: var(--primary-orange)"></i> FORTUNE CORP</div>
+          <div class="brand-item"><i class="ri-pentagon-fill" style="color: var(--primary-orange)"></i> STACKLY CAPITAL</div>
+          <div class="brand-item"><i class="ri-hexagon-line" style="color: var(--primary-orange)"></i> APEX TECH</div>
+          <div class="brand-item"><i class="ri-shield-flash-line" style="color: var(--primary-orange)"></i> VANGUARD VENTURES</div>
+          <div class="brand-item"><i class="ri-coreos-line" style="color: var(--primary-orange)"></i> ELEVATE LABS</div>
+          <div class="brand-item"><i class="ri-bubble-chart-fill" style="color: var(--primary-orange)"></i> SYNERGY GLOBAL</div>
+          <div class="brand-item"><i class="ri-quadrant-line" style="color: var(--primary-orange)"></i> FORTUNE CORP</div>
+          <div class="brand-item"><i class="ri-pentagon-fill" style="color: var(--primary-orange)"></i> STACKLY CAPITAL</div>
+          <div class="brand-item"><i class="ri-hexagon-line" style="color: var(--primary-orange)"></i> APEX TECH</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Teaser -->
+  <section class="section">
+    <div class="container">
+      <div class="home-about-grid">
+        <div>
+          <div class="badge badge-orange">
+            <i class="ri-shield-star-fill"></i> Why Choose Stackly
+          </div>
+          <h2 class="section-title">
+            The Corporate Agency <span class="gradient-orange">Built for Scale</span>
+          </h2>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1.05rem; line-height: 1.7;">
+            With over 16 years of corporate excellence, Stackly fuses multi-disciplinary strategy with cutting-edge digital execution. We architect scalable software, design iconic brand experiences, and launch high-converting growth engines for the world's most ambitious enterprises.
+          </p>
+          <a href="about.html" class="btn btn-primary">Learn More About Us <i class="ri-arrow-right-line"></i></a>
+
+          <div class="stat-cards">
+            <div class="stat-card">
+              <div class="stat-card-num">16+</div>
+              <div class="stat-card-label">Years of Excellence</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card-num">500+</div>
+              <div class="stat-card-label">Projects Delivered</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card-num">99.4%</div>
+              <div class="stat-card-label">Client Retention</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img class="home-about-img" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" alt="Stackly Team Collaboration">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="section" style="background: var(--bg-darker);">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">
+          <i class="ri-settings-4-fill"></i> Our Expertise
+        </div>
+        <h2 class="section-title">End-to-End Corporate Solutions</h2>
+        <p class="section-subtitle">Comprehensive capabilities crafted by senior strategists, engineers, and creative directors.</p>
+      </div>
+
+      <div class="home-services-grid">
+        <div class="home-service-card">
+          <div class="home-service-icon"><i class="ri-code-s-slash-line"></i></div>
+          <h3 class="home-service-title">Web Development</h3>
+          <p class="home-service-desc">High-performance web applications built with modern frameworks, optimized for speed and enterprise-grade scalability.</p>
+          <a href="services.html" class="home-service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+        </div>
+
+        <div class="home-service-card">
+          <div class="home-service-icon"><i class="ri-smartphone-line"></i></div>
+          <h3 class="home-service-title">Mobile App Development</h3>
+          <p class="home-service-desc">Native and cross-platform mobile applications for iOS and Android, delivering seamless user experiences.</p>
+          <a href="services.html" class="home-service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+        </div>
+
+        <div class="home-service-card">
+          <div class="home-service-icon"><i class="ri-layout-masonry-line"></i></div>
+          <h3 class="home-service-title">UI/UX Design</h3>
+          <p class="home-service-desc">User-centered design systems, wireframing, prototyping, and usability testing for intuitive experiences.</p>
+          <a href="services.html" class="home-service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+        </div>
+
+        <div class="home-service-card">
+          <div class="home-service-icon"><i class="ri-brain-line"></i></div>
+          <h3 class="home-service-title">AI & Machine Learning</h3>
+          <p class="home-service-desc">Custom ML pipelines, predictive analytics, NLP solutions, and generative AI integration for enterprise automation.</p>
+          <a href="services.html" class="home-service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+        </div>
+
+        <div class="home-service-card">
+          <div class="home-service-icon"><i class="ri-cloud-windy-line"></i></div>
+          <h3 class="home-service-title">Cloud Solutions</h3>
+          <p class="home-service-desc">AWS/Azure/GCP enterprise migrations, serverless architectures, and cloud cost optimization.</p>
+          <a href="services.html" class="home-service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+        </div>
+
+        <div class="home-service-card">
+          <div class="home-service-icon"><i class="ri-shield-check-line"></i></div>
+          <h3 class="home-service-title">Cybersecurity</h3>
+          <p class="home-service-desc">Penetration testing, SOC2 compliance auditing, vulnerability assessments, and enterprise security architecture.</p>
+          <a href="services.html" class="home-service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+        </div>
+
+        <div class="home-service-card">
+          <div class="home-service-icon"><i class="ri-megaphone-line"></i></div>
+          <h3 class="home-service-title">Digital Marketing</h3>
+          <p class="home-service-desc">Omnichannel campaign strategy, PPC management, conversion rate optimization, and performance marketing.</p>
+          <a href="services.html" class="home-service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+        </div>
+
+        <div class="home-service-card">
+          <div class="home-service-icon"><i class="ri-shopping-cart-2-line"></i></div>
+          <h3 class="home-service-title">E-commerce Solutions</h3>
+          <p class="home-service-desc">Full-stack e-commerce platforms, payment gateway integration, and conversion-optimized storefronts.</p>
+          <a href="services.html" class="home-service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="services.html" class="btn btn-outline">View All 22 Services <i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Portfolio -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-orange">
+          <i class="ri-briefcase-4-fill"></i> Featured Work
+        </div>
+        <h2 class="section-title">Projects That Drive Results</h2>
+        <p class="section-subtitle">A selection of our most impactful enterprise deployments and brand transformations.</p>
+      </div>
+
+      <div class="featured-grid">
+        <div class="featured-card">
+          <div class="featured-img-box">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Fintech Analytics Platform">
+            <div class="featured-overlay">
+              <a href="portfolio.html" class="featured-overlay-btn">View Case Study <i class="ri-arrow-right-line"></i></a>
+            </div>
+          </div>
+          <div class="featured-info">
+            <span class="featured-tag">Enterprise SaaS</span>
+            <h3 class="featured-title">Aethel Capital Analytics Platform</h3>
+            <p class="featured-desc">Real-time financial reporting platform processing $50B+ in annual transaction volume.</p>
+          </div>
+        </div>
+
+        <div class="featured-card">
+          <div class="featured-img-box">
+            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Enterprise AI Assistant">
+            <div class="featured-overlay">
+              <a href="portfolio.html" class="featured-overlay-btn">View Case Study <i class="ri-arrow-right-line"></i></a>
+            </div>
+          </div>
+          <div class="featured-info">
+            <span class="featured-tag">AI Solutions</span>
+            <h3 class="featured-title">Cognitive AI Enterprise Assistant</h3>
+            <p class="featured-desc">Custom LLM automation suite saving 14,000+ operational hours monthly across 12 countries.</p>
+          </div>
+        </div>
+
+        <div class="featured-card">
+          <div class="featured-img-box">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Luxury Brand System">
+            <div class="featured-overlay">
+              <a href="portfolio.html" class="featured-overlay-btn">View Case Study <i class="ri-arrow-right-line"></i></a>
+            </div>
+          </div>
+          <div class="featured-info">
+            <span class="featured-tag">Branding</span>
+            <h3 class="featured-title">Vanguard Architecture Rebrand</h3>
+            <p class="featured-desc">Complete visual identity system and digital showroom for ultra-luxury developments.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="portfolio.html" class="btn btn-primary">View All Projects <i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROI Calculator -->
+  <section id="calculator" class="section" style="background: var(--bg-darker);">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">
+          <i class="ri-calculator-line"></i> Dynamic Estimator
+        </div>
+        <h2 class="section-title">Calculate Your Project Investment</h2>
+        <p class="section-subtitle">Tailor your engagement scope and receive instant budget metrics.</p>
+      </div>
+
+      <div class="calculator-box">
+        <div class="calc-grid">
+          <div class="calc-inputs">
+            <div class="calc-input-group">
+              <div class="calc-label">
+                <span>Engagement Scope</span>
+                <span id="valScope" style="color: var(--primary-orange)">Growth Agency</span>
+              </div>
+              <input type="range" id="calcScope" min="1" max="15" value="6" class="calc-slider">
+            </div>
+
+            <div class="calc-input-group">
+              <div class="calc-label">
+                <span>Target Timeline</span>
+                <span id="valTimeline" style="color: var(--primary-orange)">3 Months</span>
+              </div>
+              <input type="range" id="calcTimeline" min="1" max="12" value="3" class="calc-slider">
+            </div>
+
+            <ul style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1.5rem;">
+              <li style="margin-bottom: 0.5rem"><i class="ri-check-double-line" style="color: var(--primary-orange)"></i> Includes Dedicated Senior Tech Lead & Strategist</li>
+              <li style="margin-bottom: 0.5rem"><i class="ri-check-double-line" style="color: var(--primary-orange)"></i> Full Intellectual Property Ownership</li>
+              <li><i class="ri-check-double-line" style="color: var(--primary-orange)"></i> 90-Day Post-Launch SLA Warranty</li>
+            </ul>
+          </div>
+
+          <div class="calc-result-card">
+            <div style="font-size: 0.9rem; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em">Estimated Project Investment</div>
+            <div id="calcOutput" class="calc-val-large">$36,600</div>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem">Customized milestone billing available</p>
+            <a href="contact.html" class="btn btn-primary">Lock In Estimate <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner-content">
+        <h2 class="cta-banner-title">Ready to Transform Your Corporate Digital Presence?</h2>
+        <p class="cta-banner-desc">Partner with Stackly to architect scalable software, elevate your brand, and accelerate growth. Let's build something extraordinary together.</p>
+        <div class="cta-banner-btns">
+          <a href="contact.html" class="btn btn-primary">Start a Project <i class="ri-arrow-right-line"></i></a>
+          <a href="portfolio.html" class="btn btn-outline">View Our Work <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Subscription -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-container">
+        <div class="newsletter-content">
+          <div class="newsletter-badge">
+            <i class="ri-mail-add-fill"></i> Stay Updated
+          </div>
+          <h2 class="newsletter-title">Get Strategic Insights Delivered to Your Inbox</h2>
+          <p class="newsletter-description">
+            Join 15,000+ executives and decision-makers who receive weekly briefs on enterprise technology, digital transformation, and market strategy.
+          </p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <input type="email" class="form-control" placeholder="Enter your corporate email" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <div class="newsletter-features">
+            <div class="newsletter-feature">
+              <i class="ri-check-line"></i>
+              <span>No spam, ever</span>
+            </div>
+            <div class="newsletter-feature">
+              <i class="ri-check-line"></i>
+              <span>Unsubscribe anytime</span>
+            </div>
+          </div>
+        </div>
+        <div class="newsletter-visual">
+          <div class="newsletter-graphic">
+            <div class="newsletter-icon-grid">
+              <div class="newsletter-icon-card">
+                <i class="ri-lightbulb-flash-line"></i>
+                <span>Innovation</span>
+              </div>
+              <div class="newsletter-icon-card">
+                <i class="ri-bar-chart-grouped-line"></i>
+                <span>Analytics</span>
+              </div>
+              <div class="newsletter-icon-card">
+                <i class="ri-shield-check-line"></i>
+                <span>Security</span>
+              </div>
+              <div class="newsletter-icon-card">
+                <i class="ri-cloud-line"></i>
+                <span>Cloud</span>
+              </div>
+              <div class="newsletter-icon-card">
+                <i class="ri-robot-2-line"></i>
+                <span>AI & ML</span>
+              </div>
+              <div class="newsletter-icon-card">
+                <i class="ri-code-s-slash-line"></i>
+                <span>DevOps</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <!-- Company Information -->
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="images/logo.webp" alt="STACKLY Logo" class="logo-img">
+          </a>
+          <p>
+            Stackly is a premier global corporate agency delivering strategic advisory, enterprise technology, and brand elevation to Fortune 500 companies worldwide.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="#" aria-label="Twitter"><i class="ri-twitter-x-fill"></i></a>
+            <a href="#" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html"><i class="ri-arrow-right-s-line"></i> About Us</a></li>
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Services</a></li>
+            <li><a href="portfolio.html"><i class="ri-arrow-right-s-line"></i> Portfolio</a></li>
+            <li><a href="pricing.html"><i class="ri-arrow-right-s-line"></i> Pricing</a></li>
+            <li><a href="team.html"><i class="ri-arrow-right-s-line"></i> Our Team</a></li>
+            <li><a href="contact.html"><i class="ri-arrow-right-s-line"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Industries We Serve -->
+        <div class="footer-col">
+          <h4 class="footer-title">Industries We Serve</h4>
+          <ul class="footer-links">
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Healthcare</a></li>
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Finance & Banking</a></li>
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Retail & E-commerce</a></li>
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Manufacturing</a></li>
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Education</a></li>
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Real Estate</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-col">
+          <h4 class="footer-title">Contact Information</h4>
+          <div class="footer-contact-item">
+            <i class="ri-map-pin-2-fill"></i>
+            <span>450 Lexington Ave, Suite 3200<br>New York, NY 10017</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="ri-phone-fill"></i>
+            <a href="tel:+12125551234">+1 (212) 555-1234</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="ri-mail-fill"></i>
+            <a href="mailto:info@stacklyagency.com">info@stacklyagency.com</a>
+          </div>
+        </div>
+
+        <!-- Business Hours -->
+        <div class="footer-col">
+          <h4 class="footer-title">Business Hours</h4>
+          <div class="footer-hours">
+            <div class="footer-hours-item">
+              <span class="footer-hours-day">Monday - Friday</span>
+              <span class="footer-hours-time">9:00 AM - 6:00 PM</span>
+            </div>
+            <div class="footer-hours-item">
+              <span class="footer-hours-day">Saturday</span>
+              <span class="footer-hours-time">10:00 AM - 4:00 PM</span>
+            </div>
+            <div class="footer-hours-item">
+              <span class="footer-hours-day">Sunday</span>
+              <span class="footer-hours-time">Closed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 STACKLY Corporate Agency Inc. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">SOC2 Compliance</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Video Modal -->
+  <div class="modal-overlay">
+    <div class="modal-container">
+      <button class="modal-close"><i class="ri-close-line"></i></button>
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+        <iframe class="modal-iframe" style="position: absolute; top:0; left: 0; width: 100%; height: 100%; border:0;" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/shared.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

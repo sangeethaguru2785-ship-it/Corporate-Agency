@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STACKLY - Pricing</title>
+  <meta name="description" content="Flexible corporate retainer plans for startups, mid-market, and enterprise engagements.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.webp" alt="STACKLY Logo" class="logo-img">
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="pricing.html" class="nav-link active">Pricing</a>
+        <a href="team.html" class="nav-link">Team</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+
+        <a href="contact.html" class="btn btn-primary">Start a Project</a>
+        <a href="login.html" class="btn btn-login"><i class="ri-login-box-line"></i> Login</a>
+        <button class="mobile-menu-toggle" aria-label="Open Menu">
+          <i class="ri-menu-3-line"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav-overlay">
+    <button class="mobile-nav-close" aria-label="Close Menu">
+      <i class="ri-close-line"></i>
+    </button>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="portfolio.html" class="mobile-nav-link">Portfolio</a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+      <a href="team.html" class="mobile-nav-link">Leadership</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+      <div class="mobile-nav-divider"></div>
+      <a href="login.html" class="mobile-nav-link mobile-nav-login"><i class="ri-login-box-line"></i> Login</a>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <div class="badge badge-orange">
+          <i class="ri-price-tag-3-fill"></i> Pricing
+        </div>
+        <h1 class="page-hero-title">Transparent Plans for <span class="gradient-orange">Every Growth Stage</span></h1>
+        <p class="page-hero-subtitle">Flexible corporate retainer plans designed to scale with your ambitions — from scaling ventures to enterprise transformations.</p>
+        <div class="page-hero-cta">
+          <a href="contact.html" class="btn btn-primary">Contact for Custom Plan <i class="ri-arrow-right-line"></i></a>
+          <a href="services.html" class="btn btn-outline">View Services <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-orange">
+          <i class="ri-price-tag-3-fill"></i> Transparent Engagement
+        </div>
+        <h2 class="section-title">Flexible Corporate Retainer Plans</h2>
+        <p class="section-subtitle">Choose the engagement structure suited for your corporate roadmap.</p>
+      </div>
+
+      <div class="pricing-toggle">
+        <span style="font-weight: 600">Monthly Billing</span>
+        <div class="toggle-switch">
+          <div class="toggle-circle"></div>
+        </div>
+        <span style="font-weight: 600; color: var(--primary-orange)">Annual Retainer (Save 20%)</span>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3 style="font-size: 1.5rem">Growth Retainer</h3>
+          <p style="font-size: 0.875rem; color: var(--text-muted)">Ideal for scaling ventures needing dedicated design & tech execution.</p>
+          <div id="priceStarter" class="pricing-price">$2,490</div>
+          <p style="font-size: 0.85rem; color: var(--text-dim)">per month</p>
+          <div class="pricing-features">
+            <div class="pricing-feature-item"><i class="ri-check-line"></i> Dedicated Senior Designer & Engineer</div>
+            <div class="pricing-feature-item"><i class="ri-check-line"></i> Bi-weekly Strategic Sprints</div>
+            <div class="pricing-feature-item"><i class="ri-check-line"></i> Brand & UI Component Maintenance</div>
+            <div class="pricing-feature-item"><i class="ri-check-line"></i> Standard 48-Hour Task Delivery</div>
+          </div>
+          <a href="contact.html" class="btn btn-outline" style="width: 100%">Get Started</a>
+        </div>
+
+        <div class="pricing-card featured">
+          <div class="pricing-badge">MOST POPULAR</div>
+          <h3 style="font-size: 1.5rem">Corporate Suite</h3>
+          <p style="font-size: 0.875rem; color: var(--text-muted)">Full cross-functional squad for mid-market and enterprise expansion.</p>
+          <div id="priceCorporate" class="pricing-price" style="color: var(--primary-orange)">$5,990</div>
+          <p style="font-size: 0.85rem; color: var(--text-dim)">per month</p>
+          <div class="pricing-features">
+            <div class="pricing-feature-item"><i class="ri-check-line"></i> Dedicated 5-Person Specialist Squad</div>
+            <div class="pricing-feature-item"><i class="ri-check-line"></i> Weekly Executive Strategy Briefings</div>
+            <div class="pricing-feature-item"><i class="ri-check-line"></i> Enterprise Cloud & AI Engineering</div>
+            <div class="pricing-feature-item"><i class="ri-check-line"></i> 24/7 Priority SLA & DevOps Support</div>
+            <div class="pricing-feature-item"><i class="ri-check-line"></i> Omnichannel Growth & Analytics</div>
+          </div>
+          <a href="contact.html" class="btn btn-primary" style="width: 100%">Select Corporate Plan</a>
+        </div>
+
+        <div class="pricing-card">
+          <h3 style="font-size: 1.5rem">Enterprise Custom</h3>
+          <p style="font-size: 0.875rem; color: var(--text-muted)">Bespoke M&A advisory, custom AI infrastructure, and multi-year engagements.</p>
+          <div id="priceEnterprise" class="pricing-price">$11,900</div>
+          <p style="font-size: 0.85rem; color: var(--text-dim)">per month</p>
+          <div class="pricing-features">
+            <div class="pricing-feature-item"><i class="ri-check-line"></i> Embedded Executive Leadership</div>
+            <div class="pricing-feature-item"><i class="ri-check-line"></i> Custom AI & LLM Model Training</div>
+            <div class="pricing-feature-item"><i class="ri-check-line"></i> Dedicated Security & Compliance Audit</div>
+            <div class="pricing-feature-item"><i class="ri-check-line"></i> Unlimited Cross-Functional Bandwidth</div>
+          </div>
+          <a href="contact.html" class="btn btn-outline" style="width: 100%">Contact Advisory</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What's Included -->
+  <section class="section" style="background: var(--bg-darker);">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">
+          <i class="ri-gift-fill"></i> Every Plan Includes
+        </div>
+        <h2 class="section-title">What's Included in All Plans</h2>
+        <p class="section-subtitle">Core benefits that come standard with every Stackly engagement, regardless of plan level.</p>
+      </div>
+
+      <div class="included-grid">
+        <div class="included-card">
+          <div class="included-icon"><i class="ri-headphone-line"></i></div>
+          <h4 class="included-title">Dedicated Support</h4>
+          <p class="included-desc">Priority access to our senior team with guaranteed response times and SLA-backed support.</p>
+        </div>
+
+        <div class="included-card">
+          <div class="included-icon"><i class="ri-chat-1-line"></i></div>
+          <h4 class="included-title">Free Consultation</h4>
+          <p class="included-desc">Complimentary strategy session to assess your needs and recommend the best approach.</p>
+        </div>
+
+        <div class="included-card">
+          <div class="included-icon"><i class="ri-code-s-slash-line"></i></div>
+          <h4 class="included-title">Source Code Ownership</h4>
+          <p class="included-desc">Full intellectual property rights and complete source code ownership for all deliverables.</p>
+        </div>
+
+        <div class="included-card">
+          <div class="included-icon"><i class="ri-smartphone-line"></i></div>
+          <h4 class="included-title">Responsive Design</h4>
+          <p class="included-desc">Every solution is fully optimized for desktop, tablet, and mobile experiences.</p>
+        </div>
+
+        <div class="included-card">
+          <div class="included-icon"><i class="ri-search-eye-line"></i></div>
+          <h4 class="included-title">SEO Optimization</h4>
+          <p class="included-desc">Technical SEO best practices built into every project for maximum search visibility.</p>
+        </div>
+
+        <div class="included-card">
+          <div class="included-icon"><i class="ri-shield-check-line"></i></div>
+          <h4 class="included-title">Security Best Practices</h4>
+          <p class="included-desc">Enterprise-grade security protocols, encryption, and regular vulnerability assessments.</p>
+        </div>
+
+        <div class="included-card">
+          <div class="included-icon"><i class="ri-speed-line"></i></div>
+          <h4 class="included-title">Performance Optimization</h4>
+          <p class="included-desc">Lightning-fast load times with CDN, caching, and optimized asset delivery.</p>
+        </div>
+
+        <div class="included-card">
+          <div class="included-icon"><i class="ri-file-text-line"></i></div>
+          <h4 class="included-title">Documentation</h4>
+          <p class="included-desc">Comprehensive technical documentation and user guides for seamless handoff.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Comparison Table -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-orange">
+          <i class="ri-table-fill"></i> Compare Plans
+        </div>
+        <h2 class="section-title">Services Comparison Table</h2>
+        <p class="section-subtitle">Detailed breakdown of what each plan includes across all service categories.</p>
+      </div>
+
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Growth Retainer</th>
+              <th class="featured-col">Corporate Suite</th>
+              <th>Enterprise Custom</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Web Development</td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+            </tr>
+            <tr>
+              <td>UI/UX Design</td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+            </tr>
+            <tr>
+              <td>Mobile Responsive</td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+            </tr>
+            <tr>
+              <td>SEO Optimization</td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+            </tr>
+            <tr>
+              <td>CMS Integration</td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+            </tr>
+            <tr>
+              <td>API Integration</td>
+              <td><span class="cross"><i class="ri-close-line"></i></span></td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+            </tr>
+            <tr>
+              <td>Hosting Support</td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+            </tr>
+            <tr>
+              <td>Analytics Setup</td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+            </tr>
+            <tr>
+              <td>Cloud Infrastructure</td>
+              <td><span class="cross"><i class="ri-close-line"></i></span></td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+            </tr>
+            <tr>
+              <td>AI/ML Integration</td>
+              <td><span class="cross"><i class="ri-close-line"></i></span></td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+            </tr>
+            <tr>
+              <td>Cybersecurity Audit</td>
+              <td><span class="cross"><i class="ri-close-line"></i></span></td>
+              <td><span class="cross"><i class="ri-close-line"></i></span></td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+            </tr>
+            <tr>
+              <td>Dedicated Tech Lead</td>
+              <td><span class="cross"><i class="ri-close-line"></i></span></td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+              <td><span class="check"><i class="ri-check-line"></i></span></td>
+            </tr>
+            <tr>
+              <td>Priority Support</td>
+              <td>48-hour SLA</td>
+              <td>24-hour SLA</td>
+              <td>4-hour SLA</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Development Process -->
+  <section class="section" style="background: var(--bg-darker);">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">
+          <i class="ri-flow-chart"></i> How We Work
+        </div>
+        <h2 class="section-title">Our Development Process</h2>
+        <p class="section-subtitle">A battle-tested workflow refined over 16 years and 500+ enterprise engagements.</p>
+      </div>
+
+      <div class="pricing-process-grid">
+        <div class="pricing-process-step">
+          <div class="pricing-process-num">01</div>
+          <h4 class="pricing-process-title">Requirement Analysis</h4>
+          <p class="pricing-process-desc">Deep-dive into your business goals, technical needs, and project scope through stakeholder workshops.</p>
+        </div>
+
+        <div class="pricing-process-step">
+          <div class="pricing-process-num">02</div>
+          <h4 class="pricing-process-title">Planning</h4>
+          <p class="pricing-process-desc">Detailed project roadmap, resource allocation, timeline milestones, and risk mitigation strategy.</p>
+        </div>
+
+        <div class="pricing-process-step">
+          <div class="pricing-process-num">03</div>
+          <h4 class="pricing-process-title">Design</h4>
+          <p class="pricing-process-desc">Wireframes, prototypes, and design systems crafted with user-centered principles and brand alignment.</p>
+        </div>
+
+        <div class="pricing-process-step">
+          <div class="pricing-process-num">04</div>
+          <h4 class="pricing-process-title">Development</h4>
+          <p class="pricing-process-desc">Agile sprints with weekly demos, code reviews, and continuous integration for rapid iteration.</p>
+        </div>
+
+        <div class="pricing-process-step">
+          <div class="pricing-process-num">05</div>
+          <h4 class="pricing-process-title">Testing</h4>
+          <p class="pricing-process-desc">Automated testing, performance benchmarking, security audits, and UAT before every release.</p>
+        </div>
+
+        <div class="pricing-process-step">
+          <div class="pricing-process-num">06</div>
+          <h4 class="pricing-process-title">Deployment</h4>
+          <p class="pricing-process-desc">Zero-downtime deployment with rollback capability, monitoring, and go-live support.</p>
+        </div>
+
+        <div class="pricing-process-step">
+          <div class="pricing-process-num">07</div>
+          <h4 class="pricing-process-title">Maintenance</h4>
+          <p class="pricing-process-desc">Ongoing support, security patching, performance optimization, and feature enhancements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Our Pricing -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-orange">
+          <i class="ri-shield-star-fill"></i> Our Promise
+        </div>
+        <h2 class="section-title">Why Choose Our Pricing</h2>
+        <p class="section-subtitle">Transparent, flexible, and designed to deliver maximum value at every engagement level.</p>
+      </div>
+
+      <div class="pricing-why-grid">
+        <div class="pricing-why-card">
+          <div class="pricing-why-icon"><i class="ri-eye-line"></i></div>
+          <div>
+            <h4 class="pricing-why-title">Transparent Pricing</h4>
+            <p class="pricing-why-desc">No hidden fees or surprise charges. Every cost is clearly outlined before you commit.</p>
+          </div>
+        </div>
+
+        <div class="pricing-why-card">
+          <div class="pricing-why-icon"><i class="ri-money-dollar-circle-line"></i></div>
+          <div>
+            <h4 class="pricing-why-title">No Hidden Charges</h4>
+            <p class="pricing-why-desc">What you see is what you pay. Complete pricing transparency from day one.</p>
+          </div>
+        </div>
+
+        <div class="pricing-why-card">
+          <div class="pricing-why-icon"><i class="ri-toggle-line"></i></div>
+          <div>
+            <h4 class="pricing-why-title">Flexible Packages</h4>
+            <p class="pricing-why-desc">Scale up or down as your needs change. No long-term lock-in required.</p>
+          </div>
+        </div>
+
+        <div class="pricing-why-card">
+          <div class="pricing-why-icon"><i class="ri-team-line"></i></div>
+          <div>
+            <h4 class="pricing-why-title">Experienced Team</h4>
+            <p class="pricing-why-desc">Work with senior strategists, engineers, and designers with 16+ years of expertise.</p>
+          </div>
+        </div>
+
+        <div class="pricing-why-card">
+          <div class="pricing-why-icon"><i class="ri-calendar-check-line"></i></div>
+          <div>
+            <h4 class="pricing-why-title">On-Time Delivery</h4>
+            <p class="pricing-why-desc">98% on-time delivery rate with milestone-based project tracking and accountability.</p>
+          </div>
+        </div>
+
+        <div class="pricing-why-card">
+          <div class="pricing-why-icon"><i class="ri-award-line"></i></div>
+          <div>
+            <h4 class="pricing-why-title">Premium Quality</h4>
+            <p class="pricing-why-desc">Enterprise-grade code, pixel-perfect design, and rigorous QA on every deliverable.</p>
+          </div>
+        </div>
+
+        <div class="pricing-why-card">
+          <div class="pricing-why-icon"><i class="ri-line-chart-line"></i></div>
+          <div>
+            <h4 class="pricing-why-title">Scalable Solutions</h4>
+            <p class="pricing-why-desc">Architecture built to grow with your business, from MVP to global enterprise platform.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries We Serve -->
+  <section class="section" style="background: var(--bg-darker);">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">
+          <i class="ri-building-4-fill"></i> Industry Expertise
+        </div>
+        <h2 class="section-title">Industries We Serve</h2>
+        <p class="section-subtitle">Tailored pricing and solutions for every industry vertical.</p>
+      </div>
+
+      <div class="pricing-industries-grid">
+        <div class="pricing-industry-card">
+          <div class="pricing-industry-icon"><i class="ri-heart-pulse-line"></i></div>
+          <h4 class="pricing-industry-title">Healthcare</h4>
+        </div>
+
+        <div class="pricing-industry-card">
+          <div class="pricing-industry-icon"><i class="ri-bank-line"></i></div>
+          <h4 class="pricing-industry-title">Finance</h4>
+        </div>
+
+        <div class="pricing-industry-card">
+          <div class="pricing-industry-icon"><i class="ri-graduation-cap-line"></i></div>
+          <h4 class="pricing-industry-title">Education</h4>
+        </div>
+
+        <div class="pricing-industry-card">
+          <div class="pricing-industry-icon"><i class="ri-shopping-bag-3-line"></i></div>
+          <h4 class="pricing-industry-title">E-commerce</h4>
+        </div>
+
+        <div class="pricing-industry-card">
+          <div class="pricing-industry-icon"><i class="ri-home-4-line"></i></div>
+          <h4 class="pricing-industry-title">Real Estate</h4>
+        </div>
+
+        <div class="pricing-industry-card">
+          <div class="pricing-industry-icon"><i class="ri-factory-line"></i></div>
+          <h4 class="pricing-industry-title">Manufacturing</h4>
+        </div>
+
+        <div class="pricing-industry-card">
+          <div class="pricing-industry-icon"><i class="ri-truck-line"></i></div>
+          <h4 class="pricing-industry-title">Logistics</h4>
+        </div>
+
+        <div class="pricing-industry-card">
+          <div class="pricing-industry-icon"><i class="ri-computer-line"></i></div>
+          <h4 class="pricing-industry-title">Technology</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="pricing-cta">
+    <div class="container">
+      <div class="pricing-cta-content">
+        <h2 class="pricing-cta-title">Ready to Get Started?</h2>
+        <p class="pricing-cta-desc">Choose the plan that fits your needs and start building something extraordinary with Stackly today.</p>
+        <div class="pricing-cta-btns">
+          <a href="contact.html" class="btn btn-primary">Contact Sales <i class="ri-arrow-right-line"></i></a>
+          <a href="services.html" class="btn btn-outline">View Services <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Subscription -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-container">
+        <div class="newsletter-content">
+          <div class="newsletter-badge">
+            <i class="ri-mail-add-fill"></i> Stay Updated
+          </div>
+          <h2 class="newsletter-title">Get Strategic Insights Delivered to Your Inbox</h2>
+          <p class="newsletter-description">
+            Join 15,000+ executives and decision-makers who receive weekly briefs on enterprise technology, digital transformation, and market strategy.
+          </p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <input type="email" class="form-control" placeholder="Enter your corporate email" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <div class="newsletter-features">
+            <div class="newsletter-feature">
+              <i class="ri-check-line"></i>
+              <span>No spam, ever</span>
+            </div>
+            <div class="newsletter-feature">
+              <i class="ri-check-line"></i>
+              <span>Unsubscribe anytime</span>
+            </div>
+          </div>
+        </div>
+        <div class="newsletter-visual">
+          <div class="newsletter-graphic">
+            <div class="newsletter-icon-grid">
+              <div class="newsletter-icon-card">
+                <i class="ri-lightbulb-flash-line"></i>
+                <span>Innovation</span>
+              </div>
+              <div class="newsletter-icon-card">
+                <i class="ri-bar-chart-grouped-line"></i>
+                <span>Analytics</span>
+              </div>
+              <div class="newsletter-icon-card">
+                <i class="ri-shield-check-line"></i>
+                <span>Security</span>
+              </div>
+              <div class="newsletter-icon-card">
+                <i class="ri-cloud-line"></i>
+                <span>Cloud</span>
+              </div>
+              <div class="newsletter-icon-card">
+                <i class="ri-robot-2-line"></i>
+                <span>AI & ML</span>
+              </div>
+              <div class="newsletter-icon-card">
+                <i class="ri-code-s-slash-line"></i>
+                <span>DevOps</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <!-- Company Information -->
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="images/logo.webp" alt="STACKLY Logo" class="logo-img">
+          </a>
+          <p>
+            Stackly is a premier global corporate agency delivering strategic advisory, enterprise technology, and brand elevation to Fortune 500 companies worldwide.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="#" aria-label="Twitter"><i class="ri-twitter-x-fill"></i></a>
+            <a href="#" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html"><i class="ri-arrow-right-s-line"></i> About Us</a></li>
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Services</a></li>
+            <li><a href="portfolio.html"><i class="ri-arrow-right-s-line"></i> Portfolio</a></li>
+            <li><a href="pricing.html"><i class="ri-arrow-right-s-line"></i> Pricing</a></li>
+            <li><a href="team.html"><i class="ri-arrow-right-s-line"></i> Our Team</a></li>
+            <li><a href="contact.html"><i class="ri-arrow-right-s-line"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Industries We Serve -->
+        <div class="footer-col">
+          <h4 class="footer-title">Industries We Serve</h4>
+          <ul class="footer-links">
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Healthcare</a></li>
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Finance & Banking</a></li>
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Retail & E-commerce</a></li>
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Manufacturing</a></li>
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Education</a></li>
+            <li><a href="services.html"><i class="ri-arrow-right-s-line"></i> Real Estate</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-col">
+          <h4 class="footer-title">Contact Information</h4>
+          <div class="footer-contact-item">
+            <i class="ri-map-pin-2-fill"></i>
+            <span>450 Lexington Ave, Suite 3200<br>New York, NY 10017</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="ri-phone-fill"></i>
+            <a href="tel:+12125551234">+1 (212) 555-1234</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="ri-mail-fill"></i>
+            <a href="mailto:info@stacklyagency.com">info@stacklyagency.com</a>
+          </div>
+        </div>
+
+        <!-- Business Hours -->
+        <div class="footer-col">
+          <h4 class="footer-title">Business Hours</h4>
+          <div class="footer-hours">
+            <div class="footer-hours-item">
+              <span class="footer-hours-day">Monday - Friday</span>
+              <span class="footer-hours-time">9:00 AM - 6:00 PM</span>
+            </div>
+            <div class="footer-hours-item">
+              <span class="footer-hours-day">Saturday</span>
+              <span class="footer-hours-time">10:00 AM - 4:00 PM</span>
+            </div>
+            <div class="footer-hours-item">
+              <span class="footer-hours-day">Sunday</span>
+              <span class="footer-hours-time">Closed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 STACKLY Corporate Agency Inc. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">SOC2 Compliance</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/shared.js"></script>
+  <script src="js/pricing.js"></script>
+</body>
+</html>

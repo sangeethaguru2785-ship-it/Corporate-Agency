@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - STACKLY</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+  <a href="index.html" class="auth-back"><i class="ri-arrow-left-line"></i> Back to Home</a>
+
+  <div class="auth-page">
+    <!-- Left Panel -->
+    <div class="auth-left">
+      <div class="auth-brand">
+        <a href="index.html" class="auth-brand-logo">
+          <img src="images/logo.webp" alt="STACKLY">
+        </a>
+        <h1>Welcome <span>Back</span></h1>
+        <p>Sign in to manage your projects, track performance, and collaborate with your team.</p>
+        <div class="auth-features">
+          <div class="auth-feature">
+            <div class="auth-feature-icon"><i class="ri-dashboard-3-line"></i></div>
+            <div class="auth-feature-text">
+              <strong>Real-time Dashboard</strong>
+              Monitor projects, analytics, and team activity
+            </div>
+          </div>
+          <div class="auth-feature">
+            <div class="auth-feature-icon"><i class="ri-shield-check-line"></i></div>
+            <div class="auth-feature-text">
+              <strong>Enterprise Security</strong>
+              2FA encryption and secure access controls
+            </div>
+          </div>
+          <div class="auth-feature">
+            <div class="auth-feature-icon"><i class="ri-team-line"></i></div>
+            <div class="auth-feature-text">
+              <strong>Team Collaboration</strong>
+              Work together seamlessly across departments
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Panel - Form -->
+    <div class="auth-right">
+      <div class="auth-form-container">
+        <div class="auth-form-header">
+          <h2>Sign In</h2>
+        </div>
+
+        <!-- Login Form -->
+        <form id="auth-login-form" novalidate>
+          <!-- Role Selector -->
+          <div class="auth-role-selector">
+            <div class="auth-role-option">
+              <input type="radio" name="role" id="role-user" value="user" checked>
+              <label for="role-user"><i class="ri-user-line"></i> User</label>
+            </div>
+            <div class="auth-role-option">
+              <input type="radio" name="role" id="role-admin" value="admin">
+              <label for="role-admin"><i class="ri-admin-line"></i> Admin</label>
+            </div>
+          </div>
+
+          <div class="auth-form-group">
+            <label for="auth-email">Email or Username</label>
+            <div class="auth-input-wrapper">
+              <input type="text" class="form-control" id="auth-email" placeholder="Enter email or username" autocomplete="username">
+              <span class="auth-input-icon"><i class="ri-user-3-line"></i></span>
+            </div>
+            <div class="auth-error"></div>
+          </div>
+
+          <div class="auth-form-group">
+            <label for="auth-password">Password</label>
+            <div class="auth-input-wrapper">
+              <input type="password" class="form-control" id="auth-password" placeholder="Enter your password" autocomplete="current-password">
+              <span class="auth-input-icon"><i class="ri-lock-2-line"></i></span>
+              <button type="button" class="auth-toggle-password" aria-label="Toggle password visibility">
+                <i class="ri-eye-line"></i>
+              </button>
+            </div>
+            <div class="auth-error"></div>
+          </div>
+
+          <div class="auth-form-row">
+            <label class="auth-checkbox">
+              <input type="checkbox" id="remember-me">
+              <span>Remember me</span>
+            </label>
+            <a href="#" class="auth-forgot">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="auth-submit">
+            <span class="btn-text">Sign In</span>
+            <span class="spinner"></span>
+          </button>
+        </form>
+
+        <div class="auth-switch">
+          <p>Don't have an account? <a href="signup.html">Create one here <i class="ri-arrow-right-line"></i></a></p>
+        </div>
+
+        <div class="auth-divider"><span>or continue with</span></div>
+
+        <div class="auth-social">
+          <a href="#" class="auth-social-btn google"><i class="ri-google-fill"></i> Google</a>
+          <a href="#" class="auth-social-btn github"><i class="ri-github-fill"></i> GitHub</a>
+          <a href="#" class="auth-social-btn linkedin"><i class="ri-linkedin-fill"></i> LinkedIn</a>
+        </div>
+
+        <div class="auth-form-footer">
+          <p>&copy; 2026 STACKLY Corporate Agency Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
