@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STACKLY - My Appointments</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400,0,500,0,600,0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+  <div class="dashboard">
+    <div class="dash-overlay"></div>
+    <main class="dash-main">
+      <div class="dash-content">
+        <div class="dash-stats-grid">
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-calendar-check-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>3 upcoming</div></div>
+            <div class="dash-stat-value" data-value="8">0</div>
+            <div class="dash-stat-label">Total Appointments</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-calendar-todo-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>next: Jul 25</div></div>
+            <div class="dash-stat-value" data-value="3">0</div>
+            <div class="dash-stat-label">Upcoming</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-checkbox-circle-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>63%</div></div>
+            <div class="dash-stat-value" data-value="5">0</div>
+            <div class="dash-stat-label">Completed</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-video-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>2 video</div></div>
+            <div class="dash-stat-value" data-value="4">0</div>
+            <div class="dash-stat-label">Video Calls</div>
+          </div>
+        </div>
+
+        <div class="dash-card" style="margin-bottom:1.5rem;">
+          <div class="dash-card-header">
+            <h3 class="dash-card-title">My Appointments</h3>
+            <div class="dash-card-actions">
+              <button class="dash-filter-btn active">All</button>
+              <button class="dash-filter-btn">Upcoming</button>
+              <button class="dash-filter-btn">Completed</button>
+              <a href="#" class="btn btn-primary" style="font-size:0.85rem;padding:0.5rem 1rem;"><i class="ri-add-line"></i> Book Appointment</a>
+            </div>
+          </div>
+          <div class="dash-card-body no-padding">
+            <div class="dash-table-wrapper">
+              <table class="dash-table">
+                <thead><tr><th>Service</th><th>Date & Time</th><th>Duration</th><th>Type</th><th>Status</th><th>Actions</th></tr></thead>
+                <tbody>
+                  <tr><td><strong style="color:var(--text-main);">Cloud Migration Review</strong></td><td>Jul 25, 2026 — 10:00 AM</td><td>2 hours</td><td>Video Call</td><td><span class="dash-status pending">Upcoming</span></td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-edit-line"></i></button></td></tr>
+                  <tr><td><strong style="color:var(--text-main);">E-Commerce Sprint Review</strong></td><td>Jul 28, 2026 — 2:00 PM</td><td>1.5 hours</td><td>Video Call</td><td><span class="dash-status pending">Upcoming</span></td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-edit-line"></i></button></td></tr>
+                  <tr><td><strong style="color:var(--text-main);">Mobile App Kickoff</strong></td><td>Aug 1, 2026 — 11:00 AM</td><td>2 hours</td><td>In-Person</td><td><span class="dash-status pending">Upcoming</span></td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-edit-line"></i></button></td></tr>
+                  <tr><td><strong style="color:var(--text-main);">Brand Identity Final Review</strong></td><td>Jul 10, 2026 — 3:00 PM</td><td>1 hour</td><td>Video Call</td><td><span class="dash-status completed">Completed</span></td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button></td></tr>
+                  <tr><td><strong style="color:var(--text-main);">SEO Strategy Session</strong></td><td>Jun 28, 2026 — 10:00 AM</td><td>1.5 hours</td><td>Phone Call</td><td><span class="dash-status completed">Completed</span></td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button></td></tr>
+                  <tr><td><strong style="color:var(--text-main);">Security Audit Discussion</strong></td><td>Jun 15, 2026 — 9:00 AM</td><td>2 hours</td><td>Video Call</td><td><span class="dash-status completed">Completed</span></td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="dash-card">
+          <div class="dash-card-header"><h3 class="dash-card-title">Upcoming Schedule</h3></div>
+          <div class="dash-card-body">
+            <div style="display:flex;flex-direction:column;gap:0.75rem;">
+              <div style="display:flex;align-items:center;gap:1rem;padding:1rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);"><div style="width:50px;height:50px;border-radius:var(--radius-md);background:rgba(249,115,22,0.1);display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-size:1.1rem;font-weight:800;color:var(--primary-orange);line-height:1;">25</span><span style="font-size:0.65rem;font-weight:600;color:var(--primary-orange);text-transform:uppercase;">Jul</span></div><div style="flex:1;"><div style="font-weight:600;font-size:0.9rem;">Cloud Migration Review</div><div style="font-size:0.8rem;color:var(--text-muted);">10:00 AM - 12:00 PM • Video Call</div></div><span class="dash-status pending">Upcoming</span></div>
+              <div style="display:flex;align-items:center;gap:1rem;padding:1rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);"><div style="width:50px;height:50px;border-radius:var(--radius-md);background:rgba(249,115,22,0.1);display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-size:1.1rem;font-weight:800;color:var(--primary-orange);line-height:1;">28</span><span style="font-size:0.65rem;font-weight:600;color:var(--primary-orange);text-transform:uppercase;">Jul</span></div><div style="flex:1;"><div style="font-weight:600;font-size:0.9rem;">E-Commerce Sprint Review</div><div style="font-size:0.8rem;color:var(--text-muted);">2:00 PM - 3:30 PM • Video Call</div></div><span class="dash-status pending">Upcoming</span></div>
+              <div style="display:flex;align-items:center;gap:1rem;padding:1rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);"><div style="width:50px;height:50px;border-radius:var(--radius-md);background:rgba(249,115,22,0.1);display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-size:1.1rem;font-weight:800;color:var(--primary-orange);line-height:1;">01</span><span style="font-size:0.65rem;font-weight:600;color:var(--primary-orange);text-transform:uppercase;">Aug</span></div><div style="flex:1;"><div style="font-weight:600;font-size:0.9rem;">Mobile App Kickoff</div><div style="font-size:0.8rem;color:var(--text-muted);">11:00 AM - 1:00 PM • In-Person</div></div><span class="dash-status pending">Upcoming</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <button class="dash-back-to-top"><i class="ri-arrow-up-line"></i></button>
+  <script src="../js/shared.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script>renderUserSidebar('appointments'); initUserDashboard();</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STACKLY - My Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500,0,600,0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+  <div class="dashboard">
+    <div class="dash-overlay"></div>
+    <main class="dash-main">
+      <div class="dash-content">
+        <div class="dash-card" style="margin-bottom:1.5rem;">
+          <div class="dash-card-header"><h3 class="dash-card-title">My Profile</h3></div>
+          <div class="dash-card-body">
+            <div style="display:flex;align-items:center;gap:1.5rem;margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border-subtle);">
+              <div id="dash-profile-avatar" class="dash-avatar-letter" style="width:80px;height:80px;font-size:2rem;border:3px solid var(--primary-orange);">A</div>
+              <div>
+                <h4 id="dash-profile-display-name" style="font-family:var(--font-heading);font-size:1.1rem;font-weight:700;margin-bottom:0.25rem;">Alex Morgan</h4>
+                <p id="dash-profile-role" style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.75rem;">Enterprise Client</p>
+                <div style="display:flex;gap:0.5rem;"><button class="btn btn-primary" style="font-size:0.85rem;padding:0.5rem 1rem;">Upload Photo</button> <button class="btn btn-outline" style="font-size:0.85rem;padding:0.5rem 1rem;">Remove</button></div>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+              <div><label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.4rem;">Full Name</label><input id="dash-profile-name" type="text" value="Alex Morgan" style="width:100%;padding:0.6rem 1rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);color:var(--text-main);font-family:var(--font-body);"></div>
+              <div><label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.4rem;">Email</label><input id="dash-profile-email" type="email" value="alex@techcorp.com" style="width:100%;padding:0.6rem 1rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);color:var(--text-main);font-family:var(--font-body);"></div>
+              <div><label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.4rem;">Phone</label><input type="tel" value="+1 (555) 987-6543" style="width:100%;padding:0.6rem 1rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);color:var(--text-main);font-family:var(--font-body);"></div>
+              <div><label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.4rem;">Company</label><input type="text" value="TechCorp Industries" style="width:100%;padding:0.6rem 1rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);color:var(--text-main);font-family:var(--font-body);"></div>
+              <div><label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.4rem;">Job Title</label><input type="text" value="CTO" style="width:100%;padding:0.6rem 1rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);color:var(--text-main);font-family:var(--font-body);"></div>
+              <div><label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.4rem;">Location</label><input type="text" value="San Francisco, CA" style="width:100%;padding:0.6rem 1rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);color:var(--text-main);font-family:var(--font-body);"></div>
+            </div>
+            <div style="margin-top:1rem;"><label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.4rem;">Bio</label><textarea rows="3" style="width:100%;padding:0.6rem 1rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);color:var(--text-main);font-family:var(--font-body);resize:vertical;">Technology executive with a passion for building scalable platforms. Leading engineering teams at TechCorp Industries to deliver enterprise-grade solutions.</textarea></div>
+            <div style="margin-top:1.5rem;display:flex;gap:0.75rem;"><button class="btn btn-primary">Save Changes</button><button class="btn btn-outline" style="color:var(--text-muted);border-color:var(--border-subtle);">Cancel</button></div>
+          </div>
+        </div>
+
+        <div class="dash-card">
+          <div class="dash-card-header"><h3 class="dash-card-title">Account Stats</h3></div>
+          <div class="dash-card-body">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;">
+              <div style="text-align:center;padding:1.25rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);"><div style="font-family:var(--font-heading);font-size:1.5rem;font-weight:800;color:var(--primary-orange);">12</div><div style="font-size:0.85rem;color:var(--text-muted);margin-top:0.25rem;">Applications</div></div>
+              <div style="text-align:center;padding:1.25rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);"><div style="font-family:var(--font-heading);font-size:1.5rem;font-weight:800;color:var(--primary-orange);">5</div><div style="font-size:0.85rem;color:var(--text-muted);margin-top:0.25rem;">Active Services</div></div>
+              <div style="text-align:center;padding:1.25rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);"><div style="font-family:var(--font-heading);font-size:1.5rem;font-weight:800;color:var(--primary-orange);">$47k</div><div style="font-size:0.85rem;color:var(--text-muted);margin-top:0.25rem;">Total Spent</div></div>
+              <div style="text-align:center;padding:1.25rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);"><div style="font-family:var(--font-heading);font-size:1.5rem;font-weight:800;color:var(--primary-orange);">16</div><div style="font-size:0.85rem;color:var(--text-muted);margin-top:0.25rem;">Months Active</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <button class="dash-back-to-top"><i class="ri-arrow-up-line"></i></button>
+  <script src="../js/shared.js"></script>
+  <script src="../js/email-validator.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script>renderUserSidebar('profile'); initUserDashboard();</script>
+</body>
+</html>

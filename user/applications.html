@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STACKLY - My Applications</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500,0,600,0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <div class="dash-overlay"></div>
+    <main class="dash-main">
+      <div class="dash-content">
+        <div class="dash-stats-grid">
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-folder-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>2 new</div></div>
+            <div class="dash-stat-value" data-value="12">0</div>
+            <div class="dash-stat-label">Total Applications</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-time-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>in progress</div></div>
+            <div class="dash-stat-value" data-value="3">0</div>
+            <div class="dash-stat-label">In Progress</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-checkbox-circle-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>67%</div></div>
+            <div class="dash-stat-value" data-value="8">0</div>
+            <div class="dash-stat-label">Completed</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-file-list-3-line"></i></div><div class="dash-stat-trend down"><i class="ri-arrow-down-s-line"></i>1 pending</div></div>
+            <div class="dash-stat-value" data-value="1">0</div>
+            <div class="dash-stat-label">Pending Review</div>
+          </div>
+        </div>
+
+        <div class="dash-card" style="margin-bottom:1.5rem;">
+          <div class="dash-card-header">
+            <h3 class="dash-card-title">My Applications</h3>
+            <div class="dash-card-actions">
+              <button class="dash-filter-btn active">All</button>
+              <button class="dash-filter-btn">In Progress</button>
+              <button class="dash-filter-btn">Completed</button>
+              <a href="#" class="btn btn-primary" style="font-size:0.85rem;padding:0.5rem 1rem;"><i class="ri-add-line"></i> New Application</a>
+            </div>
+          </div>
+          <div class="dash-card-body no-padding">
+            <div class="dash-table-wrapper">
+              <table class="dash-table">
+                <thead><tr><th>Application</th><th>Service</th><th>Progress</th><th>Deadline</th><th>Status</th><th>Actions</th></tr></thead>
+                <tbody>
+                  <tr><td><strong style="color:var(--text-main);">E-Commerce Platform v3</strong></td><td>Web Development</td><td><div style="display:flex;align-items:center;gap:0.5rem;"><div class="dash-progress" style="width:100px;"><div class="dash-progress-bar" data-progress="85" style="width:0;"></div></div><span style="font-size:0.8rem;font-weight:600;">85%</span></div></td><td>Aug 15, 2026</td><td><span class="dash-status active">In Progress</span></td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-message-3-line"></i></button></td></tr>
+                  <tr><td><strong style="color:var(--text-main);">Mobile App MVP</strong></td><td>Mobile App Dev</td><td><div style="display:flex;align-items:center;gap:0.5rem;"><div class="dash-progress" style="width:100px;"><div class="dash-progress-bar" data-progress="60" style="width:0;"></div></div><span style="font-size:0.8rem;font-weight:600;">60%</span></div></td><td>Sep 30, 2026</td><td><span class="dash-status active">In Progress</span></td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-message-3-line"></i></button></td></tr>
+                  <tr><td><strong style="color:var(--text-main);">Cloud Migration Setup</strong></td><td>Cloud Solutions</td><td><div style="display:flex;align-items:center;gap:0.5rem;"><div class="dash-progress" style="width:100px;"><div class="dash-progress-bar" data-progress="45" style="width:0;"></div></div><span style="font-size:0.8rem;font-weight:600;">45%</span></div></td><td>Oct 15, 2026</td><td><span class="dash-status active">In Progress</span></td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-message-3-line"></i></button></td></tr>
+                  <tr><td><strong style="color:var(--text-main);">Brand Identity Refresh</strong></td><td>Branding</td><td><div style="display:flex;align-items:center;gap:0.5rem;"><div class="dash-progress" style="width:100px;"><div class="dash-progress-bar" data-progress="100" style="width:0;background:#22c55e;"></div></div><span style="font-size:0.8rem;font-weight:600;">100%</span></div></td><td>Jul 10, 2026</td><td><span class="dash-status completed">Completed</span></td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-download-line"></i></button></td></tr>
+                  <tr><td><strong style="color:var(--text-main);">SEO Campaign Q3</strong></td><td>Digital Marketing</td><td><div style="display:flex;align-items:center;gap:0.5rem;"><div class="dash-progress" style="width:100px;"><div class="dash-progress-bar" data-progress="30" style="width:0;"></div></div><span style="font-size:0.8rem;font-weight:600;">30%</span></div></td><td>Oct 15, 2026</td><td><span class="dash-status pending">Planning</span></td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-message-3-line"></i></button></td></tr>
+                  <tr><td><strong style="color:var(--text-main);">Cybersecurity Audit</strong></td><td>Security</td><td><div style="display:flex;align-items:center;gap:0.5rem;"><div class="dash-progress" style="width:100px;"><div class="dash-progress-bar" data-progress="100" style="width:0;background:#22c55e;"></div></div><span style="font-size:0.8rem;font-weight:600;">100%</span></div></td><td>Jun 15, 2026</td><td><span class="dash-status completed">Completed</span></td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-download-line"></i></button></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="dash-pagination" style="padding:1rem 1.5rem;">
+              <div class="dash-pagination-info">Showing 1-6 of 12 applications</div>
+              <div class="dash-pagination-links">
+                <button class="dash-pagination-btn"><i class="ri-arrow-left-s-line"></i></button>
+                <button class="dash-pagination-btn active">1</button>
+                <button class="dash-pagination-btn">2</button>
+                <button class="dash-pagination-btn"><i class="ri-arrow-right-s-line"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dash-grid">
+          <div class="dash-card">
+            <div class="dash-card-header"><h3 class="dash-card-title">Application Progress</h3></div>
+            <div class="dash-card-body"><div style="height:280px;"><canvas id="userAppProgress"></canvas></div></div>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-header"><h3 class="dash-card-title">Status Distribution</h3></div>
+            <div class="dash-card-body"><div style="height:280px;"><canvas id="userAppStatus"></canvas></div></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <button class="dash-back-to-top"><i class="ri-arrow-up-line"></i></button>
+  <script src="../js/shared.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script>
+    renderUserSidebar('applications');
+    initUserDashboard();
+
+    new Chart(document.getElementById('userAppProgress'), {
+      type: 'line',
+      data: {
+        labels: ['Jan','Feb','Mar','Apr','May','Jun','Jul'],
+        datasets: [
+          { label: 'Total', data: [4,5,7,8,9,11,12], borderColor: '#f97316', backgroundColor: 'rgba(249,115,22,0.1)', fill: true, tension: 0.4, pointRadius: 5, pointBackgroundColor: '#f97316' },
+          { label: 'Completed', data: [1,2,3,4,6,7,8], borderColor: '#22c55e', backgroundColor: 'rgba(34,197,94,0.1)', fill: true, tension: 0.4, pointRadius: 5, pointBackgroundColor: '#22c55e' }
+        ]
+      },
+      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'top', labels: { usePointStyle: true } } }, scales: { y: { beginAtZero: true, grid: { color: 'rgba(0,0,0,0.05)' } }, x: { grid: { display: false } } } }
+    });
+
+    new Chart(document.getElementById('userAppStatus'), {
+      type: 'doughnut',
+      data: {
+        labels: ['Completed','In Progress','Planning','Cancelled'],
+        datasets: [{ data: [8,3,1,0], backgroundColor: ['#22c55e','#f97316','#3b82f6','#ef4444'], borderWidth: 0 }]
+      },
+      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom', labels: { padding: 12, usePointStyle: true } } }, cutout: '65%' }
+    });
+  </script>
+</body>
+</html>

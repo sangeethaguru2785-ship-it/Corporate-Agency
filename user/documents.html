@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STACKLY - Documents</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500,0,600,0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <div class="dash-overlay"></div>
+    <main class="dash-main">
+      <div class="dash-content">
+        <div class="dash-stats-grid">
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-file-text-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>3 new</div></div>
+            <div class="dash-stat-value" data-value="24">0</div>
+            <div class="dash-stat-label">Total Documents</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-file-pdf-2-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>PDF</div></div>
+            <div class="dash-stat-value" data-value="12">0</div>
+            <div class="dash-stat-label">PDF Files</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-file-excel-2-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>XLSX</div></div>
+            <div class="dash-stat-value" data-value="6">0</div>
+            <div class="dash-stat-label">Spreadsheets</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-folder-zip-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>ZIP</div></div>
+            <div class="dash-stat-value" data-value="6">0</div>
+            <div class="dash-stat-label">Archives</div>
+          </div>
+        </div>
+
+        <div class="dash-card" style="margin-bottom:1.5rem;">
+          <div class="dash-card-header"><h3 class="dash-card-title">All Documents</h3><div class="dash-card-actions"><button class="dash-filter-btn active">All</button><button class="dash-filter-btn">PDF</button><button class="dash-filter-btn">Excel</button><button class="dash-filter-btn">Word</button></div></div>
+          <div class="dash-card-body">
+            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;">
+              <div style="display:flex;align-items:center;gap:1rem;padding:1.25rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);cursor:pointer;transition:var(--dash-transition);"><i class="ri-file-pdf-2-line" style="font-size:2rem;color:#ef4444;flex-shrink:0;"></i><div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:0.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Project_Brief_ECommerce.pdf</div><div style="font-size:0.75rem;color:var(--text-dim);">2.4 MB • Jul 15, 2026</div></div><i class="ri-download-line" style="color:var(--primary-orange);font-size:1.1rem;"></i></div>
+              <div style="display:flex;align-items:center;gap:1rem;padding:1.25rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);cursor:pointer;transition:var(--dash-transition);"><i class="ri-file-excel-2-line" style="font-size:2rem;color:#22c55e;flex-shrink:0;"></i><div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:0.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Invoice_Jul2026.xlsx</div><div style="font-size:0.75rem;color:var(--text-dim);">156 KB • Jul 15, 2026</div></div><i class="ri-download-line" style="color:var(--primary-orange);font-size:1.1rem;"></i></div>
+              <div style="display:flex;align-items:center;gap:1rem;padding:1.25rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);cursor:pointer;transition:var(--dash-transition);"><i class="ri-file-word-2-line" style="font-size:2rem;color:#3b82f6;flex-shrink:0;"></i><div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:0.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">SOW_Contract.docx</div><div style="font-size:0.75rem;color:var(--text-dim);">890 KB • Jun 20, 2026</div></div><i class="ri-download-line" style="color:var(--primary-orange);font-size:1.1rem;"></i></div>
+              <div style="display:flex;align-items:center;gap:1rem;padding:1.25rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);cursor:pointer;transition:var(--dash-transition);"><i class="ri-file-zip-line" style="font-size:2rem;color:var(--primary-orange);flex-shrink:0;"></i><div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:0.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Design_Assets_v2.zip</div><div style="font-size:0.75rem;color:var(--text-dim);">18.7 MB • Jul 10, 2026</div></div><i class="ri-download-line" style="color:var(--primary-orange);font-size:1.1rem;"></i></div>
+              <div style="display:flex;align-items:center;gap:1rem;padding:1.25rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);cursor:pointer;transition:var(--dash-transition);"><i class="ri-file-pdf-2-line" style="font-size:2rem;color:#ef4444;flex-shrink:0;"></i><div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:0.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Security_Audit_Report.pdf</div><div style="font-size:0.75rem;color:var(--text-dim);">3.1 MB • Jun 15, 2026</div></div><i class="ri-download-line" style="color:var(--primary-orange);font-size:1.1rem;"></i></div>
+              <div style="display:flex;align-items:center;gap:1rem;padding:1.25rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);cursor:pointer;transition:var(--dash-transition);"><i class="ri-file-excel-2-line" style="font-size:2rem;color:#22c55e;flex-shrink:0;"></i><div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:0.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Budget_Q3_2026.xlsx</div><div style="font-size:0.75rem;color:var(--text-dim);">245 KB • Jul 5, 2026</div></div><i class="ri-download-line" style="color:var(--primary-orange);font-size:1.1rem;"></i></div>
+              <div style="display:flex;align-items:center;gap:1rem;padding:1.25rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);cursor:pointer;transition:var(--dash-transition);"><i class="ri-file-pdf-2-line" style="font-size:2rem;color:#ef4444;flex-shrink:0;"></i><div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:0.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Brand_Guidelines_v3.pdf</div><div style="font-size:0.75rem;color:var(--text-dim);">5.2 MB • Jun 28, 2026</div></div><i class="ri-download-line" style="color:var(--primary-orange);font-size:1.1rem;"></i></div>
+              <div style="display:flex;align-items:center;gap:1rem;padding:1.25rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);cursor:pointer;transition:var(--dash-transition);"><i class="ri-file-word-2-line" style="font-size:2rem;color:#3b82f6;flex-shrink:0;"></i><div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:0.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Meeting_Notes_Jul.docx</div><div style="font-size:0.75rem;color:var(--text-dim);">128 KB • Jul 18, 2026</div></div><i class="ri-download-line" style="color:var(--primary-orange);font-size:1.1rem;"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dash-card">
+          <div class="dash-card-header"><h3 class="dash-card-title">Documents by Type</h3></div>
+          <div class="dash-card-body"><div style="height:280px;"><canvas id="userDocChart"></canvas></div></div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <button class="dash-back-to-top"><i class="ri-arrow-up-line"></i></button>
+  <script src="../js/shared.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script>
+    renderUserSidebar('documents');
+    initUserDashboard();
+
+    new Chart(document.getElementById('userDocChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Jan','Feb','Mar','Apr','May','Jun','Jul'],
+        datasets: [
+          { label: 'PDF', data: [1,2,1,3,2,2,3], backgroundColor: '#ef4444', borderRadius: 6 },
+          { label: 'Excel', data: [0,1,1,1,1,1,1], backgroundColor: '#22c55e', borderRadius: 6 },
+          { label: 'Word', data: [1,0,1,0,1,1,1], backgroundColor: '#3b82f6', borderRadius: 6 },
+          { label: 'ZIP', data: [0,1,0,1,1,1,1], backgroundColor: '#f97316', borderRadius: 6 }
+        ]
+      },
+      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'top', labels: { usePointStyle: true } } }, scales: { y: { beginAtZero: true, stacked: true, grid: { color: 'rgba(0,0,0,0.05)' } }, x: { stacked: true, grid: { display: false } } } }
+    });
+  </script>
+</body>
+</html>

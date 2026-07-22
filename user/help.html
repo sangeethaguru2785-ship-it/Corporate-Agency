@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STACKLY - Help & Support</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500,0,600,0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+  <div class="dashboard">
+    <div class="dash-overlay"></div>
+    <main class="dash-main">
+      <div class="dash-content">
+        <div class="dash-stats-grid">
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-customer-service-2-line"></i></div><div class="dash-stat-trend down"><i class="ri-arrow-down-s-line"></i>1 resolved</div></div>
+            <div class="dash-stat-value" data-value="3">0</div>
+            <div class="dash-stat-label">Open Tickets</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-checkbox-circle-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>95%</div></div>
+            <div class="dash-stat-value" data-value="18">0</div>
+            <div class="dash-stat-label">Resolved</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-time-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>fast</div></div>
+            <div class="dash-stat-value" data-value="2" data-suffix="h">0</div>
+            <div class="dash-stat-label">Avg. Response</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-star-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>4.9/5</div></div>
+            <div class="dash-stat-value" data-value="98" data-suffix="%">0</div>
+            <div class="dash-stat-label">Satisfaction</div>
+          </div>
+        </div>
+
+        <div class="dash-grid">
+          <div class="dash-card">
+            <div class="dash-card-header"><h3 class="dash-card-title">Frequently Asked Questions</h3></div>
+            <div class="dash-card-body">
+              <div style="border:1px solid var(--border-subtle);border-radius:var(--radius-md);overflow:hidden;">
+                <div style="padding:1rem;background:var(--bg-base);border-bottom:1px solid var(--border-subtle);cursor:pointer;font-weight:600;font-size:0.9rem;">How do I track my project progress?</div>
+                <div style="padding:1rem;font-size:0.85rem;color:var(--text-muted);line-height:1.7;border-bottom:1px solid var(--border-subtle);">Navigate to My Applications to see real-time progress bars, deadlines, and status for each application. Each project shows a percentage completion bar and deadline information.</div>
+                <div style="padding:1rem;background:var(--bg-base);border-bottom:1px solid var(--border-subtle);cursor:pointer;font-weight:600;font-size:0.9rem;">How do I request additional services?</div>
+                <div style="padding:1rem;font-size:0.85rem;color:var(--text-muted);line-height:1.7;border-bottom:1px solid var(--border-subtle);">You can request new services by clicking "New Application" on the Applications page, or contact our support team directly through the Help & Support section.</div>
+                <div style="padding:1rem;background:var(--bg-base);border-bottom:1px solid var(--border-subtle);cursor:pointer;font-weight:600;font-size:0.9rem;">Where can I download my invoices?</div>
+                <div style="padding:1rem;font-size:0.85rem;color:var(--text-muted);line-height:1.7;border-bottom:1px solid var(--border-subtle);">All invoices are available in the Documents section. You can filter by type to find specific invoices, or search by invoice number in the search bar.</div>
+                <div style="padding:1rem;background:var(--bg-base);border-bottom:1px solid var(--border-subtle);cursor:pointer;font-weight:600;font-size:0.9rem;">How do I reschedule an appointment?</div>
+                <div style="padding:1rem;font-size:0.85rem;color:var(--text-muted);line-height:1.7;border-bottom:1px solid var(--border-subtle);">Go to My Appointments, find the appointment you want to reschedule, and click the edit button. You can select a new date and time from the available slots.</div>
+                <div style="padding:1rem;background:var(--bg-base);cursor:pointer;font-weight:600;font-size:0.9rem;">What payment methods are accepted?</div>
+              </div>
+            </div>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-header"><h3 class="dash-card-title">Support Tickets</h3><a href="#" class="btn btn-primary" style="font-size:0.85rem;padding:0.5rem 1rem;"><i class="ri-add-line"></i> New Ticket</a></div>
+            <div class="dash-card-body">
+              <div style="display:flex;flex-direction:column;gap:0.75rem;">
+                <div style="padding:1rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem;"><strong style="font-size:0.9rem;color:var(--text-main);">API Integration Issue</strong><span class="dash-status pending">Open</span></div><p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:0.5rem;">Webhook endpoints returning 502 errors intermittently during peak hours</p><div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--text-dim);"><span>Ticket #T-1284</span><span>2 hours ago</span></div></div>
+                <div style="padding:1rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem;"><strong style="font-size:0.9rem;color:var(--text-main);">Payment Processing</strong><span class="dash-status active">In Progress</span></div><p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:0.5rem;">Stripe integration failing on sandbox environment with card validation errors</p><div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--text-dim);"><span>Ticket #T-1280</span><span>1 day ago</span></div></div>
+                <div style="padding:1rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem;"><strong style="font-size:0.9rem;color:var(--text-main);">SSL Certificate Renewal</strong><span class="dash-status completed">Resolved</span></div><p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:0.5rem;">Wildcard cert expired, renewal completed by DevOps team</p><div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--text-dim);"><span>Ticket #T-1275</span><span>3 days ago</span></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dash-card" style="margin-bottom:1.5rem;">
+          <div class="dash-card-body" style="text-align:center;padding:2.5rem;">
+            <i class="ri-customer-service-2-line" style="font-size:3rem;color:var(--primary-orange);display:block;margin-bottom:1rem;"></i>
+            <h3 style="font-family:var(--font-heading);font-size:1.2rem;font-weight:700;margin-bottom:0.5rem;">Need Immediate Assistance?</h3>
+            <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:1.5rem;max-width:100%;margin-left:auto;margin-right:auto;">Our dedicated support team is available 24/7 for enterprise clients. Get help with technical issues, billing, or general inquiries.</p>
+            <div style="display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;">
+              <a href="../contact.html" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:0.5rem;">Contact Support <i class="ri-arrow-right-line"></i></a>
+              <a href="#" class="btn btn-outline" style="color:var(--text-muted);border-color:var(--border-subtle);display:inline-flex;align-items:center;gap:0.5rem;"><i class="ri-phone-line"></i> Call Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <button class="dash-back-to-top"><i class="ri-arrow-up-line"></i></button>
+  <script src="../js/shared.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script>renderUserSidebar('help'); initUserDashboard();</script>
+</body>
+</html>

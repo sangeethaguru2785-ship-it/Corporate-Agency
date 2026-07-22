@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STACKLY - User Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500,0,600,0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <div class="dash-overlay"></div>
+    <main class="dash-main">
+      <div class="dash-content">
+        <div class="dash-welcome">
+          <div class="dash-welcome-content">
+            <h2>Welcome back, <span id="dash-welcome-name">Alex</span></h2>
+            <p>Here's an overview of your projects and services. Tuesday, July 21, 2026.</p>
+          </div>
+          <div class="dash-welcome-actions">
+            <a href="applications.html" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.2);"><i class="ri-folder-line"></i> My Applications</a>
+            <a href="appointments.html" class="btn btn-primary"><i class="ri-calendar-check-line"></i> Book Appointment</a>
+          </div>
+        </div>
+
+        <div class="dash-stats-grid">
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-folder-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>2 new</div></div>
+            <div class="dash-stat-value" data-value="12">0</div>
+            <div class="dash-stat-label">My Applications</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-service-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>1 new</div></div>
+            <div class="dash-stat-value" data-value="5">0</div>
+            <div class="dash-stat-label">Active Services</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-calendar-check-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>3 upcoming</div></div>
+            <div class="dash-stat-value" data-value="8">0</div>
+            <div class="dash-stat-label">Appointments</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-wallet-3-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>Paid</div></div>
+            <div class="dash-stat-value" data-value="47000" data-prefix="$">$0</div>
+            <div class="dash-stat-label">Total Spent</div>
+          </div>
+        </div>
+
+        <div class="dash-grid">
+          <div class="dash-card">
+            <div class="dash-card-header"><h3 class="dash-card-title">Application Progress</h3></div>
+            <div class="dash-card-body"><div style="height:280px;"><canvas id="userOverviewLine"></canvas></div></div>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-header"><h3 class="dash-card-title">Request Status</h3></div>
+            <div class="dash-card-body"><div style="height:280px;"><canvas id="userOverviewPie"></canvas></div></div>
+          </div>
+        </div>
+
+        <div class="dash-grid">
+          <div class="dash-card">
+            <div class="dash-card-header"><h3 class="dash-card-title">Recent Activity</h3><a href="notifications.html" style="font-size:0.85rem;color:var(--primary-orange);text-decoration:none;font-weight:600;">View All</a></div>
+            <div class="dash-card-body">
+              <div class="dash-timeline">
+                <div class="dash-timeline-item"><div class="dash-timeline-dot"></div><div class="dash-timeline-content"><strong>Project milestone</strong> — E-Commerce v3 Phase 2 completed</div><div class="dash-timeline-time">10 minutes ago</div></div>
+                <div class="dash-timeline-item"><div class="dash-timeline-dot"></div><div class="dash-timeline-content"><strong>Invoice generated</strong> — INV-2026-047 for $15,000</div><div class="dash-timeline-time">2 hours ago</div></div>
+                <div class="dash-timeline-item"><div class="dash-timeline-dot"></div><div class="dash-timeline-content"><strong>Support update</strong> — Ticket #T-1284 assigned to Marcus</div><div class="dash-timeline-time">5 hours ago</div></div>
+                <div class="dash-timeline-item"><div class="dash-timeline-dot"></div><div class="dash-timeline-content"><strong>New message</strong> from Sarah Kim regarding design mockups</div><div class="dash-timeline-time">Yesterday</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-header"><h3 class="dash-card-title">My Services</h3><a href="applications.html" style="font-size:0.85rem;color:var(--primary-orange);text-decoration:none;font-weight:600;">View All</a></div>
+            <div class="dash-card-body">
+              <div style="display:flex;flex-direction:column;gap:0.75rem;">
+                <div style="display:flex;align-items:center;gap:1rem;padding:0.85rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);"><div style="width:36px;height:36px;border-radius:var(--radius-sm);background:rgba(249,115,22,0.1);display:flex;align-items:center;justify-content:center;color:var(--primary-orange);font-size:1rem;"><i class="ri-code-s-slash-line"></i></div><div style="flex:1;"><div style="font-weight:600;font-size:0.85rem;">Web Development</div><div style="font-size:0.75rem;color:var(--text-dim);">Enterprise Plan</div></div><span class="dash-status active">Active</span></div>
+                <div style="display:flex;align-items:center;gap:1rem;padding:0.85rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);"><div style="width:36px;height:36px;border-radius:var(--radius-sm);background:rgba(249,115,22,0.1);display:flex;align-items:center;justify-content:center;color:var(--primary-orange);font-size:1rem;"><i class="ri-smartphone-line"></i></div><div style="flex:1;"><div style="font-weight:600;font-size:0.85rem;">Mobile App Development</div><div style="font-size:0.75rem;color:var(--text-dim);">Growth Plan</div></div><span class="dash-status active">Active</span></div>
+                <div style="display:flex;align-items:center;gap:1rem;padding:0.85rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);"><div style="width:36px;height:36px;border-radius:var(--radius-sm);background:rgba(249,115,22,0.1);display:flex;align-items:center;justify-content:center;color:var(--primary-orange);font-size:1rem;"><i class="ri-cloud-line"></i></div><div style="flex:1;"><div style="font-weight:600;font-size:0.85rem;">Cloud Solutions</div><div style="font-size:0.75rem;color:var(--text-dim);">Starter Plan</div></div><span class="dash-status active">Active</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <button class="dash-back-to-top"><i class="ri-arrow-up-line"></i></button>
+  <script src="../js/shared.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script>
+    renderUserSidebar('dashboard');
+    initUserDashboard();
+
+    new Chart(document.getElementById('userOverviewLine'), {
+      type: 'line',
+      data: {
+        labels: ['Jan','Feb','Mar','Apr','May','Jun','Jul'],
+        datasets: [
+          { label: 'Applications', data: [4,5,7,8,9,11,12], borderColor: '#f97316', backgroundColor: 'rgba(249,115,22,0.1)', fill: true, tension: 0.4, pointRadius: 5, pointBackgroundColor: '#f97316' },
+          { label: 'Completed', data: [2,3,4,5,7,8,9], borderColor: '#22c55e', backgroundColor: 'rgba(34,197,94,0.1)', fill: true, tension: 0.4, pointRadius: 5, pointBackgroundColor: '#22c55e' }
+        ]
+      },
+      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'top', labels: { usePointStyle: true } } }, scales: { y: { beginAtZero: true, grid: { color: 'rgba(0,0,0,0.05)' } }, x: { grid: { display: false } } } }
+    });
+
+    new Chart(document.getElementById('userOverviewPie'), {
+      type: 'doughnut',
+      data: {
+        labels: ['Completed','In Progress','Pending','Cancelled'],
+        datasets: [{ data: [8,3,1,0], backgroundColor: ['#22c55e','#f97316','#3b82f6','#ef4444'], borderWidth: 0 }]
+      },
+      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom', labels: { padding: 12, usePointStyle: true } } }, cutout: '65%' }
+    });
+  </script>
+</body>
+</html>

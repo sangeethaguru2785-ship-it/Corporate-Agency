@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STACKLY - Settings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500,0,600,0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+  <div class="dashboard">
+    <div class="dash-overlay"></div>
+    <main class="dash-main">
+      <div class="dash-content">
+        <div class="dash-card" style="margin-bottom:1.5rem;">
+          <div class="dash-card-header"><h3 class="dash-card-title">Account Settings</h3></div>
+          <div class="dash-settings-section">
+            <div class="dash-settings-title">Change Password</div>
+            <div class="dash-settings-desc">Update your password to keep your account secure.</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+              <div><label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.4rem;">Current Password</label><input type="password" placeholder="Enter current password" style="width:100%;padding:0.6rem 1rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);color:var(--text-main);font-family:var(--font-body);"></div>
+              <div><label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.4rem;">New Password</label><input type="password" placeholder="Enter new password" style="width:100%;padding:0.6rem 1rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);color:var(--text-main);font-family:var(--font-body);"></div>
+            </div>
+            <div style="margin-top:1rem;"><button class="btn btn-primary" style="font-size:0.85rem;padding:0.5rem 1rem;">Update Password</button></div>
+          </div>
+          <div class="dash-settings-section">
+            <div class="dash-settings-title">Notifications</div>
+            <div class="dash-settings-row"><div><div class="dash-settings-row-label">Email Notifications</div><div class="dash-settings-row-desc">Receive email updates for projects and invoices.</div></div><label class="dash-toggle"><input type="checkbox" checked><span class="dash-toggle-slider"></span></label></div>
+            <div class="dash-settings-row"><div><div class="dash-settings-row-label">SMS Notifications</div><div class="dash-settings-row-desc">Get text alerts for critical updates.</div></div><label class="dash-toggle"><input type="checkbox"><span class="dash-toggle-slider"></span></label></div>
+            <div class="dash-settings-row"><div><div class="dash-settings-row-label">Project Updates</div><div class="dash-settings-row-desc">Notifications for milestones and deadlines.</div></div><label class="dash-toggle"><input type="checkbox" checked><span class="dash-toggle-slider"></span></label></div>
+            <div class="dash-settings-row"><div><div class="dash-settings-row-label">Marketing Emails</div><div class="dash-settings-row-desc">Receive product updates and offers.</div></div><label class="dash-toggle"><input type="checkbox"><span class="dash-toggle-slider"></span></label></div>
+          </div>
+          <div class="dash-settings-section">
+            <div class="dash-settings-title">Security</div>
+            <div class="dash-settings-row"><div><div class="dash-settings-row-label">Two-Factor Authentication</div><div class="dash-settings-row-desc">Secure your account with 2FA.</div></div><label class="dash-toggle"><input type="checkbox" checked><span class="dash-toggle-slider"></span></label></div>
+            <div class="dash-settings-row"><div><div class="dash-settings-row-label">Login Notifications</div><div class="dash-settings-row-desc">Get notified of new sign-ins to your account.</div></div><label class="dash-toggle"><input type="checkbox" checked><span class="dash-toggle-slider"></span></label></div>
+            <div class="dash-settings-row"><div><div class="dash-settings-row-label">Session Timeout</div><div class="dash-settings-row-desc">Automatically log out after 30 minutes of inactivity.</div></div><label class="dash-toggle"><input type="checkbox" checked><span class="dash-toggle-slider"></span></label></div>
+          </div>
+          <div class="dash-settings-section">
+            <div class="dash-settings-title">Privacy</div>
+            <div class="dash-settings-row"><div><div class="dash-settings-row-label">Profile Visibility</div><div class="dash-settings-row-desc">Allow team members to see your profile information.</div></div><label class="dash-toggle"><input type="checkbox" checked><span class="dash-toggle-slider"></span></label></div>
+            <div class="dash-settings-row"><div><div class="dash-settings-row-label">Activity Status</div><div class="dash-settings-row-desc">Show when you are online or last active.</div></div><label class="dash-toggle"><input type="checkbox" checked><span class="dash-toggle-slider"></span></label></div>
+          </div>
+        </div>
+
+        <div class="dash-card">
+          <div class="dash-card-header"><h3 class="dash-card-title">Danger Zone</h3></div>
+          <div class="dash-card-body">
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:1rem;background:rgba(239,68,68,0.04);border:1px solid rgba(239,68,68,0.2);border-radius:var(--radius-md);">
+              <div><div style="font-weight:600;font-size:0.9rem;color:#ef4444;">Delete Account</div><div style="font-size:0.8rem;color:var(--text-muted);margin-top:0.15rem;">Permanently delete your account and all associated data.</div></div>
+              <button class="btn" style="background:#ef4444;color:#fff;border:none;font-size:0.85rem;padding:0.5rem 1rem;">Delete Account</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <button class="dash-back-to-top"><i class="ri-arrow-up-line"></i></button>
+  <script src="../js/shared.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script>renderUserSidebar('settings'); initUserDashboard();</script>
+</body>
+</html>

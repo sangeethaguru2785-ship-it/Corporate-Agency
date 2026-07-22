@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STACKLY - Notifications</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500,0,600,0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+  <div class="dashboard">
+    <div class="dash-overlay"></div>
+    <main class="dash-main">
+      <div class="dash-content">
+        <div class="dash-card" style="margin-bottom:1.5rem;">
+          <div class="dash-card-header">
+            <h3 class="dash-card-title">All Notifications</h3>
+            <div class="dash-card-actions">
+              <a href="#" style="font-size:0.85rem;color:var(--primary-orange);text-decoration:none;font-weight:600;">Mark all read</a>
+              <button class="dash-filter-btn active">All</button>
+              <button class="dash-filter-btn">Unread</button>
+            </div>
+          </div>
+          <div class="dash-card-body">
+            <div class="dash-timeline">
+              <div class="dash-timeline-item"><div class="dash-timeline-dot"></div><div class="dash-timeline-content"><i class="ri-checkbox-circle-line" style="color:#22c55e;margin-right:0.5rem;"></i><strong>Project milestone</strong> — E-Commerce v3 Phase 2 completed successfully</div><div class="dash-timeline-time">10 minutes ago</div></div>
+              <div class="dash-timeline-item"><div class="dash-timeline-dot"></div><div class="dash-timeline-content"><i class="ri-file-text-line" style="color:var(--primary-orange);margin-right:0.5rem;"></i><strong>Invoice generated</strong> — INV-2026-047 for $15,000 (Web Development Phase 3)</div><div class="dash-timeline-time">2 hours ago</div></div>
+              <div class="dash-timeline-item"><div class="dash-timeline-dot"></div><div class="dash-timeline-content"><i class="ri-customer-service-line" style="color:#3b82f6;margin-right:0.5rem;"></i><strong>Support update</strong> — Ticket #T-1284 assigned to Marcus Lee</div><div class="dash-timeline-time">5 hours ago</div></div>
+              <div class="dash-timeline-item"><div class="dash-timeline-dot"></div><div class="dash-timeline-content"><i class="ri-message-3-line" style="color:var(--primary-orange);margin-right:0.5rem;"></i><strong>New message</strong> from Sarah Kim regarding design mockups for E-Commerce v3</div><div class="dash-timeline-time">Yesterday</div></div>
+              <div class="dash-timeline-item"><div class="dash-timeline-dot"></div><div class="dash-timeline-content"><i class="ri-calendar-check-line" style="color:#22c55e;margin-right:0.5rem;"></i><strong>Appointment confirmed</strong> — Cloud Migration Review scheduled for Jul 25 at 10:00 AM</div><div class="dash-timeline-time">Yesterday</div></div>
+              <div class="dash-timeline-item"><div class="dash-timeline-dot"></div><div class="dash-timeline-content"><i class="ri-wallet-3-line" style="color:#22c55e;margin-right:0.5rem;"></i><strong>Payment received</strong> — $8,500 for Mobile App Design Phase (Invoice #INV-2026-046)</div><div class="dash-timeline-time">2 days ago</div></div>
+              <div class="dash-timeline-item"><div class="dash-timeline-dot"></div><div class="dash-timeline-content"><i class="ri-folder-line" style="color:var(--primary-orange);margin-right:0.5rem;"></i><strong>New project</strong> — SEO Campaign Q3 has been created and is in planning phase</div><div class="dash-timeline-time">3 days ago</div></div>
+              <div class="dash-timeline-item"><div class="dash-timeline-dot"></div><div class="dash-timeline-content"><i class="ri-team-line" style="color:#3b82f6;margin-right:0.5rem;"></i><strong>Team update</strong> — James Wilson joined as your new Project Manager</div><div class="dash-timeline-time">4 days ago</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <button class="dash-back-to-top"><i class="ri-arrow-up-line"></i></button>
+  <script src="../js/shared.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script>renderUserSidebar('notifications'); initUserDashboard();</script>
+</body>
+</html>
