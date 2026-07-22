@@ -27,7 +27,7 @@ function initPasswordStrength() {
 
   const bars = document.querySelectorAll('.auth-strength-bar');
   const text = document.querySelector('.auth-strength-text');
-  if (!bars.length || !text) return;
+  const reqs = document.querySelectorAll('.auth-password-reqs .auth-req');
 
   pwInput.addEventListener('input', () => {
     const val = pwInput.value;
@@ -46,8 +46,23 @@ function initPasswordStrength() {
       bar.className = 'auth-strength-bar';
       if (i < counts[level]) bar.classList.add(level);
     });
-    text.textContent = val ? `Password strength: ${labels[level]}` : '';
-    text.className = 'auth-strength-text' + (val ? ` ${level}` : '');
+    if (text) {
+      text.textContent = val ? `Password strength: ${labels[level]}` : '';
+      text.className = 'auth-strength-text' + (val ? ` ${level}` : '');
+    }
+
+    if (reqs.length) {
+      const checks = [
+        val.length >= 8,
+        /[A-Z]/.test(val),
+        /[a-z]/.test(val),
+        /\d/.test(val),
+        /[^A-Za-z0-9]/.test(val)
+      ];
+      reqs.forEach((req, i) => {
+        req.classList.toggle('met', checks[i]);
+      });
+    }
   });
 }
 
@@ -130,6 +145,12 @@ function setupLoginValidation(form) {
       valid = false;
     }
 
+    const rememberCheck = document.getElementById('remember-me');
+    if (rememberCheck && !rememberCheck.checked) {
+      showToast('Please check "Remember Me" before signing in', 'error');
+      valid = false;
+    }
+
     if (!valid) return;
 
     const submitBtn = form.querySelector('.auth-submit');
@@ -141,6 +162,7 @@ function setupLoginValidation(form) {
       submitBtn.disabled = false;
 
       const roleValue = selectedRole.value;
+      const emailVal = email.value.trim().toLowerCase();
       const rememberMe = document.getElementById('remember-me');
 
       if (rememberMe && rememberMe.checked) {
@@ -148,6 +170,20 @@ function setupLoginValidation(form) {
       } else {
         localStorage.removeItem('stackly_remembered_email');
       }
+
+      const accounts = JSON.parse(localStorage.getItem('stackly_accounts') || '[]');
+      const account = accounts.find(a => a.email.toLowerCase() === emailVal && a.role === roleValue);
+
+      const userName = account ? account.name : emailVal.split('@')[0];
+      const userEmail = account ? account.email : email.value.trim();
+      const userAvatar = account && account.avatar ? account.avatar : '../images/photo-1507003211169-0a1dd7228f2d.webp';
+
+      localStorage.setItem('stackly_current_user', JSON.stringify({
+        name: userName,
+        email: userEmail,
+        role: roleValue,
+        avatar: userAvatar
+      }));
 
       showToast(`Welcome back! Redirecting to ${roleValue} dashboard...`, 'success');
 
@@ -169,7 +205,11 @@ function validateLoginField(field) {
 
   if (id === 'auth-password') {
     if (!val) { setFieldError(field, 'Password is required'); return false; }
-    if (val.length < 6) { setFieldError(field, 'Password must be at least 6 characters'); return false; }
+    if (val.length < 8) { setFieldError(field, 'Password must be at least 8 characters'); return false; }
+    if (!/[A-Z]/.test(val)) { setFieldError(field, 'Password must contain at least one uppercase letter'); return false; }
+    if (!/[a-z]/.test(val)) { setFieldError(field, 'Password must contain at least one lowercase letter'); return false; }
+    if (!/\d/.test(val)) { setFieldError(field, 'Password must contain at least one number'); return false; }
+    if (!/[^A-Za-z0-9]/.test(val)) { setFieldError(field, 'Password must contain at least one special character'); return false; }
   }
 
   setFieldSuccess(field);
@@ -233,6 +273,20 @@ function setupSignupValidation(form) {
       submitBtn.disabled = false;
 
       const roleValue = selectedRole.value;
+      const nameVal = name.value.trim();
+      const emailVal = email.value.trim();
+      const phoneVal = phone.value.trim();
+
+      const accounts = JSON.parse(localStorage.getItem('stackly_accounts') || '[]');
+      accounts.push({
+        name: nameVal,
+        email: emailVal,
+        phone: phoneVal,
+        role: roleValue,
+        avatar: '../images/photo-1507003211169-0a1dd7228f2d.webp'
+      });
+      localStorage.setItem('stackly_accounts', JSON.stringify(accounts));
+
       showToast('Account created successfully! Redirecting to login...', 'success');
 
       setTimeout(() => {
@@ -264,9 +318,10 @@ function validateSignupField(field) {
   if (id === 'auth-password') {
     if (!val) { setFieldError(field, 'Password is required'); return false; }
     if (val.length < 8) { setFieldError(field, 'Password must be at least 8 characters'); return false; }
-    if (!/[A-Z]/.test(val)) { setFieldError(field, 'Include at least one uppercase letter'); return false; }
-    if (!/\d/.test(val)) { setFieldError(field, 'Include at least one number'); return false; }
-    if (!/[^A-Za-z0-9]/.test(val)) { setFieldError(field, 'Include at least one special character'); return false; }
+    if (!/[A-Z]/.test(val)) { setFieldError(field, 'Password must contain at least one uppercase letter'); return false; }
+    if (!/[a-z]/.test(val)) { setFieldError(field, 'Password must contain at least one lowercase letter'); return false; }
+    if (!/\d/.test(val)) { setFieldError(field, 'Password must contain at least one number'); return false; }
+    if (!/[^A-Za-z0-9]/.test(val)) { setFieldError(field, 'Password must contain at least one special character'); return false; }
   }
 
   if (id === 'auth-confirm-password') {
