@@ -13,7 +13,7 @@
 </head>
 <body>
 
-  <header class="navbar">
+  <header class="navbar navbar-hero">
     <div class="container nav-container">
       <a href="index.html" class="logo">
         <img src="images/logo.webp" alt="STACKLY Logo" class="logo-img">
@@ -51,12 +51,13 @@
       <a href="team.html" class="mobile-nav-link">Leadership</a>
       <a href="contact.html" class="mobile-nav-link">Contact Us</a>
       <div class="mobile-nav-divider"></div>
+      <a href="contact.html" class="mobile-nav-cta"><i class="ri-rocket-2-line"></i> Start a Project</a>
       <a href="login.html" class="mobile-nav-link mobile-nav-login"><i class="ri-login-box-line"></i> Login</a>
     </div>
   </div>
 
   <!-- Page Hero -->
-  <section class="page-hero">
+  <section class="page-hero" style="background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('images/servicec.webp') center/cover no-repeat, var(--bg-darker);">
     <div class="container">
       <div class="page-hero-content">
         <div class="badge">
@@ -86,199 +87,261 @@
       <div class="services-grid">
         <!-- Development Services -->
         <div class="service-card">
-          <div class="service-icon-box">
-            <i class="ri-code-s-slash-line"></i>
+          <div class="service-card-img">
+            <img src="images/photo-1461749280684-dccba630e2f6.webp" alt="Web Development">
           </div>
-          <h3 class="service-title">Web Development</h3>
-          <p class="service-desc">High-performance web applications built with modern frameworks, optimized for speed, accessibility, and enterprise-grade scalability.</p>
-          <a href="contact.html" class="service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="service-card-body">
+            <div class="service-icon-box">
+              <i class="ri-code-s-slash-line"></i>
+            </div>
+            <h3 class="service-title">Web Development</h3>
+            <p class="service-desc">High-performance web applications built with modern frameworks, optimized for speed, accessibility, and enterprise-grade scalability.</p>
+            <a href="404.html" class="service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
 
         <div class="service-card">
-          <div class="service-icon-box" style="background: rgba(249, 115, 22, 0.1); color: var(--primary-orange);">
-            <i class="ri-smartphone-line"></i>
+          <div class="service-card-img">
+            <img src="images/photo-1512941937669-90a1b58e7e9c.webp" alt="Mobile App Development">
           </div>
-          <h3 class="service-title">Mobile App Development</h3>
-          <p class="service-desc">Native and cross-platform mobile applications for iOS and Android, delivering seamless user experiences and robust performance.</p>
-          <a href="contact.html" class="service-link" style="color: var(--primary-orange);">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="service-card-body">
+            <div class="service-icon-box" style="background: rgba(249, 115, 22, 0.1); color: var(--primary-orange);">
+              <i class="ri-smartphone-line"></i>
+            </div>
+            <h3 class="service-title">Mobile App Development</h3>
+            <p class="service-desc">Native and cross-platform mobile applications for iOS and Android, delivering seamless user experiences and robust performance.</p>
+            <a href="404.html" class="service-link" style="color: var(--primary-orange);">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
 
         <div class="service-card">
-          <div class="service-icon-box">
-            <i class="ri-code-box-line"></i>
+          <div class="service-card-img">
+            <img src="images/photo-1555066931-4365d14bab8c.webp" alt="Custom Software Development">
           </div>
-          <h3 class="service-title">Custom Software Development</h3>
-          <p class="service-desc">Tailor-made software solutions designed around your unique business logic, from internal tools to customer-facing platforms.</p>
-          <a href="contact.html" class="service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="service-card-body">
+            <div class="service-icon-box">
+              <i class="ri-code-box-line"></i>
+            </div>
+            <h3 class="service-title">Custom Software Development</h3>
+            <p class="service-desc">Tailor-made software solutions designed around your unique business logic, from internal tools to customer-facing platforms.</p>
+            <a href="404.html" class="service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
 
         <div class="service-card">
-          <div class="service-icon-box" style="background: rgba(249, 115, 22, 0.1); color: var(--primary-orange);">
-            <i class="ri-plug-line"></i>
+          <div class="service-card-img">
+            <img src="images/photo-1558494949-ef010cbdcc31.webp" alt="API Development & Integration">
           </div>
-          <h3 class="service-title">API Development & Integration</h3>
-          <p class="service-desc">RESTful and GraphQL API design, third-party system integrations, and secure data exchange layers for seamless connectivity.</p>
-          <a href="contact.html" class="service-link" style="color: var(--primary-orange);">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="service-card-body">
+            <div class="service-icon-box" style="background: rgba(249, 115, 22, 0.1); color: var(--primary-orange);">
+              <i class="ri-plug-line"></i>
+            </div>
+            <h3 class="service-title">API Development & Integration</h3>
+            <p class="service-desc">RESTful and GraphQL API design, third-party system integrations, and secure data exchange layers for seamless connectivity.</p>
+            <a href="404.html" class="service-link" style="color: var(--primary-orange);">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
 
         <!-- Design Services -->
         <div class="service-card">
-          <div class="service-icon-box" style="background: rgba(249, 115, 22, 0.1); color: var(--primary-orange);">
-            <i class="ri-layout-masonry-line"></i>
+          <div class="service-card-img">
+            <img src="images/uiux.webp" alt="UI/UX Design">
           </div>
-          <h3 class="service-title">UI/UX Design</h3>
-          <p class="service-desc">User-centered design systems, wireframing, prototyping, and usability testing that transform complex workflows into intuitive experiences.</p>
-          <a href="contact.html" class="service-link" style="color: var(--primary-orange);">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="service-card-body">
+            <div class="service-icon-box" style="background: rgba(249, 115, 22, 0.1); color: var(--primary-orange);">
+              <i class="ri-layout-masonry-line"></i>
+            </div>
+            <h3 class="service-title">UI/UX Design</h3>
+            <p class="service-desc">User-centered design systems, wireframing, prototyping, and usability testing that transform complex workflows into intuitive experiences.</p>
+            <a href="404.html" class="service-link" style="color: var(--primary-orange);">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
 
         <div class="service-card">
-          <div class="service-icon-box" style="background: rgba(249, 115, 22, 0.1); color: var(--primary-orange);">
-            <i class="ri-palette-line"></i>
+          <div class="service-card-img">
+            <img src="images/graphic.webp" alt="Branding & Graphic Design">
           </div>
-          <h3 class="service-title">Branding & Graphic Design</h3>
-          <p class="service-desc">World-class brand identity, visual language systems, corporate guidelines, and creative assets that command market authority.</p>
-          <a href="contact.html" class="service-link" style="color: var(--primary-orange);">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="service-card-body">
+            <div class="service-icon-box" style="background: rgba(249, 115, 22, 0.1); color: var(--primary-orange);">
+              <i class="ri-palette-line"></i>
+            </div>
+            <h3 class="service-title">Branding & Graphic Design</h3>
+            <p class="service-desc">World-class brand identity, visual language systems, corporate guidelines, and creative assets that command market authority.</p>
+            <a href="404.html" class="service-link" style="color: var(--primary-orange);">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
 
         <!-- Cloud & Infrastructure -->
         <div class="service-card">
-          <div class="service-icon-box">
-            <i class="ri-cloud-windy-line"></i>
+          <div class="service-card-img">
+            <img src="images/s3.webp" alt="Cloud Solutions">
           </div>
-          <h3 class="service-title">Cloud Solutions</h3>
-          <p class="service-desc">AWS/Azure/GCP enterprise migrations, serverless architectures, auto-scaling infrastructure, and cloud cost optimization.</p>
-          <a href="contact.html" class="service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="service-card-body">
+            <div class="service-icon-box">
+              <i class="ri-cloud-windy-line"></i>
+            </div>
+            <h3 class="service-title">Cloud Solutions</h3>
+            <p class="service-desc">AWS/Azure/GCP enterprise migrations, serverless architectures, auto-scaling infrastructure, and cloud cost optimization.</p>
+            <a href="404.html" class="service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
 
         <div class="service-card">
-          <div class="service-icon-box">
-            <i class="ri-server-line"></i>
+          <div class="service-card-img">
+            <img src="images/s1.webp" alt="DevOps Services">
           </div>
-          <h3 class="service-title">DevOps Services</h3>
-          <p class="service-desc">CI/CD pipeline automation, Kubernetes orchestration, infrastructure-as-code, and 24/7 managed operations for zero-downtime deployments.</p>
-          <a href="contact.html" class="service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="service-card-body">
+            <div class="service-icon-box">
+              <i class="ri-server-line"></i>
+            </div>
+            <h3 class="service-title">DevOps Services</h3>
+            <p class="service-desc">CI/CD pipeline automation, Kubernetes orchestration, infrastructure-as-code, and 24/7 managed operations for zero-downtime deployments.</p>
+            <a href="404.html" class="service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
 
         <!-- AI & Data -->
         <div class="service-card">
-          <div class="service-icon-box" style="background: rgba(249, 115, 22, 0.1); color: var(--primary-orange);">
-            <i class="ri-brain-line"></i>
+          <div class="service-card-img">
+            <img src="images/photo-1677442136019-21780ecad995.webp" alt="AI & Machine Learning">
           </div>
-          <h3 class="service-title">AI & Machine Learning</h3>
-          <p class="service-desc">Custom ML pipelines, predictive analytics, NLP solutions, computer vision, and generative AI integration for enterprise automation.</p>
-          <a href="contact.html" class="service-link" style="color: var(--primary-orange);">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="service-card-body">
+            <div class="service-icon-box" style="background: rgba(249, 115, 22, 0.1); color: var(--primary-orange);">
+              <i class="ri-brain-line"></i>
+            </div>
+            <h3 class="service-title">AI & Machine Learning</h3>
+            <p class="service-desc">Custom ML pipelines, predictive analytics, NLP solutions, computer vision, and generative AI integration for enterprise automation.</p>
+            <a href="404.html" class="service-link" style="color: var(--primary-orange);">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
 
         <div class="service-card">
-          <div class="service-icon-box">
-            <i class="ri-bar-chart-grouped-line"></i>
+          <div class="service-card-img">
+            <img src="images/photo-1551288049-bebda4e38f71.webp" alt="Data Analytics">
           </div>
-          <h3 class="service-title">Data Analytics</h3>
-          <p class="service-desc">Business intelligence dashboards, data warehousing, real-time reporting, and actionable insights that drive informed decision-making.</p>
-          <a href="contact.html" class="service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="service-card-body">
+            <div class="service-icon-box">
+              <i class="ri-bar-chart-grouped-line"></i>
+            </div>
+            <h3 class="service-title">Data Analytics</h3>
+            <p class="service-desc">Business intelligence dashboards, data warehousing, real-time reporting, and actionable insights that drive informed decision-making.</p>
+            <a href="404.html" class="service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
 
         <!-- Security & QA -->
         <div class="service-card">
-          <div class="service-icon-box">
-            <i class="ri-shield-check-line"></i>
+          <div class="service-card-img">
+            <img src="images/photo-1563986768609-322da13575f2.webp" alt="Cybersecurity">
           </div>
-          <h3 class="service-title">Cybersecurity</h3>
-          <p class="service-desc">Penetration testing, SOC2 compliance auditing, vulnerability assessments, and enterprise-grade security architecture for threat prevention.</p>
-          <a href="contact.html" class="service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="service-card-body">
+            <div class="service-icon-box">
+              <i class="ri-shield-check-line"></i>
+            </div>
+            <h3 class="service-title">Cybersecurity</h3>
+            <p class="service-desc">Penetration testing, SOC2 compliance auditing, vulnerability assessments, and enterprise-grade security architecture for threat prevention.</p>
+            <a href="404.html" class="service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
 
         <div class="service-card">
-          <div class="service-icon-box" style="background: rgba(249, 115, 22, 0.1); color: var(--primary-orange);">
-            <i class="ri-bug-line"></i>
+          <div class="service-card-img">
+            <img src="images/photo-1576444356170-66073FAF0966.webp" alt="Quality Assurance & Testing">
           </div>
-          <h3 class="service-title">Quality Assurance & Testing</h3>
-          <p class="service-desc">Automated testing frameworks, performance benchmarking, regression testing, and end-to-end QA pipelines for flawless releases.</p>
-          <a href="contact.html" class="service-link" style="color: var(--primary-orange);">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="service-card-body">
+            <div class="service-icon-box" style="background: rgba(249, 115, 22, 0.1); color: var(--primary-orange);">
+              <i class="ri-bug-line"></i>
+            </div>
+            <h3 class="service-title">Quality Assurance & Testing</h3>
+            <p class="service-desc">Automated testing frameworks, performance benchmarking, regression testing, and end-to-end QA pipelines for flawless releases.</p>
+            <a href="404.html" class="service-link" style="color: var(--primary-orange);">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
 
         <!-- Marketing Services -->
         <div class="service-card">
-          <div class="service-icon-box" style="background: rgba(249, 115, 22, 0.1); color: var(--primary-orange);">
-            <i class="ri-megaphone-line"></i>
+          <div class="service-card-img">
+            <img src="images/photo-1533750349088-cd871a92f312.webp" alt="Digital Marketing">
           </div>
-          <h3 class="service-title">Digital Marketing</h3>
-          <p class="service-desc">Omnichannel campaign strategy, PPC management, conversion rate optimization, and data-driven performance marketing at scale.</p>
-          <a href="contact.html" class="service-link" style="color: var(--primary-orange);">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="service-card-body">
+            <div class="service-icon-box" style="background: rgba(249, 115, 22, 0.1); color: var(--primary-orange);">
+              <i class="ri-megaphone-line"></i>
+            </div>
+            <h3 class="service-title">Digital Marketing</h3>
+            <p class="service-desc">Omnichannel campaign strategy, PPC management, conversion rate optimization, and data-driven performance marketing at scale.</p>
+            <a href="404.html" class="service-link" style="color: var(--primary-orange);">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
 
         <div class="service-card">
-          <div class="service-icon-box">
-            <i class="ri-search-eye-line"></i>
+          <div class="service-card-img">
+            <img src="images/seo.webp" alt="SEO">
           </div>
-          <h3 class="service-title">SEO</h3>
-          <p class="service-desc">Technical SEO audits, keyword strategy, content optimization, and link-building campaigns that drive sustainable organic growth.</p>
-          <a href="contact.html" class="service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="service-card-body">
+            <div class="service-icon-box">
+              <i class="ri-search-eye-line"></i>
+            </div>
+            <h3 class="service-title">SEO</h3>
+            <p class="service-desc">Technical SEO audits, keyword strategy, content optimization, and link-building campaigns that drive sustainable organic growth.</p>
+            <a href="404.html" class="service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
 
         <div class="service-card">
-          <div class="service-icon-box" style="background: rgba(249, 115, 22, 0.1); color: var(--primary-orange);">
-            <i class="ri-share-forward-line"></i>
+          <div class="service-card-img">
+            <img src="images/photo-1562577309-4932fdd64cd1.webp" alt="Social Media Marketing">
           </div>
-          <h3 class="service-title">Social Media Marketing</h3>
-          <p class="service-desc">Platform-specific content strategy, community management, paid social campaigns, and influencer partnership programs.</p>
-          <a href="contact.html" class="service-link" style="color: var(--primary-orange);">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="service-card-body">
+            <div class="service-icon-box" style="background: rgba(249, 115, 22, 0.1); color: var(--primary-orange);">
+              <i class="ri-share-forward-line"></i>
+            </div>
+            <h3 class="service-title">Social Media Marketing</h3>
+            <p class="service-desc">Platform-specific content strategy, community management, paid social campaigns, and influencer partnership programs.</p>
+            <a href="404.html" class="service-link" style="color: var(--primary-orange);">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
 
         <div class="service-card">
-          <div class="service-icon-box">
-            <i class="ri-quill-pen-line"></i>
+          <div class="service-card-img">
+            <img src="images/photo-1455390582262-044cdead277a.webp" alt="Content Creation">
           </div>
-          <h3 class="service-title">Content Creation</h3>
-          <p class="service-desc">Executive thought leadership, blog production, video scripting, whitepapers, and content calendars that build authority and trust.</p>
-          <a href="contact.html" class="service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="service-card-body">
+            <div class="service-icon-box">
+              <i class="ri-quill-pen-line"></i>
+            </div>
+            <h3 class="service-title">Content Creation</h3>
+            <p class="service-desc">Executive thought leadership, blog production, video scripting, whitepapers, and content calendars that build authority and trust.</p>
+            <a href="404.html" class="service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
 
         <!-- Business Solutions -->
         <div class="service-card">
-          <div class="service-icon-box" style="background: rgba(249, 115, 22, 0.1); color: var(--primary-orange);">
-            <i class="ri-shopping-cart-2-line"></i>
+          <div class="service-card-img">
+            <img src="images/photo-1556742049-0cfed4f6a45d.webp" alt="E-commerce Solutions">
           </div>
-          <h3 class="service-title">E-commerce Solutions</h3>
-          <p class="service-desc">Full-stack e-commerce platforms, payment gateway integration, inventory management, and conversion-optimized storefronts.</p>
-          <a href="contact.html" class="service-link" style="color: var(--primary-orange);">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="service-card-body">
+            <div class="service-icon-box" style="background: rgba(249, 115, 22, 0.1); color: var(--primary-orange);">
+              <i class="ri-shopping-cart-2-line"></i>
+            </div>
+            <h3 class="service-title">E-commerce Solutions</h3>
+            <p class="service-desc">Full-stack e-commerce platforms, payment gateway integration, inventory management, and conversion-optimized storefronts.</p>
+            <a href="404.html" class="service-link" style="color: var(--primary-orange);">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
 
         <div class="service-card">
-          <div class="service-icon-box" style="background: rgba(249, 115, 22, 0.1); color: var(--primary-orange);">
-            <i class="ri-customer-service-2-line"></i>
+          <div class="service-card-img">
+            <img src="images/photo-1460925895917-afdab827c52f.webp" alt="CRM & ERP Solutions">
           </div>
-          <h3 class="service-title">CRM & ERP Solutions</h3>
-          <p class="service-desc">Salesforce, HubSpot, SAP, and custom CRM/ERP implementations with workflow automation and cross-system data synchronization.</p>
-          <a href="contact.html" class="service-link" style="color: var(--primary-orange);">Get Started <i class="ri-arrow-right-s-line"></i></a>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon-box">
-            <i class="ri-lightbulb-line"></i>
+          <div class="service-card-body">
+            <div class="service-icon-box" style="background: rgba(249, 115, 22, 0.1); color: var(--primary-orange);">
+              <i class="ri-customer-service-2-line"></i>
+            </div>
+            <h3 class="service-title">CRM & ERP Solutions</h3>
+            <p class="service-desc">Salesforce, HubSpot, SAP, and custom CRM/ERP implementations with workflow automation and cross-system data synchronization.</p>
+            <a href="404.html" class="service-link" style="color: var(--primary-orange);">Get Started <i class="ri-arrow-right-s-line"></i></a>
           </div>
-          <h3 class="service-title">IT Consulting</h3>
-          <p class="service-desc">Technology roadmaps, digital transformation advisory, vendor evaluation, and IT governance frameworks for enterprise modernization.</p>
-          <a href="contact.html" class="service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon-box">
-            <i class="ri-line-chart-line"></i>
-          </div>
-          <h3 class="service-title">Business Consulting</h3>
-          <p class="service-desc">Process optimization, organizational design, change management, and growth strategy consulting for C-suite leadership.</p>
-          <a href="contact.html" class="service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
-        </div>
-
-        <!-- Support Services -->
-        <div class="service-card">
-          <div class="service-icon-box">
-            <i class="ri-headphone-line"></i>
-          </div>
-          <h3 class="service-title">Technical Support</h3>
-          <p class="service-desc">Dedicated helpdesk operations, SLA-backed issue resolution, remote infrastructure management, and escalation workflows.</p>
-          <a href="contact.html" class="service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
         </div>
       </div>
     </div>
@@ -308,7 +371,7 @@
             <li><i class="ri-check-line"></i> 30-Day Support</li>
           </ul>
           <div class="package-price">From $8,500 <span>/ one-time</span></div>
-          <a href="contact.html" class="btn btn-outline" style="width: 100%; justify-content: center;">Get Started <i class="ri-arrow-right-line"></i></a>
+          <a href="404.html" class="btn btn-outline" style="width: 100%; justify-content: center;">Get Started <i class="ri-arrow-right-line"></i></a>
         </div>
 
         <div class="package-card featured">
@@ -325,7 +388,7 @@
             <li><i class="ri-check-line"></i> 90-Day Support</li>
           </ul>
           <div class="package-price">From $35,000 <span>/ project</span></div>
-          <a href="contact.html" class="btn btn-primary" style="width: 100%; justify-content: center;">Get Started <i class="ri-arrow-right-line"></i></a>
+          <a href="404.html" class="btn btn-primary" style="width: 100%; justify-content: center;">Get Started <i class="ri-arrow-right-line"></i></a>
         </div>
 
         <div class="package-card">
@@ -341,7 +404,7 @@
             <li><i class="ri-check-line"></i> 12-Month Retainer</li>
           </ul>
           <div class="package-price">Custom Pricing <span>/ retainer</span></div>
-          <a href="contact.html" class="btn btn-outline" style="width: 100%; justify-content: center;">Contact Sales <i class="ri-arrow-right-line"></i></a>
+          <a href="404.html" class="btn btn-outline" style="width: 100%; justify-content: center;">Contact Sales <i class="ri-arrow-right-line"></i></a>
         </div>
       </div>
     </div>
@@ -360,51 +423,83 @@
 
       <div class="industries-grid">
         <div class="industry-card">
-          <div class="industry-icon"><i class="ri-bank-line"></i></div>
-          <h4 class="industry-title">Financial Services</h4>
-          <p class="industry-desc">Banking, fintech, insurance, and wealth management platforms with regulatory compliance.</p>
+          <div class="industry-img">
+            <img src="images/ind-finance.webp" alt="Financial Services">
+          </div>
+          <div class="industry-card-body">
+            <h4 class="industry-title">Financial Services</h4>
+            <p class="industry-desc">Banking, fintech, insurance, and wealth management platforms with regulatory compliance.</p>
+          </div>
         </div>
 
         <div class="industry-card">
-          <div class="industry-icon"><i class="ri-heart-pulse-line"></i></div>
-          <h4 class="industry-title">Healthcare</h4>
-          <p class="industry-desc">HIPAA-compliant systems, telemedicine platforms, and clinical workflow solutions.</p>
+          <div class="industry-img">
+            <img src="images/ind-healthcare.webp" alt="Healthcare">
+          </div>
+          <div class="industry-card-body">
+            <h4 class="industry-title">Healthcare</h4>
+            <p class="industry-desc">HIPAA-compliant systems, telemedicine platforms, and clinical workflow solutions.</p>
+          </div>
         </div>
 
         <div class="industry-card">
-          <div class="industry-icon"><i class="ri-shopping-bag-3-line"></i></div>
-          <h4 class="industry-title">Retail & E-commerce</h4>
-          <p class="industry-desc">Omnichannel commerce, inventory management, and customer loyalty platforms.</p>
+          <div class="industry-img">
+            <img src="images/ind-retail.webp" alt="Retail & E-commerce">
+          </div>
+          <div class="industry-card-body">
+            <h4 class="industry-title">Retail & E-commerce</h4>
+            <p class="industry-desc">Omnichannel commerce, inventory management, and customer loyalty platforms.</p>
+          </div>
         </div>
 
         <div class="industry-card">
-          <div class="industry-icon"><i class="ri_FACTORY-line"></i></div>
-          <h4 class="industry-title">Manufacturing</h4>
-          <p class="industry-desc">Supply chain optimization, IoT integration, and predictive maintenance systems.</p>
+          <div class="industry-img">
+            <img src="images/ind-manufacturing.webp" alt="Manufacturing">
+          </div>
+          <div class="industry-card-body">
+            <h4 class="industry-title">Manufacturing</h4>
+            <p class="industry-desc">Supply chain optimization, IoT integration, and predictive maintenance systems.</p>
+          </div>
         </div>
 
         <div class="industry-card">
-          <div class="industry-icon"><i class="ri-graduation-cap-line"></i></div>
-          <h4 class="industry-title">Education</h4>
-          <p class="industry-desc">LMS platforms, virtual classrooms, and student information systems.</p>
+          <div class="industry-img">
+            <img src="images/ind-education.webp" alt="Education">
+          </div>
+          <div class="industry-card-body">
+            <h4 class="industry-title">Education</h4>
+            <p class="industry-desc">LMS platforms, virtual classrooms, and student information systems.</p>
+          </div>
         </div>
 
         <div class="industry-card">
-          <div class="industry-icon"><i class="ri-flight-takeoff-line"></i></div>
-          <h4 class="industry-title">Travel & Hospitality</h4>
-          <p class="industry-desc">Booking engines, loyalty programs, and guest experience platforms.</p>
+          <div class="industry-img">
+            <img src="images/ind-travel.webp" alt="Travel & Hospitality">
+          </div>
+          <div class="industry-card-body">
+            <h4 class="industry-title">Travel & Hospitality</h4>
+            <p class="industry-desc">Booking engines, loyalty programs, and guest experience platforms.</p>
+          </div>
         </div>
 
         <div class="industry-card">
-          <div class="industry-icon"><i class="ri-flashlight-line"></i></div>
-          <h4 class="industry-title">Energy & Utilities</h4>
-          <p class="industry-desc">Smart grid solutions, resource management, and sustainability dashboards.</p>
+          <div class="industry-img">
+            <img src="images/ind-energy.webp" alt="Energy & Utilities">
+          </div>
+          <div class="industry-card-body">
+            <h4 class="industry-title">Energy & Utilities</h4>
+            <p class="industry-desc">Smart grid solutions, resource management, and sustainability dashboards.</p>
+          </div>
         </div>
 
         <div class="industry-card">
-          <div class="industry-icon"><i class="ri-government-line"></i></div>
-          <h4 class="industry-title">Government</h4>
-          <p class="industry-desc">Citizen portals, e-governance platforms, and secure data infrastructure.</p>
+          <div class="industry-img">
+            <img src="images/ind-government.webp" alt="Government">
+          </div>
+          <div class="industry-card-body">
+            <h4 class="industry-title">Government</h4>
+            <p class="industry-desc">Citizen portals, e-governance platforms, and secure data infrastructure.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -464,7 +559,7 @@
         <div class="about-testimonial-card">
           <p class="about-testimonial-text">"Stackly delivered a complete digital transformation that reduced our operational costs by 40% while improving customer satisfaction scores by 60%. Their team is truly world-class."</p>
           <div class="about-testimonial-author">
-            <img class="about-testimonial-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="James Whitfield">
+            <img class="about-testimonial-avatar" src="images/photo-1507003211169-0a1dd7228f2d.webp" alt="James Whitfield">
             <div>
               <div class="about-testimonial-name">James Whitfield</div>
               <div class="about-testimonial-role">CTO, Meridian Financial Group</div>
@@ -476,7 +571,7 @@
         <div class="about-testimonial-card">
           <p class="about-testimonial-text">"The e-commerce platform Stackly built handles 50,000+ concurrent users and processes $100M+ annually. Their technical expertise and strategic guidance were invaluable to our growth."</p>
           <div class="about-testimonial-author">
-            <img class="about-testimonial-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Sarah Chen">
+            <img class="about-testimonial-avatar" src="images/photo-1494790108377-be9c29b29330.webp" alt="Sarah Chen">
             <div>
               <div class="about-testimonial-name">Sarah Chen</div>
               <div class="about-testimonial-role">VP Digital, Quantum Dynamics</div>
@@ -488,7 +583,7 @@
         <div class="about-testimonial-card">
           <p class="about-testimonial-text">"From cloud migration to AI integration, Stackly transformed our entire technology stack. We've seen a 3x improvement in deployment frequency and 99.99% uptime since launch."</p>
           <div class="about-testimonial-author">
-            <img class="about-testimonial-avatar" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=120&q=80" alt="Michael Torres">
+            <img class="about-testimonial-avatar" src="images/photo-1472099645785-5658abf4ff4e.webp" alt="Michael Torres">
             <div>
               <div class="about-testimonial-name">Michael Torres</div>
               <div class="about-testimonial-role">Director of Engineering, Aethel Capital</div>
@@ -500,7 +595,7 @@
         <div class="about-testimonial-card">
           <p class="about-testimonial-text">"Stackly's cybersecurity audit identified critical vulnerabilities that could have cost us millions. Their proactive approach and 24/7 monitoring give us complete peace of mind."</p>
           <div class="about-testimonial-author">
-            <img class="about-testimonial-avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=120&q=80" alt="Priya Sharma">
+            <img class="about-testimonial-avatar" src="images/photo-1438761681033-6461ffad8d80.webp" alt="Priya Sharma">
             <div>
               <div class="about-testimonial-name">Priya Sharma</div>
               <div class="about-testimonial-role">CISO, Vanguard Architecture</div>
@@ -654,7 +749,7 @@
             <div style="font-size: 0.9rem; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em">Estimated Project Investment</div>
             <div id="calcOutput" class="calc-val-large">$36,600</div>
             <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem">Customized milestone billing available</p>
-            <a href="contact.html" class="btn btn-primary">Lock In Estimate <i class="ri-arrow-right-line"></i></a>
+            <a href="404.html" class="btn btn-primary">Lock In Estimate <i class="ri-arrow-right-line"></i></a>
           </div>
         </div>
       </div>
@@ -723,7 +818,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer" style="background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('images/footerc.webp') center/cover no-repeat, var(--bg-darker);">
     <div class="container">
       <div class="footer-main">
         <!-- Company Information -->
@@ -735,11 +830,11 @@
             Stackly is a premier global corporate agency delivering strategic advisory, enterprise technology, and brand elevation to Fortune 500 companies worldwide.
           </p>
           <div class="footer-social">
-            <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
-            <a href="#" aria-label="Twitter"><i class="ri-twitter-x-fill"></i></a>
-            <a href="#" aria-label="GitHub"><i class="ri-github-fill"></i></a>
-            <a href="#" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
-            <a href="#" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+            <a href="404.html" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="404.html" aria-label="Twitter"><i class="ri-twitter-x-fill"></i></a>
+            <a href="404.html" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+            <a href="404.html" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+            <a href="404.html" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
           </div>
         </div>
 
@@ -809,17 +904,18 @@
       <div class="footer-bottom">
         <div>&copy; 2026 STACKLY Corporate Agency Inc. All rights reserved.</div>
         <div class="footer-bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Cookie Policy</a>
-          <a href="#">SOC2 Compliance</a>
-          <a href="#">Sitemap</a>
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms of Service</a>
+          <a href="404.html">Cookie Policy</a>
+          <a href="404.html">SOC2 Compliance</a>
+          <a href="404.html">Sitemap</a>
         </div>
       </div>
     </div>
   </footer>
 
   <script src="js/shared.js"></script>
+  <script src="js/email-validator.js"></script>
   <script src="js/services.js"></script>
 </body>
 </html>

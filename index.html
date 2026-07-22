@@ -14,7 +14,7 @@
 <body>
 
   <!-- Header & Navigation -->
-  <header class="navbar">
+  <header class="navbar navbar-hero">
     <div class="container nav-container">
       <a href="index.html" class="logo">
         <img src="images/logo.webp" alt="STACKLY Logo" class="logo-img">
@@ -53,15 +53,30 @@
       <a href="team.html" class="mobile-nav-link">Leadership</a>
       <a href="contact.html" class="mobile-nav-link">Contact Us</a>
       <div class="mobile-nav-divider"></div>
+      <a href="contact.html" class="mobile-nav-cta"><i class="ri-rocket-2-line"></i> Start a Project</a>
       <a href="login.html" class="mobile-nav-link mobile-nav-login"><i class="ri-login-box-line"></i> Login</a>
     </div>
   </div>
 
   <!-- Hero Section -->
   <section id="hero" class="hero">
-    <video class="hero-video-bg" autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80">
-      <source src="https://assets.mixkit.co/videos/preview/mixkit-corporate-team-working-together-in-office-43527-large.mp4" type="video/mp4">
-    </video>
+    <div class="hero-slider">
+      <div class="hero-slide active">
+        <video class="hero-bg-video" autoplay muted playsinline loop>
+          <source src="hero1.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-slide">
+        <video class="hero-bg-video" muted playsinline>
+          <source src="hero2.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-slide">
+        <video class="hero-bg-video" muted playsinline>
+          <source src="hero4.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
     <div class="hero-overlay"></div>
 
     <div class="container hero-content">
@@ -80,41 +95,23 @@
           <a href="portfolio.html" class="btn btn-primary">
             Explore Work <i class="ri-arrow-right-line"></i>
           </a>
-          <button class="video-modal-trigger">
-            <span class="play-pulse"><i class="ri-play-fill"></i></span>
-            <span>Watch Agency Showreel</span>
-          </button>
+          <a href="contact.html" class="btn btn-outline">
+            <i class="ri-calendar-line"></i> Schedule a Consultation
+          </a>
         </div>
 
         <div class="hero-metrics">
           <div class="metric-item">
-            <div class="metric-num">$2.5B+</div>
+            <div class="metric-num" data-target="2.5" data-prefix="$" data-suffix="B+" data-decimals="1">$0</div>
             <div class="metric-label">Client Revenue Scaled</div>
           </div>
           <div class="metric-item">
-            <div class="metric-num">500+</div>
+            <div class="metric-num" data-target="500" data-prefix="" data-suffix="+" data-decimals="0">0</div>
             <div class="metric-label">Enterprise Solutions Delivered</div>
           </div>
           <div class="metric-item">
-            <div class="metric-num">99.4%</div>
+            <div class="metric-num" data-target="99.4" data-prefix="" data-suffix="%" data-decimals="1">0</div>
             <div class="metric-label">Client Retention Rate</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-visual">
-        <div class="glass-card-hero">
-          <div class="hero-img-box">
-            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80" alt="Stackly Corporate Office Strategy">
-          </div>
-          <div class="floating-badge-hero">
-            <div class="badge-icon">
-              <i class="ri-award-fill"></i>
-            </div>
-            <div>
-              <div style="font-weight: 700; font-size: 0.95rem;">Top Global Agency 2026</div>
-              <div style="font-size: 0.8rem; color: var(--text-muted)">Recognized by TechCorp & Forbes</div>
-            </div>
           </div>
         </div>
       </div>
@@ -176,7 +173,7 @@
           </div>
         </div>
         <div>
-          <img class="home-about-img" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" alt="Stackly Team Collaboration">
+          <img class="home-about-img" src="images/photo-1522071820081-009f0129c71c.webp" alt="Stackly Team Collaboration">
         </div>
       </div>
     </div>
@@ -195,59 +192,99 @@
 
       <div class="home-services-grid">
         <div class="home-service-card">
-          <div class="home-service-icon"><i class="ri-code-s-slash-line"></i></div>
-          <h3 class="home-service-title">Web Development</h3>
-          <p class="home-service-desc">High-performance web applications built with modern frameworks, optimized for speed and enterprise-grade scalability.</p>
-          <a href="services.html" class="home-service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="home-service-img">
+            <img src="images/photo-1461749280684-dccba630e2f6.webp" alt="Web Development">
+          </div>
+          <div class="home-service-body">
+            <div class="home-service-icon"><i class="ri-code-s-slash-line"></i></div>
+            <h3 class="home-service-title">Web Development</h3>
+            <p class="home-service-desc">High-performance web applications built with modern frameworks, optimized for speed and enterprise-grade scalability.</p>
+            <a href="services.html" class="home-service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
 
         <div class="home-service-card">
-          <div class="home-service-icon"><i class="ri-smartphone-line"></i></div>
-          <h3 class="home-service-title">Mobile App Development</h3>
-          <p class="home-service-desc">Native and cross-platform mobile applications for iOS and Android, delivering seamless user experiences.</p>
-          <a href="services.html" class="home-service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="home-service-img">
+            <img src="images/photo-1512941937669-90a1b58e7e9c.webp" alt="Mobile App Development">
+          </div>
+          <div class="home-service-body">
+            <div class="home-service-icon"><i class="ri-smartphone-line"></i></div>
+            <h3 class="home-service-title">Mobile App Development</h3>
+            <p class="home-service-desc">Native and cross-platform mobile applications for iOS and Android, delivering seamless user experiences.</p>
+            <a href="services.html" class="home-service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
 
         <div class="home-service-card">
-          <div class="home-service-icon"><i class="ri-layout-masonry-line"></i></div>
-          <h3 class="home-service-title">UI/UX Design</h3>
-          <p class="home-service-desc">User-centered design systems, wireframing, prototyping, and usability testing for intuitive experiences.</p>
-          <a href="services.html" class="home-service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="home-service-img">
+            <img src="images/uiux.webp" alt="UI/UX Design">
+          </div>
+          <div class="home-service-body">
+            <div class="home-service-icon"><i class="ri-layout-masonry-line"></i></div>
+            <h3 class="home-service-title">UI/UX Design</h3>
+            <p class="home-service-desc">User-centered design systems, wireframing, prototyping, and usability testing for intuitive experiences.</p>
+            <a href="services.html" class="home-service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
 
         <div class="home-service-card">
-          <div class="home-service-icon"><i class="ri-brain-line"></i></div>
-          <h3 class="home-service-title">AI & Machine Learning</h3>
-          <p class="home-service-desc">Custom ML pipelines, predictive analytics, NLP solutions, and generative AI integration for enterprise automation.</p>
-          <a href="services.html" class="home-service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="home-service-img">
+            <img src="images/photo-1677442136019-21780ecad995.webp" alt="AI & Machine Learning">
+          </div>
+          <div class="home-service-body">
+            <div class="home-service-icon"><i class="ri-brain-line"></i></div>
+            <h3 class="home-service-title">AI & Machine Learning</h3>
+            <p class="home-service-desc">Custom ML pipelines, predictive analytics, NLP solutions, and generative AI integration for enterprise automation.</p>
+            <a href="services.html" class="home-service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
 
         <div class="home-service-card">
-          <div class="home-service-icon"><i class="ri-cloud-windy-line"></i></div>
-          <h3 class="home-service-title">Cloud Solutions</h3>
-          <p class="home-service-desc">AWS/Azure/GCP enterprise migrations, serverless architectures, and cloud cost optimization.</p>
-          <a href="services.html" class="home-service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="home-service-img">
+            <img src="images/s3.webp" alt="Cloud Solutions">
+          </div>
+          <div class="home-service-body">
+            <div class="home-service-icon"><i class="ri-cloud-windy-line"></i></div>
+            <h3 class="home-service-title">Cloud Solutions</h3>
+            <p class="home-service-desc">AWS/Azure/GCP enterprise migrations, serverless architectures, and cloud cost optimization.</p>
+            <a href="services.html" class="home-service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
 
         <div class="home-service-card">
-          <div class="home-service-icon"><i class="ri-shield-check-line"></i></div>
-          <h3 class="home-service-title">Cybersecurity</h3>
-          <p class="home-service-desc">Penetration testing, SOC2 compliance auditing, vulnerability assessments, and enterprise security architecture.</p>
-          <a href="services.html" class="home-service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="home-service-img">
+            <img src="images/photo-1563986768609-322da13575f2.webp" alt="Cybersecurity">
+          </div>
+          <div class="home-service-body">
+            <div class="home-service-icon"><i class="ri-shield-check-line"></i></div>
+            <h3 class="home-service-title">Cybersecurity</h3>
+            <p class="home-service-desc">Penetration testing, SOC2 compliance auditing, vulnerability assessments, and enterprise security architecture.</p>
+            <a href="services.html" class="home-service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
 
         <div class="home-service-card">
-          <div class="home-service-icon"><i class="ri-megaphone-line"></i></div>
-          <h3 class="home-service-title">Digital Marketing</h3>
-          <p class="home-service-desc">Omnichannel campaign strategy, PPC management, conversion rate optimization, and performance marketing.</p>
-          <a href="services.html" class="home-service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="home-service-img">
+            <img src="images/photo-1533750349088-cd871a92f312.webp" alt="Digital Marketing">
+          </div>
+          <div class="home-service-body">
+            <div class="home-service-icon"><i class="ri-megaphone-line"></i></div>
+            <h3 class="home-service-title">Digital Marketing</h3>
+            <p class="home-service-desc">Omnichannel campaign strategy, PPC management, conversion rate optimization, and performance marketing.</p>
+            <a href="services.html" class="home-service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
 
         <div class="home-service-card">
-          <div class="home-service-icon"><i class="ri-shopping-cart-2-line"></i></div>
-          <h3 class="home-service-title">E-commerce Solutions</h3>
-          <p class="home-service-desc">Full-stack e-commerce platforms, payment gateway integration, and conversion-optimized storefronts.</p>
-          <a href="services.html" class="home-service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          <div class="home-service-img">
+            <img src="images/photo-1556742049-0cfed4f6a45d.webp" alt="E-commerce Solutions">
+          </div>
+          <div class="home-service-body">
+            <div class="home-service-icon"><i class="ri-shopping-cart-2-line"></i></div>
+            <h3 class="home-service-title">E-commerce Solutions</h3>
+            <p class="home-service-desc">Full-stack e-commerce platforms, payment gateway integration, and conversion-optimized storefronts.</p>
+            <a href="services.html" class="home-service-link">Get Started <i class="ri-arrow-right-s-line"></i></a>
+          </div>
         </div>
       </div>
 
@@ -271,7 +308,7 @@
       <div class="featured-grid">
         <div class="featured-card">
           <div class="featured-img-box">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Fintech Analytics Platform">
+            <img src="images/photo-1551288049-bebda4e38f71.webp" alt="Fintech Analytics Platform">
             <div class="featured-overlay">
               <a href="portfolio.html" class="featured-overlay-btn">View Case Study <i class="ri-arrow-right-line"></i></a>
             </div>
@@ -285,7 +322,7 @@
 
         <div class="featured-card">
           <div class="featured-img-box">
-            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Enterprise AI Assistant">
+            <img src="images/photo-1531482615713-2afd69097998.webp" alt="Enterprise AI Assistant">
             <div class="featured-overlay">
               <a href="portfolio.html" class="featured-overlay-btn">View Case Study <i class="ri-arrow-right-line"></i></a>
             </div>
@@ -299,7 +336,7 @@
 
         <div class="featured-card">
           <div class="featured-img-box">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Luxury Brand System">
+            <img src="images/photo-1600585154340-be6161a56a0c.webp" alt="Luxury Brand System">
             <div class="featured-overlay">
               <a href="portfolio.html" class="featured-overlay-btn">View Case Study <i class="ri-arrow-right-line"></i></a>
             </div>
@@ -359,7 +396,7 @@
             <div style="font-size: 0.9rem; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em">Estimated Project Investment</div>
             <div id="calcOutput" class="calc-val-large">$36,600</div>
             <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem">Customized milestone billing available</p>
-            <a href="contact.html" class="btn btn-primary">Lock In Estimate <i class="ri-arrow-right-line"></i></a>
+            <a href="404.html" class="btn btn-primary">Lock In Estimate <i class="ri-arrow-right-line"></i></a>
           </div>
         </div>
       </div>
@@ -442,7 +479,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer" style="background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('images/footerc.webp') center/cover no-repeat, var(--bg-darker);">
     <div class="container">
       <div class="footer-main">
         <!-- Company Information -->
@@ -454,11 +491,11 @@
             Stackly is a premier global corporate agency delivering strategic advisory, enterprise technology, and brand elevation to Fortune 500 companies worldwide.
           </p>
           <div class="footer-social">
-            <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
-            <a href="#" aria-label="Twitter"><i class="ri-twitter-x-fill"></i></a>
-            <a href="#" aria-label="GitHub"><i class="ri-github-fill"></i></a>
-            <a href="#" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
-            <a href="#" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+            <a href="404.html" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="404.html" aria-label="Twitter"><i class="ri-twitter-x-fill"></i></a>
+            <a href="404.html" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+            <a href="404.html" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+            <a href="404.html" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
           </div>
         </div>
 
@@ -528,11 +565,11 @@
       <div class="footer-bottom">
         <div>&copy; 2026 STACKLY Corporate Agency Inc. All rights reserved.</div>
         <div class="footer-bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Cookie Policy</a>
-          <a href="#">SOC2 Compliance</a>
-          <a href="#">Sitemap</a>
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms of Service</a>
+          <a href="404.html">Cookie Policy</a>
+          <a href="404.html">SOC2 Compliance</a>
+          <a href="404.html">Sitemap</a>
         </div>
       </div>
     </div>
@@ -549,6 +586,99 @@
   </div>
 
   <script src="js/shared.js"></script>
+  <script src="js/email-validator.js"></script>
   <script src="js/home.js"></script>
+  <script>
+    (function() {
+      var slides = document.querySelectorAll('.hero-slide');
+      var videos = document.querySelectorAll('.hero-bg-video');
+      var current = 0;
+      var isTransitioning = false;
+      var SLIDE_DURATION = 7000;
+
+      if (slides.length > 0) {
+        function nextSlide() {
+          if (isTransitioning) return;
+          isTransitioning = true;
+
+          var nextIndex = (current + 1) % slides.length;
+          var nextVideo = videos[nextIndex];
+
+          nextVideo.currentTime = 0;
+          nextVideo.play().then(function() {
+            setTimeout(function() {
+              slides[current].classList.remove('active');
+              slides[nextIndex].classList.add('active');
+              var prevVideo = videos[current];
+              setTimeout(function() {
+                prevVideo.pause();
+                prevVideo.currentTime = 0;
+              }, 1600);
+              current = nextIndex;
+              isTransitioning = false;
+            }, 300);
+          }).catch(function() {
+            slides[current].classList.remove('active');
+            slides[nextIndex].classList.add('active');
+            current = nextIndex;
+            isTransitioning = false;
+          });
+        }
+
+        setInterval(nextSlide, SLIDE_DURATION);
+      }
+
+      var counters = document.querySelectorAll('.metric-num[data-target]');
+      if (counters.length === 0) return;
+
+      function easeOutQuart(t) {
+        return 1 - Math.pow(1 - t, 4);
+      }
+
+      function formatNumber(val, decimals) {
+        var parts = val.toFixed(decimals).split('.');
+        parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        return parts.join('.');
+      }
+
+      function animateCounter(el) {
+        var target = parseFloat(el.getAttribute('data-target'));
+        var prefix = el.getAttribute('data-prefix') || '';
+        var suffix = el.getAttribute('data-suffix') || '';
+        var decimals = parseInt(el.getAttribute('data-decimals')) || 0;
+        var duration = 2000;
+        var start = null;
+
+        function step(timestamp) {
+          if (!start) start = timestamp;
+          var progress = Math.min((timestamp - start) / duration, 1);
+          var eased = easeOutQuart(progress);
+          var current = eased * target;
+          el.textContent = prefix + formatNumber(current, decimals) + suffix;
+          if (progress < 1) {
+            requestAnimationFrame(step);
+          }
+        }
+
+        requestAnimationFrame(step);
+      }
+
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            counters.forEach(function(counter) {
+              animateCounter(counter);
+            });
+            observer.disconnect();
+          }
+        });
+      }, { threshold: 0.3 });
+
+      var metricsContainer = document.querySelector('.hero-metrics');
+      if (metricsContainer) {
+        observer.observe(metricsContainer);
+      }
+    })();
+  </script>
 </body>
 </html>

@@ -13,8 +13,6 @@
   <link rel="stylesheet" href="css/auth.css">
 </head>
 <body>
-  <a href="index.html" class="auth-back"><i class="ri-arrow-left-line"></i> Back to Home</a>
-
   <div class="auth-page">
     <!-- Left Panel -->
     <div class="auth-left">
@@ -107,6 +105,13 @@
                 <i class="ri-eye-line"></i>
               </button>
             </div>
+            <div class="auth-password-reqs">
+              <span class="auth-req"><i class="ri-check-line"></i> At least 8 characters</span>
+              <span class="auth-req"><i class="ri-check-line"></i> One uppercase letter</span>
+              <span class="auth-req"><i class="ri-check-line"></i> One lowercase letter</span>
+              <span class="auth-req"><i class="ri-check-line"></i> One number</span>
+              <span class="auth-req"><i class="ri-check-line"></i> One special character</span>
+            </div>
             <div class="auth-password-strength">
               <div class="auth-strength-bar"></div>
               <div class="auth-strength-bar"></div>
@@ -133,7 +138,7 @@
           <div class="auth-form-row" style="margin-top:1rem;">
             <label class="auth-checkbox">
               <input type="checkbox" id="terms-checkbox">
-              <span>I agree to the <a href="#" style="color:var(--primary-orange);text-decoration:none;font-weight:600;">Terms &amp; Conditions</a></span>
+              <span>I agree to the <a href="404.html" style="color:var(--primary-orange);text-decoration:none;font-weight:600;">Terms &amp; Conditions</a></span>
             </label>
           </div>
 
@@ -150,10 +155,12 @@
         <div class="auth-divider"><span>or sign up with</span></div>
 
         <div class="auth-social">
-          <a href="#" class="auth-social-btn google"><i class="ri-google-fill"></i> Google</a>
-          <a href="#" class="auth-social-btn github"><i class="ri-github-fill"></i> GitHub</a>
-          <a href="#" class="auth-social-btn linkedin"><i class="ri-linkedin-fill"></i> LinkedIn</a>
+          <a href="404.html" class="auth-social-btn google"><i class="ri-google-fill"></i> Google</a>
+          <a href="404.html" class="auth-social-btn github"><i class="ri-github-fill"></i> GitHub</a>
+          <a href="404.html" class="auth-social-btn linkedin"><i class="ri-linkedin-fill"></i> LinkedIn</a>
         </div>
+
+        <a href="index.html" class="auth-back"><i class="ri-arrow-left-line"></i> Back to Home</a>
 
         <div class="auth-form-footer">
           <p>&copy; 2026 STACKLY Corporate Agency Inc. All rights reserved.</p>
@@ -162,6 +169,7 @@
     </div>
   </div>
 
+  <script src="js/email-validator.js"></script>
   <script src="js/auth.js"></script>
 </body>
 </html>

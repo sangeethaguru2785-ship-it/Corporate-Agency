@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/dashboard.css">
 </head>
 <body>
+  <script>window.location.href = 'user/index.html';</script>
   <div class="dashboard">
     <div class="dash-overlay"></div>
 
@@ -59,7 +60,7 @@
       </nav>
       <div class="dash-sidebar-footer">
         <div class="dash-sidebar-user">
-          <img class="dash-sidebar-user-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="User">
+          <img class="dash-sidebar-user-avatar" src="images/photo-1507003211169-0a1dd7228f2d.webp" alt="User">
           <div class="dash-sidebar-user-info">
             <div class="dash-sidebar-user-name">Alex Morgan</div>
             <div class="dash-sidebar-user-role">Enterprise Client</div>
@@ -79,43 +80,6 @@
             <span class="current">Dashboard</span>
           </div>
         </div>
-        <div class="dash-topbar-right">
-          <div class="dash-search"><i class="ri-search-line"></i><input type="text" placeholder="Search anything..."></div>
-          <div class="dash-dropdown">
-            <button class="dash-topbar-btn dash-dropdown-trigger"><i class="ri-notification-3-line"></i><span class="notification-dot"></span></button>
-            <div class="dash-dropdown-menu">
-              <div class="dash-dropdown-header"><h4>Notifications</h4><a href="#">Mark all read</a></div>
-              <div class="dash-dropdown-item unread"><div class="dash-dropdown-item-icon"><i class="ri-checkbox-circle-line"></i></div><div class="dash-dropdown-item-content"><p class="dash-dropdown-item-text"><strong>Project Update</strong> — E-Commerce v3 milestone completed</p><p class="dash-dropdown-item-time">10 min ago</p></div></div>
-              <div class="dash-dropdown-item unread"><div class="dash-dropdown-item-icon"><i class="ri-file-text-line"></i></div><div class="dash-dropdown-item-content"><p class="dash-dropdown-item-text"><strong>Invoice Ready</strong> — Invoice #INV-2026-047 is available</p><p class="dash-dropdown-item-time">2 hr ago</p></div></div>
-              <div class="dash-dropdown-item"><div class="dash-dropdown-item-icon"><i class="ri-customer-service-line"></i></div><div class="dash-dropdown-item-content"><p class="dash-dropdown-item-text"><strong>Support Reply</strong> — Your ticket #T-1284 has been updated</p><p class="dash-dropdown-item-time">5 hr ago</p></div></div>
-            </div>
-          </div>
-          <div class="dash-dropdown">
-            <button class="dash-topbar-btn dash-dropdown-trigger"><i class="ri-mail-line"></i></button>
-            <div class="dash-dropdown-menu">
-              <div class="dash-dropdown-header"><h4>Messages</h4><a href="#">View all</a></div>
-              <div class="dash-dropdown-item unread"><div class="dash-dropdown-item-icon"><i class="ri-message-3-line"></i></div><div class="dash-dropdown-item-content"><p class="dash-dropdown-item-text"><strong>Marcus Lee:</strong> Your project phase 2 is ready for review.</p><p class="dash-dropdown-item-time">5 min ago</p></div></div>
-            </div>
-          </div>
-
-          <div class="dash-dropdown">
-            <button class="dash-dropdown-trigger" style="display:flex;align-items:center;gap:0.5rem;cursor:pointer;background:none;border:none;">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="User" style="width:34px;height:34px;border-radius:50%;object-fit:cover;border:2px solid var(--primary-orange);">
-            </button>
-            <div class="dash-dropdown-menu dash-profile-dropdown">
-              <div class="dash-profile-header">
-                <img class="dash-profile-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="User">
-                <div class="dash-profile-name">Alex Morgan</div>
-                <div class="dash-profile-email">alex@techcorp.com</div>
-              </div>
-              <a class="dash-profile-menu-item" href="#sec-profile"><i class="ri-user-settings-line"></i> My Profile</a>
-              <a class="dash-profile-menu-item" href="#sec-account"><i class="ri-settings-3-line"></i> Account Settings</a>
-              <a class="dash-profile-menu-item" href="#sec-help"><i class="ri-question-line"></i> Help & Support</a>
-              <div class="dash-profile-menu-divider"></div>
-              <a class="dash-profile-menu-item danger" href="login.html"><i class="ri-logout-box-r-line"></i> Logout</a>
-            </div>
-          </div>
-        </div>
       </header>
 
       <div class="dash-content">
@@ -123,7 +87,7 @@
         <!-- Welcome Banner -->
         <div class="dash-welcome">
           <div class="dash-welcome-content">
-            <h2>Welcome back, <span>Alex</span> 👋</h2>
+            <h2>Welcome back, <span id="dash-welcome-name">Alex</span> 👋</h2>
             <p>Here's an overview of your projects and services. Tuesday, July 21, 2026.</p>
           </div>
           <div class="dash-welcome-actions">
@@ -281,15 +245,15 @@
           <div class="dash-card-body">
             <div style="display:flex;flex-direction:column;gap:0.75rem;">
               <div style="display:flex;gap:1rem;padding:1rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);cursor:pointer;transition:var(--dash-transition);">
-                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=60&q=80" alt="" style="width:40px;height:40px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+                <img src="images/photo-1560250097-0b93528c311a.webp" alt="" style="width:40px;height:40px;border-radius:50%;object-fit:cover;flex-shrink:0;">
                 <div style="flex:1;min-width:0;"><div style="display:flex;justify-content:space-between;margin-bottom:0.25rem;"><strong style="font-size:0.9rem;">Marcus Lee</strong><span style="font-size:0.75rem;color:var(--text-dim);">10 min ago</span></div><p style="font-size:0.85rem;color:var(--text-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Your project phase 2 is ready for review. Please check the staging environment.</p></div>
               </div>
               <div style="display:flex;gap:1rem;padding:1rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);cursor:pointer;">
-                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=60&q=80" alt="" style="width:40px;height:40px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+                <img src="images/photo-1494790108377-be9c29b29330.webp" alt="" style="width:40px;height:40px;border-radius:50%;object-fit:cover;flex-shrink:0;">
                 <div style="flex:1;min-width:0;"><div style="display:flex;justify-content:space-between;margin-bottom:0.25rem;"><strong style="font-size:0.9rem;">Sarah Kim</strong><span style="font-size:0.75rem;color:var(--text-dim);">2 hr ago</span></div><p style="font-size:0.85rem;color:var(--text-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">The new UI mockups have been uploaded to Figma. Let me know your thoughts!</p></div>
               </div>
               <div style="display:flex;gap:1rem;padding:1rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);cursor:pointer;">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=60&q=80" alt="" style="width:40px;height:40px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+                <img src="images/photo-1507003211169-0a1dd7228f2d.webp" alt="" style="width:40px;height:40px;border-radius:50%;object-fit:cover;flex-shrink:0;">
                 <div style="flex:1;min-width:0;"><div style="display:flex;justify-content:space-between;margin-bottom:0.25rem;"><strong style="font-size:0.9rem;">James Wilson</strong><span style="font-size:0.75rem;color:var(--text-dim);">Yesterday</span></div><p style="font-size:0.85rem;color:var(--text-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Sprint retrospective notes have been shared. Next sprint starts Monday.</p></div>
               </div>
             </div>
@@ -371,6 +335,7 @@
 
   <button class="dash-back-to-top"><i class="ri-arrow-up-line"></i></button>
   <script src="js/shared.js"></script>
+  <script src="js/email-validator.js"></script>
   <script src="js/dashboard.js"></script>
 </body>
 </html>
