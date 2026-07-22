@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STACKLY - Analytics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <div class="dash-overlay"></div>
+    <main class="dash-main">
+      <div class="dash-content">
+        <div class="dash-stats-grid">
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-eye-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>18.2%</div></div>
+            <div class="dash-stat-value" data-value="384290">0</div>
+            <div class="dash-stat-label">Page Views</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-user-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>12.5%</div></div>
+            <div class="dash-stat-value" data-value="45230">0</div>
+            <div class="dash-stat-label">Unique Users</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-time-line"></i></div><div class="dash-stat-trend down"><i class="ri-arrow-down-s-line"></i>2.1%</div></div>
+            <div class="dash-stat-value" data-value="4" data-suffix="m 32s">0</div>
+            <div class="dash-stat-label">Avg. Session</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-percent-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>1.8%</div></div>
+            <div class="dash-stat-value" data-value="3" data-suffix="%">0</div>
+            <div class="dash-stat-label">Bounce Rate</div>
+          </div>
+        </div>
+
+        <div class="dash-grid">
+          <div class="dash-card">
+            <div class="dash-card-header"><h3 class="dash-card-title">Traffic Overview</h3><div class="dash-card-actions"><button class="dash-filter-btn active">Monthly</button><button class="dash-filter-btn">Weekly</button></div></div>
+            <div class="dash-card-body"><div style="height:300px;"><canvas id="analyticsTraffic"></canvas></div></div>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-header"><h3 class="dash-card-title">User Growth</h3></div>
+            <div class="dash-card-body">
+              <div style="display:flex;flex-direction:column;gap:1rem;">
+                <div><div style="display:flex;justify-content:space-between;font-size:0.85rem;margin-bottom:0.25rem;"><span>New Users</span><span style="font-weight:600;">847</span></div><div class="dash-progress"><div class="dash-progress-bar" data-progress="85" style="width:0;"></div></div></div>
+                <div><div style="display:flex;justify-content:space-between;font-size:0.85rem;margin-bottom:0.25rem;"><span>Returning Users</span><span style="font-weight:600;">2,000</span></div><div class="dash-progress"><div class="dash-progress-bar" data-progress="70" style="width:0;"></div></div></div>
+                <div><div style="display:flex;justify-content:space-between;font-size:0.85rem;margin-bottom:0.25rem;"><span>Active Sessions</span><span style="font-weight:600;">573</span></div><div class="dash-progress"><div class="dash-progress-bar" data-progress="57" style="width:0;"></div></div></div>
+                <div><div style="display:flex;justify-content:space-between;font-size:0.85rem;margin-bottom:0.25rem;"><span>Bounced Sessions</span><span style="font-weight:600;">127</span></div><div class="dash-progress"><div class="dash-progress-bar" data-progress="13" style="width:0;background:#ef4444;"></div></div></div>
+              </div>
+              <div style="margin-top:1.5rem;"><div style="height:180px;"><canvas id="analyticsUserGrowth"></canvas></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dash-grid">
+          <div class="dash-card">
+            <div class="dash-card-header"><h3 class="dash-card-title">Revenue by Service</h3></div>
+            <div class="dash-card-body"><div style="height:300px;"><canvas id="analyticsRevenue"></canvas></div></div>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-header"><h3 class="dash-card-title">Service Usage</h3></div>
+            <div class="dash-card-body"><div style="height:300px;"><canvas id="analyticsServiceUsage"></canvas></div></div>
+          </div>
+        </div>
+
+        <div class="dash-card" style="margin-bottom:1.5rem;">
+          <div class="dash-card-header"><h3 class="dash-card-title">Top Pages</h3></div>
+          <div class="dash-card-body no-padding">
+            <div class="dash-table-wrapper">
+              <table class="dash-table">
+                <thead><tr><th>Page</th><th>Views</th><th>Unique</th><th>Bounce Rate</th><th>Avg. Time</th></tr></thead>
+                <tbody>
+                  <tr><td><strong style="color:var(--text-main);">/services</strong></td><td>45,230</td><td>32,100</td><td>18%</td><td>3m 45s</td></tr>
+                  <tr><td><strong style="color:var(--text-main);">/pricing</strong></td><td>38,900</td><td>28,400</td><td>22%</td><td>4m 12s</td></tr>
+                  <tr><td><strong style="color:var(--text-main);">/portfolio</strong></td><td>31,200</td><td>24,800</td><td>15%</td><td>5m 30s</td></tr>
+                  <tr><td><strong style="color:var(--text-main);">/about</strong></td><td>22,100</td><td>18,900</td><td>25%</td><td>2m 55s</td></tr>
+                  <tr><td><strong style="color:var(--text-main);">/contact</strong></td><td>18,700</td><td>15,200</td><td>12%</td><td>6m 10s</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <button class="dash-back-to-top"><i class="ri-arrow-up-line"></i></button>
+  <script src="../js/shared.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script>
+    renderAdminSidebar('analytics');
+    initAdminDashboard();
+
+    new Chart(document.getElementById('analyticsTraffic'), {
+      type: 'line',
+      data: {
+        labels: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+        datasets: [
+          { label: 'Page Views', data: [28000,32000,30000,38000,42000,48000,52000,58000,55000,62000,60000,68000], borderColor: '#f97316', backgroundColor: 'rgba(249,115,22,0.1)', fill: true, tension: 0.4, pointRadius: 3 },
+          { label: 'Unique Users', data: [18000,21000,19000,25000,28000,32000,35000,38000,36000,42000,40000,45000], borderColor: '#3b82f6', backgroundColor: 'rgba(59,130,246,0.1)', fill: true, tension: 0.4, pointRadius: 3 }
+        ]
+      },
+      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'top', labels: { usePointStyle: true } } }, scales: { y: { beginAtZero: true, grid: { color: 'rgba(0,0,0,0.05)' } }, x: { grid: { display: false } } } }
+    });
+
+    new Chart(document.getElementById('analyticsUserGrowth'), {
+      type: 'bar',
+      data: {
+        labels: ['Jan','Feb','Mar','Apr','May','Jun'],
+        datasets: [{ label: 'New Users', data: [620,780,850,920,1050,1200], backgroundColor: 'rgba(249,115,22,0.7)', borderRadius: 6 }]
+      },
+      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, grid: { color: 'rgba(0,0,0,0.05)' } }, x: { grid: { display: false } } } }
+    });
+
+    new Chart(document.getElementById('analyticsRevenue'), {
+      type: 'bar',
+      data: {
+        labels: ['Web Dev','Mobile','Cloud','AI/ML','Security','Marketing'],
+        datasets: [
+          { label: 'Revenue', data: [620000,480000,390000,310000,275000,180000], backgroundColor: ['#f97316','#3b82f6','#22c55e','#a855f7','#ef4444','#eab308'], borderRadius: 8 }
+        ]
+      },
+      options: { responsive: true, maintainAspectRatio: false, indexAxis: 'y', plugins: { legend: { display: false } }, scales: { x: { beginAtZero: true, grid: { color: 'rgba(0,0,0,0.05)' } }, y: { grid: { display: false } } } }
+    });
+
+    new Chart(document.getElementById('analyticsServiceUsage'), {
+      type: 'doughnut',
+      data: {
+        labels: ['Web Dev','Mobile','Cloud','AI/ML','Security','Marketing'],
+        datasets: [{ data: [86,62,45,28,38,52], backgroundColor: ['#f97316','#3b82f6','#22c55e','#a855f7','#ef4444','#eab308'], borderWidth: 0 }]
+      },
+      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom', labels: { padding: 12, usePointStyle: true } } }, cutout: '65%' }
+    });
+  </script>
+</body>
+</html>

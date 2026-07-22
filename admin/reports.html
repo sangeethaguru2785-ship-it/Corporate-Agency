@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STACKLY - Reports</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <div class="dash-overlay"></div>
+    <main class="dash-main">
+      <div class="dash-content">
+        <div class="dash-stats-grid">
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-bar-chart-grouped-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>22.1%</div></div>
+            <div class="dash-stat-value" data-value="2400000" data-prefix="$">$0</div>
+            <div class="dash-stat-label">Total Revenue</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-file-list-3-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>18.6%</div></div>
+            <div class="dash-stat-value" data-value="342">0</div>
+            <div class="dash-stat-label">Invoices Sent</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-checkbox-circle-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>94.2%</div></div>
+            <div class="dash-stat-value" data-value="94" data-suffix="%">0</div>
+            <div class="dash-stat-label">Collection Rate</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-group-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>12.5%</div></div>
+            <div class="dash-stat-value" data-value="2847">0</div>
+            <div class="dash-stat-label">Total Users</div>
+          </div>
+        </div>
+
+        <div class="dash-grid">
+          <div class="dash-card">
+            <div class="dash-card-header"><h3 class="dash-card-title">Monthly Visitors</h3></div>
+            <div class="dash-card-body"><div style="height:320px;"><canvas id="reportLineChart"></canvas></div></div>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-header"><h3 class="dash-card-title">Application Status</h3></div>
+            <div class="dash-card-body"><div style="height:320px;"><canvas id="reportPieChart"></canvas></div></div>
+          </div>
+        </div>
+
+        <div class="dash-card" style="margin-bottom:1.5rem;">
+          <div class="dash-card-header"><h3 class="dash-card-title">Service Requests</h3></div>
+          <div class="dash-card-body"><div style="height:320px;"><canvas id="reportBarChart"></canvas></div></div>
+        </div>
+
+        <div class="dash-grid">
+          <div class="dash-card">
+            <div class="dash-card-header"><h3 class="dash-card-title">Revenue Breakdown</h3></div>
+            <div class="dash-card-body">
+              <div style="display:flex;flex-direction:column;gap:0.75rem;">
+                <div style="display:flex;align-items:center;justify-content:space-between;padding:0.75rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);"><div style="display:flex;align-items:center;gap:0.75rem;"><div style="width:8px;height:8px;border-radius:50%;background:#f97316;"></div><span style="font-weight:600;font-size:0.9rem;">Web Development</span></div><span style="font-weight:700;font-size:0.9rem;">$620,000</span></div>
+                <div style="display:flex;align-items:center;justify-content:space-between;padding:0.75rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);"><div style="display:flex;align-items:center;gap:0.75rem;"><div style="width:8px;height:8px;border-radius:50%;background:#3b82f6;"></div><span style="font-weight:600;font-size:0.9rem;">Mobile Apps</span></div><span style="font-weight:700;font-size:0.9rem;">$480,000</span></div>
+                <div style="display:flex;align-items:center;justify-content:space-between;padding:0.75rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);"><div style="display:flex;align-items:center;gap:0.75rem;"><div style="width:8px;height:8px;border-radius:50%;background:#22c55e;"></div><span style="font-weight:600;font-size:0.9rem;">Cloud Solutions</span></div><span style="font-weight:700;font-size:0.9rem;">$390,000</span></div>
+                <div style="display:flex;align-items:center;justify-content:space-between;padding:0.75rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);"><div style="display:flex;align-items:center;gap:0.75rem;"><div style="width:8px;height:8px;border-radius:50%;background:#a855f7;"></div><span style="font-weight:600;font-size:0.9rem;">AI & ML</span></div><span style="font-weight:700;font-size:0.9rem;">$310,000</span></div>
+                <div style="display:flex;align-items:center;justify-content:space-between;padding:0.75rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);"><div style="display:flex;align-items:center;gap:0.75rem;"><div style="width:8px;height:8px;border-radius:50%;background:#ef4444;"></div><span style="font-weight:600;font-size:0.9rem;">Security</span></div><span style="font-weight:700;font-size:0.9rem;">$275,000</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-header"><h3 class="dash-card-title">Top Performing Projects</h3></div>
+            <div class="dash-card-body">
+              <div style="display:flex;flex-direction:column;gap:1rem;">
+                <div><div style="display:flex;justify-content:space-between;font-size:0.85rem;margin-bottom:0.35rem;"><span style="font-weight:600;">E-Commerce Platform</span><span style="font-weight:700;color:var(--primary-orange);">$485k</span></div><div class="dash-progress"><div class="dash-progress-bar" data-progress="92" style="width:0;"></div></div></div>
+                <div><div style="display:flex;justify-content:space-between;font-size:0.85rem;margin-bottom:0.35rem;"><span style="font-weight:600;">Cloud Migration</span><span style="font-weight:700;color:var(--primary-orange);">$320k</span></div><div class="dash-progress"><div class="dash-progress-bar" data-progress="78" style="width:0;"></div></div></div>
+                <div><div style="display:flex;justify-content:space-between;font-size:0.85rem;margin-bottom:0.35rem;"><span style="font-weight:600;">AI Dashboard</span><span style="font-weight:700;color:var(--primary-orange);">$210k</span></div><div class="dash-progress"><div class="dash-progress-bar" data-progress="55" style="width:0;"></div></div></div>
+                <div><div style="display:flex;justify-content:space-between;font-size:0.85rem;margin-bottom:0.35rem;"><span style="font-weight:600;">Patient Portal</span><span style="font-weight:700;color:var(--primary-orange);">$175k</span></div><div class="dash-progress"><div class="dash-progress-bar" data-progress="42" style="width:0;"></div></div></div>
+                <div><div style="display:flex;justify-content:space-between;font-size:0.85rem;margin-bottom:0.35rem;"><span style="font-weight:600;">LMS Platform</span><span style="font-weight:700;color:var(--primary-orange);">$142k</span></div><div class="dash-progress"><div class="dash-progress-bar" data-progress="100" style="width:0;background:#22c55e;"></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <button class="dash-back-to-top"><i class="ri-arrow-up-line"></i></button>
+  <script src="../js/shared.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script>
+    renderAdminSidebar('reports');
+    initAdminDashboard();
+
+    new Chart(document.getElementById('reportLineChart'), {
+      type: 'line',
+      data: {
+        labels: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+        datasets: [
+          { label: 'Visitors', data: [12000,19000,15000,25000,22000,30000,28000,35000,32000,40000,38000,45000], borderColor: '#f97316', backgroundColor: 'rgba(249,115,22,0.1)', fill: true, tension: 0.4, pointRadius: 4, pointBackgroundColor: '#f97316' },
+          { label: 'Unique Users', data: [8000,12000,10000,17000,15000,20000,19000,24000,22000,28000,26000,31000], borderColor: '#3b82f6', backgroundColor: 'rgba(59,130,246,0.1)', fill: true, tension: 0.4, pointRadius: 4, pointBackgroundColor: '#3b82f6' }
+        ]
+      },
+      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'top', labels: { usePointStyle: true } } }, scales: { y: { beginAtZero: true, grid: { color: 'rgba(0,0,0,0.05)' } }, x: { grid: { display: false } } } }
+    });
+
+    new Chart(document.getElementById('reportPieChart'), {
+      type: 'pie',
+      data: {
+        labels: ['Approved','Pending','Rejected','Under Review'],
+        datasets: [{ data: [142,38,12,22], backgroundColor: ['#22c55e','#f97316','#ef4444','#3b82f6'], borderWidth: 2, borderColor: '#fff' }]
+      },
+      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom', labels: { padding: 15, usePointStyle: true } } } }
+    });
+
+    new Chart(document.getElementById('reportBarChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+        datasets: [
+          { label: 'New Requests', data: [45,52,38,65,72,58,80,75,88,92,85,98], backgroundColor: 'rgba(249,115,22,0.7)', borderRadius: 6 },
+          { label: 'Completed', data: [38,45,32,55,60,50,70,68,78,82,75,88], backgroundColor: 'rgba(34,197,94,0.7)', borderRadius: 6 }
+        ]
+      },
+      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'top', labels: { usePointStyle: true } } }, scales: { y: { beginAtZero: true, grid: { color: 'rgba(0,0,0,0.05)' } }, x: { grid: { display: false } } } }
+    });
+  </script>
+</body>
+</html>

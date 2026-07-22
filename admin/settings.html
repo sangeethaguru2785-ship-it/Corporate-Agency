@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STACKLY - Settings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500,0,600,0,700,0,800;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+  <div class="dashboard">
+    <div class="dash-overlay"></div>
+    <main class="dash-main">
+      <div class="dash-content">
+        <div class="dash-card" style="margin-bottom:1.5rem;">
+          <div class="dash-card-header"><h3 class="dash-card-title">Account Settings</h3></div>
+          <div class="dash-settings-section">
+            <div class="dash-settings-title">Change Password</div>
+            <div class="dash-settings-desc">Update your password to keep your account secure.</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+              <div><label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.4rem;">Current Password</label><input type="password" placeholder="Enter current password" style="width:100%;padding:0.6rem 1rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);color:var(--text-main);font-family:var(--font-body);"></div>
+              <div><label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.4rem;">New Password</label><input type="password" placeholder="Enter new password" style="width:100%;padding:0.6rem 1rem;background:var(--bg-base);border:1px solid var(--border-subtle);border-radius:var(--radius-md);color:var(--text-main);font-family:var(--font-body);"></div>
+            </div>
+            <div style="margin-top:1rem;"><button class="btn btn-primary" style="font-size:0.85rem;padding:0.5rem 1rem;">Update Password</button></div>
+          </div>
+          <div class="dash-settings-section">
+            <div class="dash-settings-title">Security</div>
+            <div class="dash-settings-row"><div><div class="dash-settings-row-label">Two-Factor Authentication</div><div class="dash-settings-row-desc">Add an extra layer of security to your account.</div></div><label class="dash-toggle"><input type="checkbox" checked><span class="dash-toggle-slider"></span></label></div>
+            <div class="dash-settings-row"><div><div class="dash-settings-row-label">Login Notifications</div><div class="dash-settings-row-desc">Get notified of new sign-ins to your account.</div></div><label class="dash-toggle"><input type="checkbox" checked><span class="dash-toggle-slider"></span></label></div>
+            <div class="dash-settings-row"><div><div class="dash-settings-row-label">Session Timeout</div><div class="dash-settings-row-desc">Automatically log out after 30 minutes of inactivity.</div></div><label class="dash-toggle"><input type="checkbox"><span class="dash-toggle-slider"></span></label></div>
+          </div>
+          <div class="dash-settings-section">
+            <div class="dash-settings-title">Notifications</div>
+            <div class="dash-settings-row"><div><div class="dash-settings-row-label">Email Notifications</div><div class="dash-settings-row-desc">Receive email for new inquiries and quotes.</div></div><label class="dash-toggle"><input type="checkbox" checked><span class="dash-toggle-slider"></span></label></div>
+            <div class="dash-settings-row"><div><div class="dash-settings-row-label">Project Updates</div><div class="dash-settings-row-desc">Notifications for project milestones and deadlines.</div></div><label class="dash-toggle"><input type="checkbox" checked><span class="dash-toggle-slider"></span></label></div>
+            <div class="dash-settings-row"><div><div class="dash-settings-row-label">Marketing Emails</div><div class="dash-settings-row-desc">Receive product updates and newsletter.</div></div><label class="dash-toggle"><input type="checkbox"><span class="dash-toggle-slider"></span></label></div>
+            <div class="dash-settings-row"><div><div class="dash-settings-row-label">Sound Alerts</div><div class="dash-settings-row-desc">Play a sound for new notifications.</div></div><label class="dash-toggle"><input type="checkbox" checked><span class="dash-toggle-slider"></span></label></div>
+          </div>
+          <div class="dash-settings-section">
+            <div class="dash-settings-title">Appearance</div>
+            <div class="dash-settings-row"><div><div class="dash-settings-row-label">Compact Mode</div><div class="dash-settings-row-desc">Reduce spacing for a denser interface.</div></div><label class="dash-toggle"><input type="checkbox"><span class="dash-toggle-slider"></span></label></div>
+            <div class="dash-settings-row"><div><div class="dash-settings-row-label">Show Sidebar Labels</div><div class="dash-settings-row-desc">Display text labels in the collapsed sidebar.</div></div><label class="dash-toggle"><input type="checkbox" checked><span class="dash-toggle-slider"></span></label></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <button class="dash-back-to-top"><i class="ri-arrow-up-line"></i></button>
+  <script src="../js/shared.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script>renderAdminSidebar('settings'); initAdminDashboard();</script>
+</body>
+</html>

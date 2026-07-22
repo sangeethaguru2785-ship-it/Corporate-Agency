@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STACKLY - Services Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <div class="dash-overlay"></div>
+    <main class="dash-main">
+      <div class="dash-content">
+        <div class="dash-stats-grid">
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-service-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>5.7%</div></div>
+            <div class="dash-stat-value" data-value="47">0</div>
+            <div class="dash-stat-label">Active Services</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-team-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>15.3%</div></div>
+            <div class="dash-stat-value" data-value="342">0</div>
+            <div class="dash-stat-label">Active Clients</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-money-dollar-circle-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>18.6%</div></div>
+            <div class="dash-stat-value" data-value="2255000" data-prefix="$">$0</div>
+            <div class="dash-stat-label">Total Revenue</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-star-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>0.2</div></div>
+            <div class="dash-stat-value" data-value="48" data-suffix=".9">0</div>
+            <div class="dash-stat-label">Avg. Rating</div>
+          </div>
+        </div>
+
+        <div class="dash-card" style="margin-bottom:1.5rem;">
+          <div class="dash-card-header"><h3 class="dash-card-title">Services Overview</h3><a href="#" class="btn btn-primary" style="font-size:0.85rem;padding:0.5rem 1rem;"><i class="ri-add-line"></i> Add Service</a></div>
+          <div class="dash-card-body no-padding">
+            <div class="dash-table-wrapper">
+              <table class="dash-table">
+                <thead><tr><th>Service</th><th>Category</th><th>Active Clients</th><th>Revenue</th><th>Rating</th><th>Status</th><th>Actions</th></tr></thead>
+                <tbody>
+                  <tr><td><strong style="color:var(--text-main);">Web Development</strong></td><td>Technology</td><td>86</td><td>$620,000</td><td><span style="color:#eab308;">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.8</td><td><span class="dash-status active">Active</span></td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-edit-line"></i></button></td></tr>
+                  <tr><td><strong style="color:var(--text-main);">Mobile App Development</strong></td><td>Technology</td><td>62</td><td>$480,000</td><td><span style="color:#eab308;">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.7</td><td><span class="dash-status active">Active</span></td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-edit-line"></i></button></td></tr>
+                  <tr><td><strong style="color:var(--text-main);">Cloud Solutions</strong></td><td>Infrastructure</td><td>45</td><td>$390,000</td><td><span style="color:#eab308;">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.9</td><td><span class="dash-status active">Active</span></td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-edit-line"></i></button></td></tr>
+                  <tr><td><strong style="color:var(--text-main);">AI & Machine Learning</strong></td><td>Data</td><td>28</td><td>$310,000</td><td><span style="color:#eab308;">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.6</td><td><span class="dash-status pending">Growing</span></td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-edit-line"></i></button></td></tr>
+                  <tr><td><strong style="color:var(--text-main);">Cybersecurity</strong></td><td>Security</td><td>38</td><td>$275,000</td><td><span style="color:#eab308;">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.8</td><td><span class="dash-status active">Active</span></td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-edit-line"></i></button></td></tr>
+                  <tr><td><strong style="color:var(--text-main);">Digital Marketing</strong></td><td>Marketing</td><td>52</td><td>$180,000</td><td><span style="color:#eab308;">&#9733;&#9733;&#9733;&#9734;&#9734;</span> 4.3</td><td><span class="dash-status active">Active</span></td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-edit-line"></i></button></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="dash-grid">
+          <div class="dash-card">
+            <div class="dash-card-header"><h3 class="dash-card-title">Service Revenue Comparison</h3></div>
+            <div class="dash-card-body"><div style="height:300px;"><canvas id="serviceRevenueChart"></canvas></div></div>
+          </div>
+          <div class="dash-card">
+            <div class="dash-card-header"><h3 class="dash-card-title">Client Distribution</h3></div>
+            <div class="dash-card-body"><div style="height:300px;"><canvas id="serviceClientChart"></canvas></div></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <button class="dash-back-to-top"><i class="ri-arrow-up-line"></i></button>
+  <script src="../js/shared.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script>
+    renderAdminSidebar('services');
+    initAdminDashboard();
+
+    new Chart(document.getElementById('serviceRevenueChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Web Dev','Mobile','Cloud','AI/ML','Security','Marketing'],
+        datasets: [
+          { label: 'This Year', data: [620000,480000,390000,310000,275000,180000], backgroundColor: '#f97316', borderRadius: 6 },
+          { label: 'Last Year', data: [520000,380000,320000,180000,240000,150000], backgroundColor: 'rgba(249,115,22,0.2)', borderRadius: 6 }
+        ]
+      },
+      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'top', labels: { usePointStyle: true } } }, scales: { y: { beginAtZero: true, grid: { color: 'rgba(0,0,0,0.05)' } }, x: { grid: { display: false } } } }
+    });
+
+    new Chart(document.getElementById('serviceClientChart'), {
+      type: 'doughnut',
+      data: {
+        labels: ['Web Dev','Mobile','Cloud','AI/ML','Security','Marketing'],
+        datasets: [{ data: [86,62,45,28,38,52], backgroundColor: ['#f97316','#3b82f6','#22c55e','#a855f7','#ef4444','#eab308'], borderWidth: 0 }]
+      },
+      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom', labels: { padding: 12, usePointStyle: true } } }, cutout: '60%' }
+    });
+  </script>
+</body>
+</html>

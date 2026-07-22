@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STACKLY - Users Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+  <div class="dashboard">
+    <div class="dash-overlay"></div>
+    <main class="dash-main">
+      <div class="dash-content">
+        <div class="dash-stats-grid">
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-team-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>12.5%</div></div>
+            <div class="dash-stat-value" data-value="2847">0</div>
+            <div class="dash-stat-label">Total Users</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-user-star-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>8.3%</div></div>
+            <div class="dash-stat-value" data-value="1923">0</div>
+            <div class="dash-stat-label">Active Users</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-user-add-line"></i></div><div class="dash-stat-trend up"><i class="ri-arrow-up-s-line"></i>47 today</div></div>
+            <div class="dash-stat-value" data-value="312">0</div>
+            <div class="dash-stat-label">New This Month</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-header"><div class="dash-stat-icon"><i class="ri-shield-user-line"></i></div><div class="dash-stat-trend down"><i class="ri-arrow-down-s-line"></i>2.1%</div></div>
+            <div class="dash-stat-value" data-value="92">0</div>
+            <div class="dash-stat-label">Admin Users</div>
+          </div>
+        </div>
+
+        <div class="dash-card" style="margin-bottom:1.5rem;">
+          <div class="dash-card-header">
+            <h3 class="dash-card-title">User Management</h3>
+            <div class="dash-card-actions">
+              <button class="dash-filter-btn active">All</button>
+              <button class="dash-filter-btn">Active</button>
+              <button class="dash-filter-btn">Inactive</button>
+              <a href="#" class="btn btn-primary" style="font-size:0.85rem;padding:0.5rem 1rem;"><i class="ri-user-add-line"></i> Add User</a>
+            </div>
+          </div>
+          <div class="dash-card-body no-padding">
+            <div class="dash-table-wrapper">
+              <table class="dash-table">
+                <thead><tr><th><input type="checkbox" class="dash-select-all"></th><th>User</th><th>Role</th><th>Status</th><th>Joined</th><th>Actions</th></tr></thead>
+                <tbody>
+                  <tr><td><input type="checkbox" class="row-checkbox"></td><td><div class="user-cell"><img src="../images/photo-1507003211169-0a1dd7228f2d.webp" alt=""><div><div class="user-name">Marcus Johnson</div><div class="user-email">marcus@techcorp.com</div></div></div></td><td>Admin</td><td><span class="dash-status active">Active</span></td><td>Jan 12, 2026</td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-edit-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-delete-bin-line"></i></button></td></tr>
+                  <tr><td><input type="checkbox" class="row-checkbox"></td><td><div class="user-cell"><img src="../images/photo-1494790108377-be9c29b29330.webp" alt=""><div><div class="user-name">Sarah Chen</div><div class="user-email">sarah@startup.io</div></div></div></td><td>Editor</td><td><span class="dash-status active">Active</span></td><td>Feb 3, 2026</td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-edit-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-delete-bin-line"></i></button></td></tr>
+                  <tr><td><input type="checkbox" class="row-checkbox"></td><td><div class="user-cell"><img src="../images/photo-1472099645785-5658abf4ff4e.webp" alt=""><div><div class="user-name">David Park</div><div class="user-email">david@enterprise.com</div></div></div></td><td>Client</td><td><span class="dash-status pending">Pending</span></td><td>Mar 15, 2026</td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-edit-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-delete-bin-line"></i></button></td></tr>
+                  <tr><td><input type="checkbox" class="row-checkbox"></td><td><div class="user-cell"><img src="../images/photo-1438761681033-6461ffad8d80.webp" alt=""><div><div class="user-name">Emily Rodriguez</div><div class="user-email">emily@design.co</div></div></div></td><td>Editor</td><td><span class="dash-status active">Active</span></td><td>Apr 22, 2026</td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-edit-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-delete-bin-line"></i></button></td></tr>
+                  <tr><td><input type="checkbox" class="row-checkbox"></td><td><div class="user-cell"><img src="../images/photo-1500648767791-00dcc994a43e.webp" alt=""><div><div class="user-name">Alex Thompson</div><div class="user-email">alex@agency.net</div></div></div></td><td>Client</td><td><span class="dash-status inactive">Inactive</span></td><td>May 8, 2026</td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-edit-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-delete-bin-line"></i></button></td></tr>
+                  <tr><td><input type="checkbox" class="row-checkbox"></td><td><div class="user-cell"><img src="../images/photo-1544005313-94ddf0286df2.webp" alt=""><div><div class="user-name">Lisa Wang</div><div class="user-email">lisa@fintech.com</div></div></div></td><td>Admin</td><td><span class="dash-status active">Active</span></td><td>Jun 1, 2026</td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-edit-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-delete-bin-line"></i></button></td></tr>
+                  <tr><td><input type="checkbox" class="row-checkbox"></td><td><div class="user-cell"><img src="../images/photo-1519345182560-3f2917c472ef.webp" alt=""><div><div class="user-name">James Wilson</div><div class="user-email">james@health.org</div></div></div></td><td>Client</td><td><span class="dash-status active">Active</span></td><td>Jul 5, 2026</td><td><button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-eye-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-edit-line"></i></button> <button class="dash-topbar-btn" style="width:30px;height:30px;font-size:0.9rem;"><i class="ri-delete-bin-line"></i></button></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="dash-pagination" style="padding:1rem 1.5rem;">
+              <div class="dash-pagination-info">Showing 1-7 of 2,847 users</div>
+              <div class="dash-pagination-links">
+                <button class="dash-pagination-btn"><i class="ri-arrow-left-s-line"></i></button>
+                <button class="dash-pagination-btn active">1</button>
+                <button class="dash-pagination-btn">2</button>
+                <button class="dash-pagination-btn">3</button>
+                <button class="dash-pagination-btn">...</button>
+                <button class="dash-pagination-btn">407</button>
+                <button class="dash-pagination-btn"><i class="ri-arrow-right-s-line"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <button class="dash-back-to-top"><i class="ri-arrow-up-line"></i></button>
+  <script src="../js/shared.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script>renderAdminSidebar('users'); initAdminDashboard();</script>
+</body>
+</html>

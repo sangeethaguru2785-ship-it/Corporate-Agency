@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STACKLY - Notifications</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500,0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+  <div class="dashboard">
+    <div class="dash-overlay"></div>
+    <main class="dash-main">
+      <div class="dash-content">
+        <div class="dash-card" style="margin-bottom:1.5rem;">
+          <div class="dash-card-header">
+            <h3 class="dash-card-title">All Notifications</h3>
+            <div class="dash-card-actions">
+              <a href="#" style="font-size:0.85rem;color:var(--primary-orange);text-decoration:none;font-weight:600;">Mark all read</a>
+              <button class="dash-filter-btn active">All</button>
+              <button class="dash-filter-btn">Unread</button>
+            </div>
+          </div>
+          <div class="dash-card-body">
+            <div class="dash-timeline">
+              <div class="dash-timeline-item"><div class="dash-timeline-dot"></div><div class="dash-timeline-content"><i class="ri-user-add-line" style="color:var(--primary-orange);margin-right:0.5rem;"></i><strong>New user registered</strong> — jane.doe@acme.com signed up as Enterprise Client</div><div class="dash-timeline-time">2 minutes ago</div></div>
+              <div class="dash-timeline-item"><div class="dash-timeline-dot"></div><div class="dash-timeline-content"><i class="ri-file-list-3-line" style="color:var(--primary-orange);margin-right:0.5rem;"></i><strong>Quote request</strong> from TechCorp for Cloud Migration Services ($100k+)</div><div class="dash-timeline-time">15 minutes ago</div></div>
+              <div class="dash-timeline-item"><div class="dash-timeline-dot"></div><div class="dash-timeline-content"><i class="ri-checkbox-circle-line" style="color:#22c55e;margin-right:0.5rem;"></i><strong>Project delivered</strong> — E-Commerce Platform for RetailPro completed successfully</div><div class="dash-timeline-time">1 hour ago</div></div>
+              <div class="dash-timeline-item"><div class="dash-timeline-dot"></div><div class="dash-timeline-content"><i class="ri-chat-3-line" style="color:#3b82f6;margin-right:0.5rem;"></i><strong>New inquiry</strong> — Contact form submission from GlobalInc about AI integration</div><div class="dash-timeline-time">2 hours ago</div></div>
+              <div class="dash-timeline-item"><div class="dash-timeline-dot"></div><div class="dash-timeline-content"><i class="ri-calendar-check-line" style="color:var(--primary-orange);margin-right:0.5rem;"></i><strong>Appointment booked</strong> — MedTech Solutions scheduled a security audit review for Jul 24</div><div class="dash-timeline-time">3 hours ago</div></div>
+              <div class="dash-timeline-item"><div class="dash-timeline-dot"></div><div class="dash-timeline-content"><i class="ri-money-dollar-circle-line" style="color:#22c55e;margin-right:0.5rem;"></i><strong>Payment received</strong> — $45,000 from GlobalRetail Inc. for Invoice #INV-2026-042</div><div class="dash-timeline-time">5 hours ago</div></div>
+              <div class="dash-timeline-item"><div class="dash-timeline-dot"></div><div class="dash-timeline-content"><i class="ri-article-line" style="color:var(--primary-orange);margin-right:0.5rem;"></i><strong>Blog published</strong> — "Enterprise AI Trends 2026" went live on the blog</div><div class="dash-timeline-time">Yesterday</div></div>
+              <div class="dash-timeline-item"><div class="dash-timeline-dot"></div><div class="dash-timeline-content"><i class="ri-team-line" style="color:#3b82f6;margin-right:0.5rem;"></i><strong>Team update</strong> — Marcus Lee promoted to Senior Architect</div><div class="dash-timeline-time">Yesterday</div></div>
+              <div class="dash-timeline-item"><div class="dash-timeline-dot"></div><div class="dash-timeline-content"><i class="ri-service-line" style="color:var(--primary-orange);margin-right:0.5rem;"></i><strong>Service activated</strong> — FinEdge Capital upgraded to Enterprise Plan for AI & ML</div><div class="dash-timeline-time">2 days ago</div></div>
+              <div class="dash-timeline-item"><div class="dash-timeline-dot"></div><div class="dash-timeline-content"><i class="ri-file-text-line" style="color:#22c55e;margin-right:0.5rem;"></i><strong>Invoice generated</strong> — INV-2026-047 for Cloud Migration Phase 3 ($15,000)</div><div class="dash-timeline-time">2 days ago</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <button class="dash-back-to-top"><i class="ri-arrow-up-line"></i></button>
+  <script src="../js/shared.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script>renderAdminSidebar('notifications'); initAdminDashboard();</script>
+</body>
+</html>
